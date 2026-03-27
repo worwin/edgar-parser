@@ -3,12 +3,12 @@ from __future__ import annotations
 from pathlib import Path
 import shutil
 import sys
+from uuid import uuid4
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
-TMP_ROOT = ROOT / ".tmp-tests"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
@@ -102,14 +102,17 @@ class FakeSecClient:
 
 class FetchFilingsTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        TMP_ROOT.mkdir(exist_ok=True)
+        base_tmp = ROOT / "tests" / ".tmp-work"
+        base_tmp.mkdir(parents=True, exist_ok=True)
+        self.tmp_root = base_tmp / f"edgar-parser-tests-{uuid4().hex}"
+        self.tmp_root.mkdir(parents=True, exist_ok=True)
 
     def tearDown(self) -> None:
-        if TMP_ROOT.exists():
-            shutil.rmtree(TMP_ROOT, ignore_errors=True)
+        if self.tmp_root.exists():
+            shutil.rmtree(self.tmp_root, ignore_errors=True)
 
     def test_fetch_filings_writes_expected_raw_artifacts_and_catalog(self) -> None:
-        layout = ProjectLayout(TMP_ROOT / "workspace-fetch")
+        layout = ProjectLayout(self.tmp_root / "workspace-fetch")
         result = fetch_filings(
             client=FakeSecClient(),
             layout=layout,

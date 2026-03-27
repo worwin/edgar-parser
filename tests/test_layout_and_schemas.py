@@ -3,12 +3,12 @@ from __future__ import annotations
 from pathlib import Path
 import shutil
 import sys
+from uuid import uuid4
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
-TMP_ROOT = ROOT / ".tmp-tests"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
@@ -18,14 +18,17 @@ from edgar_parser.schemas import SCHEMA_REGISTRY
 
 class LayoutAndSchemaTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        TMP_ROOT.mkdir(exist_ok=True)
+        base_tmp = ROOT / "tests" / ".tmp-work"
+        base_tmp.mkdir(parents=True, exist_ok=True)
+        self.tmp_root = base_tmp / f"edgar-parser-tests-{uuid4().hex}"
+        self.tmp_root.mkdir(parents=True, exist_ok=True)
 
     def tearDown(self) -> None:
-        if TMP_ROOT.exists():
-            shutil.rmtree(TMP_ROOT, ignore_errors=True)
+        if self.tmp_root.exists():
+            shutil.rmtree(self.tmp_root, ignore_errors=True)
 
     def test_layout_directory_set_is_stable(self) -> None:
-        layout = ProjectLayout(TMP_ROOT / "layout-root")
+        layout = ProjectLayout(self.tmp_root / "layout-root")
         expected = {
             "ticker_dir",
             "cik_dir",

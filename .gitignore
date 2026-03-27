@@ -20,3 +20,13 @@ schemas/
 .idea/
 
 .tmp-tests/
+# Repo-root generated SEC artifacts
+ticker/
+cik/
+sec/
+catalog/
+normalized/
+datasets/
+edgar-parser.toml
+
+tests/.tmp-work/

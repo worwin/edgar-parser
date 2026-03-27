@@ -45,14 +45,18 @@ After that, `ORYND` can either:
 
 ## One-Time Initialization
 
+Recommended working-root rule:
+- keep the git clone as code-only when possible
+- use a clean project root for downloaded and parsed SEC artifacts
+- in downstream repos, prefer `--root D:/Projects/Orynd/_edgar_parser_test` or another clean directory
+
 Run this once in the target `edgar-parser` repo root:
 
 ```powershell
-cd D:\Projects\edgar-parser
-edgar-parser init --company-name "Orynd Research" --email "ops@example.com"
+edgar-parser init --root D:\Projects\Orynd\_edgar_parser_test --company-name "Orynd Research" --email "ops@example.com"
 ```
 
-This writes `D:/Projects/edgar-parser/edgar-parser.toml`.
+This writes `D:/Projects/Orynd/_edgar_parser_test/edgar-parser.toml`.
 That file stores the SEC identity and request-rate settings used by the downloader.
 
 ## Download Flow
@@ -60,8 +64,7 @@ That file stores the SEC identity and request-rate settings used by the download
 CLI example:
 
 ```powershell
-cd D:\Projects\edgar-parser
-edgar-parser fetch filings --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
+edgar-parser fetch filings --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
 ```
 
 What happens internally:
@@ -74,12 +77,12 @@ What happens internally:
 7. Write one catalog record per filing.
 
 Raw filing output locations:
-- `D:/Projects/edgar-parser/ticker`
-- `D:/Projects/edgar-parser/sec`
-- `D:/Projects/edgar-parser/catalog/filings.jsonl`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker`
+- `D:/Projects/Orynd/_edgar_parser_test/sec`
+- `D:/Projects/Orynd/_edgar_parser_test/catalog/filings.jsonl`
 
 Berkshire example raw path:
-- `D:/Projects/edgar-parser/ticker/brk-b/13F`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/13F`
 
 Each accession folder contains:
 - raw filing text
@@ -92,12 +95,11 @@ Each accession folder contains:
 CLI example:
 
 ```powershell
-cd D:\Projects\edgar-parser
-edgar-parser parse 13f --ticker BRK-B
+edgar-parser parse 13f --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B
 ```
 
 What happens internally:
-1. Read `D:/Projects/edgar-parser/catalog/filings.jsonl`.
+1. Read `D:/Projects/Orynd/_edgar_parser_test/catalog/filings.jsonl`.
 2. Select only records that:
    - are 13F forms
    - belong to `/ticker/brk-b/13F/`
@@ -109,7 +111,7 @@ What happens internally:
 7. Update the catalog with parse status and normalized output path.
 
 Parsed filing output location:
-- `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b`
 
 ## 13F Parser Decision Logic
 
@@ -133,7 +135,7 @@ That prevents silent data loss.
 ORYND should treat the parsed JSON files as the source parsed layer.
 
 One parsed file exists per accession, for example:
-- `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
 
 Each parsed file contains:
 - filing metadata
@@ -216,7 +218,7 @@ from edgar_parser import (
 )
 from edgar_parser.sec_client import SecClient
 
-root = Path(r"D:\Projects\edgar-parser")
+root = Path(r"D:\Projects\Orynd\_edgar_parser_test")
 config = ProjectConfig.load(root)
 layout = ProjectLayout(root)
 client = SecClient(
@@ -251,8 +253,8 @@ Important note:
 ## What ORYND Should Read
 
 ORYND should primarily read:
-- `D:/Projects/edgar-parser/normalized/13f/filings`
-- `D:/Projects/edgar-parser/catalog/filings.jsonl`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings`
+- `D:/Projects/Orynd/_edgar_parser_test/catalog/filings.jsonl`
 
 Use parsed filing JSON for holdings.
 Use the catalog for inventory, raw-path lookup, parse status, and auditability.
@@ -262,7 +264,7 @@ Use the catalog for inventory, raw-path lookup, parse status, and auditability.
 Berkshire Hathaway / `BRK-B` / CIK `0001067983` has already been:
 - downloaded back to 1999
 - parsed into one JSON per filing
-- stored under `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b`
+- stored under `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b`
 
 Current Berkshire parse outcomes as of March 27, 2026:
 - `95` pass
@@ -281,7 +283,7 @@ The `parse_error` outputs are expected for unsupported historical layouts and sh
 ## Practical Review Set
 
 If ORYND or a human reviewer wants a small spot-check set, use:
-- `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
 - `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0001193125-12-470800.json`
 - `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0000950148-99-001187.json`
 - `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0000950129-05-001294.json`

@@ -3,19 +3,20 @@ from __future__ import annotations
 from pathlib import Path
 import shutil
 import sys
+from uuid import uuid4
 import unittest
 
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
-TMP_ROOT = ROOT / ".tmp-tests"
+FIXTURES = ROOT / "tests" / "fixtures" / "thirteenf"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
 from edgar_parser.io import read_jsonl, write_jsonl_records
 from edgar_parser.paths import ProjectLayout
 from edgar_parser.schemas import SCHEMA_VERSION
-from edgar_parser.thirteenf import ParseThirteenFFilingsRequest, parse_downloaded_thirteenf_filings, parse_thirteenf_text
+from edgar_parser.thirteenf import ParseThirteenFFilingsRequest, parse_downloaded_thirteenf_filings, parse_thirteenf_filing, parse_thirteenf_text
 
 
 XML_SAMPLE = """
@@ -123,11 +124,14 @@ First Data Corporation   1, 2, 3, 4, 5, 6      3,962,100
 
 class ParseThirteenFTestCase(unittest.TestCase):
     def setUp(self) -> None:
-        TMP_ROOT.mkdir(exist_ok=True)
+        base_tmp = ROOT / "tests" / ".tmp-work"
+        base_tmp.mkdir(parents=True, exist_ok=True)
+        self.tmp_root = base_tmp / f"edgar-parser-tests-{uuid4().hex}"
+        self.tmp_root.mkdir(parents=True, exist_ok=True)
 
     def tearDown(self) -> None:
-        if TMP_ROOT.exists():
-            shutil.rmtree(TMP_ROOT, ignore_errors=True)
+        if self.tmp_root.exists():
+            shutil.rmtree(self.tmp_root, ignore_errors=True)
 
     def test_parse_xml_information_table(self) -> None:
         parsed = parse_thirteenf_text(
@@ -188,8 +192,48 @@ class ParseThirteenFTestCase(unittest.TestCase):
         self.assertEqual(parsed.holdings[0].other_managers, ["1", "2", "3", "4", "5", "6"])
         self.assertEqual(parsed.validation.expected_value_total, 419855000)
 
+    def test_parse_real_berkshire_xml_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_2026_0001193125-26-054580.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0001193125-26-054580",
+                "cik": "0001067983",
+                "form": "13F-HR",
+                "filing_date": "2026-02-17",
+                "report_period": "2025-12-31",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "xml_information_table")
+        self.assertGreater(len(parsed.holdings), 0)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+
+    def test_parse_real_berkshire_2000_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_2000_0000950150-00-000118.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000950150-00-000118",
+                "cik": "0001067983",
+                "form": "13F-HR",
+                "filing_date": "2000-02-15",
+                "report_period": "1998-12-31",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(len(parsed.holdings), 32)
+        self.assertEqual(parsed.validation.expected_entry_total, 32)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 32)
+        self.assertEqual(parsed.validation.expected_value_total, 26977010000)
+        self.assertEqual(parsed.validation.parsed_value_total, 26977010000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+        self.assertEqual(parsed.holdings[0].issuer_name, "American Express Co.")
+        self.assertEqual(parsed.holdings[0].other_managers, ["4", "5", "14"])
+
     def test_parse_downloaded_filings_continues_after_parse_error(self) -> None:
-        root = TMP_ROOT / "parse-project"
+        root = self.tmp_root / "parse-project"
         layout = ProjectLayout(root)
         layout.create()
 

@@ -331,7 +331,10 @@ def _parse_legacy_single_table(
     positions: list[ThirteenFPositionRecord] = []
     pending_issuer_lines: list[str] = []
     current_identity: tuple[str, str | None, str | None] | None = None
+    expected_entry_total = _parse_legacy_summary_entry_total(text)
     expected_value_total = _parse_legacy_grand_total("\n".join(table_blocks))
+    if expected_value_total is None:
+        expected_value_total = _parse_legacy_summary_value_total(text)
 
     value_start, managers_start, sole_start, shared_start, none_start = _single_table_column_positions(table_blocks[0])
 
@@ -354,7 +357,7 @@ def _parse_legacy_single_table(
                 continue
 
             issuer_name, title_of_class, cusip = current_identity
-            row_value_start = cusip_match.end() if cusip_match else value_start
+            row_value_start = cusip_match.end() if cusip_match else _row_value_start(raw_line, value_start)
             partial_row = _parse_single_table_row(
                 raw_line=raw_line,
                 issuer_name=issuer_name,
@@ -400,7 +403,7 @@ def _parse_legacy_single_table(
         filing_date=filing_date,
         form=form,
         parser_format="legacy_text_table",
-        expected_entry_total=None,
+        expected_entry_total=expected_entry_total,
         expected_value_total=expected_value_total,
         parsed_holdings=positions,
     )
@@ -501,7 +504,7 @@ def _parse_split_investment_rows(block: str) -> list[_PartialRow]:
             continue
 
         issuer_name, title_of_class, cusip = current_identity
-        row_value_start = cusip_match.end() if cusip_match else value_start
+        row_value_start = cusip_match.end() if cusip_match else _row_value_start(raw_line, value_start)
         middle = raw_line[row_value_start:].strip()
         parts = [part.strip() for part in re.split(r"\s{2,}", middle) if part.strip()]
         if len(parts) < 2:
@@ -595,6 +598,13 @@ def _parse_single_table_row(
         "voting_authority_shared": _safe_int(shared_text),
         "voting_authority_none": _safe_int(none_text),
     }
+
+
+def _row_value_start(raw_line: str, fallback: int) -> int:
+    match = re.search(r"[\d,]+", raw_line)
+    if not match:
+        return fallback
+    return min(match.start(), fallback)
 
 
 def _parse_legacy_single_tail(value_text: str) -> dict[str, Any] | None:
@@ -764,7 +774,11 @@ def _relevant_legacy_single_blocks(text: str) -> list[str]:
     table_blocks = TABLE_BLOCK_RE.findall(text)
     start_index = None
     for index, block in enumerate(table_blocks):
-        if "Name of Issuer" in block and "CUSIP" in block and "Managers" in block:
+        normalized = _normalize_spaces(TAG_RE.sub(" ", block)).upper()
+        has_name_header = "NAME OF ISSUER" in normalized or ("NAME OF" in normalized and "ISSUER" in normalized)
+        has_core_columns = "CUSIP" in normalized and "SOLE" in normalized and "SHARED" in normalized
+        has_manager_column = "MANAGERS" in normalized or "OTHER" in normalized
+        if has_name_header and has_core_columns and has_manager_column:
             start_index = index
             break
     if start_index is None:
@@ -822,6 +836,12 @@ def _should_skip_table_line(line: str) -> bool:
     upper = stripped.upper()
     if upper.startswith("GRAND TOTAL") or upper.startswith("$") or upper.startswith("COLUMN "):
         return True
+    if upper == "INVESTMENT" or upper.startswith("DISCRETION"):
+        return True
+    if upper.startswith("ISSUER") and "CLASS" in upper and "NUMBER" in upper:
+        return True
+    if "CLASS" in upper and "NUMBER" in upper and ("THOUSANDS" in upper or "AMOUNT" in upper or "SOLE" in upper):
+        return True
     if set(stripped) <= {"=", "-"}:
         return True
     return any(
@@ -839,6 +859,20 @@ def _should_skip_table_line(line: str) -> bool:
             "===========",
         ]
     )
+
+
+def _parse_legacy_summary_entry_total(text: str) -> int | None:
+    match = re.search(r"Form 13F Information Table Entry Total:\s*([\d,]+)", text, re.IGNORECASE)
+    if not match:
+        return None
+    return _safe_int(match.group(1))
+
+
+def _parse_legacy_summary_value_total(text: str) -> int | None:
+    match = re.search(r"Form 13F Information Table Value Total:\s*\$([\d,]+)", text, re.IGNORECASE)
+    if not match:
+        return None
+    return _safe_int(match.group(1), thousands=True)
 
 
 def _parse_legacy_grand_total(text: str) -> int | None:

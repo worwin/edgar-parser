@@ -62,25 +62,27 @@ Current repo-root layout:
 
 ## Quick Start
 
-Initialize the repo root with SEC identity:
+Recommended workflow: keep the repo clone code-only and use a clean project root for downloaded SEC data, for example `D:/Projects/Orynd/_edgar_parser_test`.
+
+Initialize a clean project root with SEC identity:
 
 ```powershell
-python -m edgar_parser init --company-name "Example Research" --email "ops@example.com"
+python -m edgar_parser init --root D:\Projects\Orynd\_edgar_parser_test --company-name "Example Research" --email "ops@example.com"
 ```
 
 Download Berkshire Hathaway 13F filings:
 
 ```powershell
-python -m edgar_parser fetch filings --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
+python -m edgar_parser fetch filings --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
 ```
 
 Parse the downloaded Berkshire 13F filings:
 
 ```powershell
-python -m edgar_parser parse 13f --ticker BRK-B
+python -m edgar_parser parse 13f --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B
 ```
 
-Parsed outputs will be written under `normalized/13f/filings/ticker/brk-b/`.
+Parsed outputs will be written under `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/`.
 
 ## Python API
 

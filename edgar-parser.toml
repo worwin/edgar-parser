@@ -1,9 +1,0 @@
-[project]
-workspace_root = "D:/Projects/edgar-parser"
-
-[identity]
-company_name = "Example Research"
-email = "ops@example.com"
-
-[sec]
-request_rate_limit_per_second = 5.0

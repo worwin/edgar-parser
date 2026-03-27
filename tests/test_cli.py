@@ -5,11 +5,11 @@ import os
 import shutil
 import subprocess
 import sys
+from uuid import uuid4
 import unittest
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-TMP_ROOT = REPO_ROOT / ".tmp-tests"
 
 
 class CliTestCase(unittest.TestCase):
@@ -28,11 +28,14 @@ class CliTestCase(unittest.TestCase):
         )
 
     def setUp(self) -> None:
-        TMP_ROOT.mkdir(exist_ok=True)
+        base_tmp = REPO_ROOT / "tests" / ".tmp-work"
+        base_tmp.mkdir(parents=True, exist_ok=True)
+        self.tmp_root = base_tmp / f"edgar-parser-tests-{uuid4().hex}"
+        self.tmp_root.mkdir(parents=True, exist_ok=True)
 
     def tearDown(self) -> None:
-        if TMP_ROOT.exists():
-            shutil.rmtree(TMP_ROOT, ignore_errors=True)
+        if self.tmp_root.exists():
+            shutil.rmtree(self.tmp_root, ignore_errors=True)
 
     def test_schema_list_contains_expected_documents(self) -> None:
         result = self.run_cli("schema", "list")
@@ -41,7 +44,7 @@ class CliTestCase(unittest.TestCase):
         self.assertIn("thirteenf_parsed_filing", result.stdout)
 
     def test_init_creates_project_layout_and_config(self) -> None:
-        root = TMP_ROOT / "project-root"
+        root = self.tmp_root / "project-root"
         result = self.run_cli(
             "init",
             "--root",
@@ -58,7 +61,7 @@ class CliTestCase(unittest.TestCase):
         self.assertIn("Example Research ops@example.com", result.stdout)
 
     def test_schema_export_writes_files(self) -> None:
-        out_dir = TMP_ROOT / "schemas-export"
+        out_dir = self.tmp_root / "schemas-export"
         result = self.run_cli("schema", "export", "--out-dir", str(out_dir))
         self.assertEqual(result.returncode, 0, msg=result.stderr)
         self.assertTrue((out_dir / "filing_catalog_record.schema.json").exists())
