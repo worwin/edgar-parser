@@ -232,6 +232,52 @@ class ParseThirteenFTestCase(unittest.TestCase):
         self.assertEqual(parsed.holdings[0].issuer_name, "American Express Co.")
         self.assertEqual(parsed.holdings[0].other_managers, ["4", "5", "14"])
 
+    def test_parse_real_berkshire_1999_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_1999_0000950148-99-001187.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000950148-99-001187",
+                "cik": "0001067983",
+                "form": "13F-HR",
+                "filing_date": "1999-05-17",
+                "report_period": "1999-03-31",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(len(parsed.holdings), 32)
+        self.assertEqual(parsed.validation.expected_entry_total, 32)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 32)
+        self.assertEqual(parsed.validation.expected_value_total, 27426454000)
+        self.assertEqual(parsed.validation.parsed_value_total, 27426454000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+        self.assertEqual(parsed.holdings[3].issuer_name, "American Express Co.")
+        self.assertEqual(parsed.holdings[3].other_managers, ["4", "3", "14", "16", "17", "18"])
+
+    def test_parse_real_berkshire_2012_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_2012_0001193125-12-470800.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0001193125-12-470800",
+                "cik": "0001067983",
+                "form": "13F-HR",
+                "filing_date": "2012-11-14",
+                "report_period": "2012-09-30",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(len(parsed.holdings), 119)
+        self.assertEqual(parsed.validation.expected_entry_total, 119)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 119)
+        self.assertEqual(parsed.validation.expected_value_total, 75326633000)
+        self.assertEqual(parsed.validation.parsed_value_total, 75326633000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+        self.assertEqual(parsed.holdings[11].issuer_name, "COCA COLA CO")
+        self.assertEqual(parsed.holdings[11].other_managers, ["4", "5"])
+
     def test_parse_downloaded_filings_continues_after_parse_error(self) -> None:
         root = self.tmp_root / "parse-project"
         layout = ProjectLayout(root)

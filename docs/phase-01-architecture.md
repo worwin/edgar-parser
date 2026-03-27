@@ -299,6 +299,7 @@ Recommended on-disk layout:
 ```
 
 Rules:
+- use a clean project root for downloaded SEC artifacts; keep the source clone code-only when possible
 - `ticker/<ticker>/<filing-family>/...` is the primary human-readable store when a ticker is known
 - `cik/<cik>/<filing-family>/...` is the fallback when fetched by CIK
 - SEC metadata downloads live under `sec/`

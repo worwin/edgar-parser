@@ -52,7 +52,7 @@ Primary human-readable filing store:
 ticker/<ticker-symbol>/<filing-family>/<filing-date>_<accession>/
 ```
 
-Current repo-root layout:
+Within a clean project root, `edgar-parser` writes:
 - `ticker/` raw filings fetched by ticker
 - `cik/` raw filings fetched directly by CIK
 - `sec/` SEC metadata like ticker maps and submissions JSON
@@ -99,7 +99,7 @@ from edgar_parser import (
 )
 from edgar_parser.sec_client import SecClient
 
-root = Path(r"D:\Projects\edgar-parser")
+root = Path(r"D:\Projects\Orynd\_edgar_parser_test")
 layout = ProjectLayout(root)
 identity = IdentityConfig(
     company_name="Example Research",
@@ -137,11 +137,11 @@ parse_downloaded_thirteenf_filings(
 ## Core Commands
 
 ```powershell
-edgar-parser init --company-name "Example Research" --email "ops@example.com"
-edgar-parser fetch filings --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
-edgar-parser parse 13f --ticker BRK-B
+edgar-parser init --root D:\Projects\Orynd\_edgar_parser_test --company-name "Example Research" --email "ops@example.com"
+edgar-parser fetch filings --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
+edgar-parser parse 13f --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B
 edgar-parser schema list
-edgar-parser layout print
+edgar-parser layout print --root D:\Projects\Orynd\_edgar_parser_test
 ```
 
 ## Docs

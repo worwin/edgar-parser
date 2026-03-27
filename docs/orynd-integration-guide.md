@@ -197,11 +197,12 @@ From `ORYND`, shell out like this:
 
 ```powershell
 cd G:\Projects\ORYND
-edgar-parser fetch filings --root D:\Projects\edgar-parser --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
-edgar-parser parse 13f --root D:\Projects\edgar-parser --ticker BRK-B
+edgar-parser init --root D:\Projects\Orynd\_edgar_parser_test --company-name "Orynd Research" --email "ops@example.com"
+edgar-parser fetch filings --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
+edgar-parser parse 13f --root D:\Projects\Orynd\_edgar_parser_test --ticker BRK-B
 ```
 
-That tells the CLI to operate against the `edgar-parser` repo root while being launched from another repo.
+That tells the CLI to use a clean project root for SEC artifacts while being launched from another repo.
 
 ## Python API Tutorial For ORYND
 
@@ -284,9 +285,9 @@ The `parse_error` outputs are expected for unsupported historical layouts and sh
 
 If ORYND or a human reviewer wants a small spot-check set, use:
 - `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
-- `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0001193125-12-470800.json`
-- `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0000950148-99-001187.json`
-- `D:/Projects/edgar-parser/normalized/13f/filings/ticker/brk-b/0000950129-05-001294.json`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-12-470800.json`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0000950148-99-001187.json`
+- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0000950129-05-001294.json`
 
 That set covers:
 - modern XML

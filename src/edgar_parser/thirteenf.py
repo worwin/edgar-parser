@@ -23,7 +23,7 @@ from edgar_parser.schemas import (
 TABLE_BLOCK_RE = re.compile(r"<TABLE>(.*?)</TABLE>", re.IGNORECASE | re.DOTALL)
 XML_BLOCK_RE = re.compile(r"<XML>\s*(.*?)\s*</XML>", re.IGNORECASE | re.DOTALL)
 TAG_RE = re.compile(r"<[^>]+>")
-CUSIP_RE = re.compile(r"\b([0-9A-Z]{6}\s*[0-9A-Z]{2}\s*[0-9A-Z])\b")
+CUSIP_RE = re.compile(r"\b((?=[0-9A-Z\s]*\d)[0-9A-Z]{6}\s*[0-9A-Z]{2}\s*[0-9A-Z])\b")
 ACCESSION_RE = re.compile(r"ACCESSION NUMBER:\s*([0-9-]+)")
 FORM_RE = re.compile(r"CONFORMED SUBMISSION TYPE:\s*([^\n\r]+)")
 FILED_AS_OF_RE = re.compile(r"FILED AS OF DATE:\s*(\d{8})")
@@ -328,7 +328,7 @@ def _parse_legacy_single_table(
     if not table_blocks:
         raise ValueError("Could not locate legacy holdings table in filing")
 
-    positions: list[ThirteenFPositionRecord] = []
+    position_rows: list[dict[str, Any]] = []
     pending_issuer_lines: list[str] = []
     current_identity: tuple[str, str | None, str | None] | None = None
     expected_entry_total = _parse_legacy_summary_entry_total(text)
@@ -342,7 +342,7 @@ def _parse_legacy_single_table(
         for raw_line in _clean_table_lines(block):
             if _should_skip_table_line(raw_line):
                 continue
-            cusip_match = CUSIP_RE.search(raw_line)
+            cusip_match = _find_cusip_match(raw_line)
             if cusip_match:
                 prefix = raw_line[: cusip_match.end()]
                 identity = _parse_identity_prefix(prefix, pending_issuer_lines)
@@ -350,6 +350,14 @@ def _parse_legacy_single_table(
                     continue
                 pending_issuer_lines = []
                 current_identity = identity
+            elif position_rows and _is_manager_continuation_line(raw_line):
+                extra_managers = _split_manager_tokens(raw_line)
+                if extra_managers:
+                    existing = position_rows[-1]["other_managers"]
+                    for manager in extra_managers:
+                        if manager not in existing:
+                            existing.append(manager)
+                continue
             elif current_identity and re.match(r"^\s*[\d,$-]", raw_line):
                 issuer_name, title_of_class, cusip = current_identity
             else:
@@ -372,31 +380,34 @@ def _parse_legacy_single_table(
             if partial_row is None:
                 continue
 
-            positions.append(
-                ThirteenFPositionRecord(
-                    schema_version=SCHEMA_VERSION,
-                    cik=cik,
-                    ticker_workspace=ticker_symbol.lower() if ticker_symbol else None,
-                    accession_number=accession_number,
-                    filing_date=filing_date,
-                    report_period=report_period,
-                    form=form,
-                    issuer_name=partial_row["issuer_name"],
-                    title_of_class=partial_row["title_of_class"],
-                    cusip=partial_row["cusip"],
-                    value_usd=partial_row["value_usd"],
-                    shares_or_principal=partial_row["shares_or_principal"],
-                    share_amount_type=None,
-                    investment_discretion=partial_row["investment_discretion"],
-                    other_managers=partial_row["other_managers"],
-                    voting_authority_sole=partial_row["voting_authority_sole"],
-                    voting_authority_shared=partial_row["voting_authority_shared"],
-                    voting_authority_none=partial_row["voting_authority_none"],
-                    parser_format="legacy_text_table",
-                    source_path=source_path,
-                    validation_status="unchecked",
-                )
-            )
+            position_rows.append(partial_row)
+
+    positions = [
+        ThirteenFPositionRecord(
+            schema_version=SCHEMA_VERSION,
+            cik=cik,
+            ticker_workspace=ticker_symbol.lower() if ticker_symbol else None,
+            accession_number=accession_number,
+            filing_date=filing_date,
+            report_period=report_period,
+            form=form,
+            issuer_name=partial_row["issuer_name"],
+            title_of_class=partial_row["title_of_class"],
+            cusip=partial_row["cusip"],
+            value_usd=partial_row["value_usd"],
+            shares_or_principal=partial_row["shares_or_principal"],
+            share_amount_type=None,
+            investment_discretion=partial_row["investment_discretion"],
+            other_managers=partial_row["other_managers"],
+            voting_authority_sole=partial_row["voting_authority_sole"],
+            voting_authority_shared=partial_row["voting_authority_shared"],
+            voting_authority_none=partial_row["voting_authority_none"],
+            parser_format="legacy_text_table",
+            source_path=source_path,
+            validation_status="unchecked",
+        )
+        for partial_row in position_rows
+    ]
 
     validation = _build_validation_summary(
         accession_number=accession_number,
@@ -489,7 +500,7 @@ def _parse_split_investment_rows(block: str) -> list[_PartialRow]:
     for raw_line in lines:
         if _should_skip_table_line(raw_line):
             continue
-        cusip_match = CUSIP_RE.search(raw_line)
+        cusip_match = _find_cusip_match(raw_line)
         if cusip_match:
             prefix = raw_line[: cusip_match.end()]
             identity = _parse_identity_prefix(prefix, pending_issuer_lines)
@@ -598,6 +609,15 @@ def _parse_single_table_row(
         "voting_authority_shared": _safe_int(shared_text),
         "voting_authority_none": _safe_int(none_text),
     }
+
+
+def _is_manager_continuation_line(raw_line: str) -> bool:
+    stripped = raw_line.strip()
+    if not stripped:
+        return False
+    if any(character.isalpha() for character in stripped):
+        return False
+    return bool(re.fullmatch(r"[\d,\s-]+", stripped))
 
 
 def _row_value_start(raw_line: str, fallback: int) -> int:
@@ -952,6 +972,13 @@ def _normalize_storage_key(value: str | None) -> str:
 
 def _normalize_spaces(value: str | None) -> str:
     return " ".join((value or "").split())
+
+
+def _find_cusip_match(raw_line: str) -> re.Match[str] | None:
+    for match in CUSIP_RE.finditer(raw_line):
+        if any(character.isdigit() for character in match.group(1)):
+            return match
+    return None
 
 
 def _normalize_cusip(value: str | None) -> str | None:
