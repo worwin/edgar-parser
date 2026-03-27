@@ -1,0 +1,22 @@
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+dist/
+build/
+*.egg-info/
+
+# Local workspace data
+workspace/
+data/
+cache/
+exports/
+schemas/
+
+# IDE
+.vscode/
+.idea/
+
+.tmp-tests/
