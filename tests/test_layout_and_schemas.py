@@ -12,8 +12,8 @@ TMP_ROOT = ROOT / ".tmp-tests"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from edgar_foundry.paths import ProjectLayout
-from edgar_foundry.schemas import SCHEMA_REGISTRY
+from edgar_parser.paths import ProjectLayout
+from edgar_parser.schemas import SCHEMA_REGISTRY
 
 
 class LayoutAndSchemaTestCase(unittest.TestCase):
@@ -27,10 +27,13 @@ class LayoutAndSchemaTestCase(unittest.TestCase):
     def test_layout_directory_set_is_stable(self) -> None:
         layout = ProjectLayout(TMP_ROOT / "layout-root")
         expected = {
-            "raw_indexes_dir",
-            "raw_submissions_dir",
-            "raw_filings_dir",
+            "ticker_dir",
+            "cik_dir",
+            "sec_indexes_dir",
+            "sec_submissions_dir",
+            "company_tickers_path",
             "catalog_dir",
+            "catalog_file",
             "normalized_thirteenf_filings_dir",
             "datasets_thirteenf_dir",
             "exports_csv_dir",

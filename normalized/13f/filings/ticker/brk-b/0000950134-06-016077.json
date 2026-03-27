@@ -1,0 +1,50 @@
+{
+  "accession_number": "0000950134-06-016077",
+  "cik": "0001067983",
+  "filing_date": "2006-08-14",
+  "form": "13F-HR/A",
+  "holdings": [
+    {
+      "accession_number": "0000950134-06-016077",
+      "cik": "0001067983",
+      "cusip": "478160104",
+      "filing_date": "2006-08-14",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Johnson & Johnson",
+      "other_managers": [
+        "2            1",
+        "9"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2006-03-31",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 1970000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2006-08-14_0000950134-06-016077/0000950134-06-016077.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "unchecked",
+      "value_usd": 116663000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 70000
+    }
+  ],
+  "parser_format": "legacy_text_table",
+  "report_period": "2006-03-31",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2006-08-14_0000950134-06-016077/0000950134-06-016077.txt",
+  "validation": {
+    "accession_number": "0000950134-06-016077",
+    "expected_entry_total": null,
+    "expected_value_total": null,
+    "filing_date": "2006-08-14",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 1,
+    "parsed_value_total": 116663000,
+    "parser_format": "legacy_text_table",
+    "validation_status": "unchecked",
+    "warnings": []
+  }
+}

@@ -1,0 +1,319 @@
+<SEC-DOCUMENT>0001193125-12-355534.txt : 20120814
+<SEC-HEADER>0001193125-12-355534.hdr.sgml : 20120814
+<ACCEPTANCE-DATETIME>20120814160555
+ACCESSION NUMBER:		0001193125-12-355534
+CONFORMED SUBMISSION TYPE:	13F-HR
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20120630
+FILED AS OF DATE:		20120814
+DATE AS OF CHANGE:		20120814
+EFFECTIVENESS DATE:		20120814
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BERKSHIRE HATHAWAY INC
+		CENTRAL INDEX KEY:			0001067983
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				470813844
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	028-04545
+		FILM NUMBER:		121032828
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3555 FARNAM STREET
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+		BUSINESS PHONE:		4023461400
+
+	MAIL ADDRESS:	
+		STREET 1:		3555 FARNAM STREET
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NBH INC
+		DATE OF NAME CHANGE:	19980810
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR
+<SEQUENCE>1
+<FILENAME>d392985d13fhr.txt
+<DESCRIPTION>FORM 13F
+<TEXT>
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: June 30, 2012
+
+Check here if Amendment [_]; Amendment Number: __________
+This Amendment (Check only one.): [_] is a restatement.
+                                  [_] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:    Berkshire Hathaway Inc.
+Address: 3555 Farnam Street
+         Omaha, NE 68131
+
+Form 13F File Number: 28-4545
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:  Marc D. Hamburg
+Title: Senior Vice President
+Phone: 402-346-1400
+
+Signature, Place, and Date of Signing:
+
+
+    (s) Marc D. Hamburg              Omaha, NE               August 14, 2012
+--------------------------   ------------------------   ------------------------
+        [Signature]                [City, State]                 [Date]
+
+Report Type (Check only one.):
+
+[_]  13F HOLDINGS REPORT. (Check here if all holdings of this reporting manager
+     are reported in this report.)
+
+[_]  13F NOTICE. (Check here if no holdings reported are in this report, and all
+     holdings are reported by other reporting manager(s).)
+
+[X]  13F COMBINATION REPORT. (Check here if a portion of the holdings for this
+     reporting manager are reported in this report and a portion are reported by
+     other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+Form 13F File Number   Name
+--------------------   ----
+28-5194                General Re - New England Asset Management, Inc.
+
+<PAGE>
+
+
+                              Form 13F SUMMARY PAGE
+
+Report Summary:
+
+Number of Other Included Managers:                 14
+Form 13F Information Table Entry Total:           117
+Form 13F Information Table Value Total:   $74,321,382
+                                           (thousands)
+
+
+List of Other Included Managers:
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+NO.   FORM 13F FILE NUMBER   NAME
+---   --------------------   ----
+1.    28-2226                Berkshire Hathaway Homestate Insurance Company
+2.    28-5678                Berkshire Hathaway Life Insurance Co. of Nebraska
+3.    28-14389               BH Finance LLC
+4.    28-554                 Buffett, Warren E.
+5.    28-1517                Columbia Insurance Co.
+6.    28-06102               Cypress Insurance Company
+7.    28-11217               Fechheimer Brothers Company
+8.    28-852                 GEICO Corp.
+9.    28-12941               Medical Protective Corp.
+10.   28-1066                National Fire & Marine
+11.   28-718                 National Indemnity Co.
+12.   28-5006                National Liability & Fire Ins. Co.
+13.   28-11222               Nebraska Furniture Mart
+14.   28-12947               U.S. Investment Corp.
+
+<PAGE>
+
+
+                             Berkshire Hathaway Inc.
+                           Form 13F Information Table
+                                  June 30, 2012
+
+<TABLE>
+<CAPTION>
+                                                Market    Shares or                                  Voting Authority
+                         Title of              Value (In  Principal    Investment      Other    --------------------------
+Name of Issuer            Class       CUSIP   Thousands)    Amount     Discretion     Managers      Sole    Shared   None
+--------------------- ------------- --------- ---------- ----------- -------------- ----------- ----------- ------ -------
+<S>                   <C>           <C>       <C>        <C>         <C>            <C>         <C>         <C>    <C>
+AMERICAN EXPRESS CO   COM           025816109    113,634   1,952,142 Shared-Defined           4   1,952,142     --      --
+AMERICAN EXPRESS CO   COM           025816109  1,002,691  17,225,400 Shared-Defined        4, 5  17,225,400     --      --
+AMERICAN EXPRESS CO   COM           025816109     48,887     839,832 Shared-Defined        4, 7     839,832     --      --
+AMERICAN EXPRESS CO   COM           025816109    113,108   1,943,100 Shared-Defined    4, 8, 11   1,943,100     --      --
+AMERICAN EXPRESS CO   COM           025816109    465,368   7,994,634 Shared-Defined       4, 10   7,994,634     --      --
+AMERICAN EXPRESS CO   COM           025816109  7,000,095 120,255,879 Shared-Defined       4, 11 120,255,879     --      --
+AMERICAN EXPRESS CO   COM           025816109     81,477   1,399,713 Shared-Defined       4, 13   1,399,713     --      --
+BANK OF NEW YORK
+ MELLON CORP          COM           064058100    176,507   8,041,300 Shared-Defined           4   8,041,300     --      --
+BANK OF NEW YORK
+ MELLON CORP          COM           064058100     39,376   1,793,915 Shared-Defined    2, 4, 11   1,793,915     --      --
+BANK OF NEW YORK
+ MELLON CORP          COM           064058100    195,010   8,884,300 Shared-Defined    4, 8, 11   8,884,300     --      --
+CVS CAREMARK
+CORPORATION           COM           126650100    247,759   5,301,916 Shared-Defined    4, 8, 11   5,301,916     --      --
+COCA COLA CO          COM           191216100     31,276     400,000 Shared-Defined           4     400,000     --      --
+COCA COLA CO          COM           191216100  3,138,672  40,141,600 Shared-Defined        4, 5  40,141,600     --      --
+COCA COLA CO          COM           191216100     71,309     912,000 Shared-Defined        4, 6     912,000     --      --
+COCA COLA CO          COM           191216100    563,406   7,205,600 Shared-Defined    4, 8, 11   7,205,600     --      --
+COCA COLA CO          COM           191216100    714,594   9,139,200 Shared-Defined       4, 10   9,139,200     --      --
+COCA COLA CO          COM           191216100 10,942,346 139,945,600 Shared-Defined       4, 11 139,945,600     --      --
+COCA COLA CO          COM           191216100    138,865   1,776,000 Shared-Defined       4, 12   1,776,000     --      --
+COCA COLA CO          COM           191216100     37,531     480,000 Shared-Defined       4, 13     480,000     --      --
+CONOCOPHILLIPS        COM           20825C104    321,852   5,759,700 Shared-Defined    4, 8, 11   5,759,700     --      --
+CONOCOPHILLIPS        COM           20825C104    111,721   1,999,300 Shared-Defined       4, 10   1,999,300     --      --
+CONOCOPHILLIPS        COM           20825C104  1,179,607  21,109,637 Shared-Defined       4, 11  21,109,637     --      --
+COSTCO WHSL CORP NEW  COM           22160K105    411,669   4,333,363 Shared-Defined       4, 11   4,333,363     --      --
+DAVITA INC            COM           23918K108    324,093   3,300,000 Shared-Defined           4   3,300,000     --      --
+DAVITA INC            COM           23918K108    589,260   6,000,000 Shared-Defined    4, 8, 11   6,000,000     --      --
+DIRECTV               COM CL A      25490A101    264,658   5,421,100 Shared-Defined           4   5,421,100     --      --
+DIRECTV               COM CL A      25490A101  1,122,840  22,999,600 Shared-Defined    4, 8, 11  22,999,600     --      --
+DOLLAR GEN CORP NEW   COM           256677105    180,623   3,320,885 Shared-Defined    4, 8, 11   3,320,885     --      --
+GANNETT INC           COM           364730101     25,634   1,740,231 Shared-Defined       4, 11   1,740,231     --      --
+GENERAL DYNAMICS CORP COM           369550108    255,735   3,877,122 Shared-Defined    4, 8, 11   3,877,122     --      --
+</TABLE>
+
+<PAGE>
+
+
+<TABLE>
+<S>                   <C>           <C>       <C>        <C>         <C>            <C>         <C>         <C>    <C>
+GENERAL ELECTRIC CO   COM           369604103    104,380   5,008,625 Shared-Defined           4   5,008,625     --      --
+GENERAL MTRS CO       COM           37045V100    197,200  10,000,000 Shared-Defined    4, 8, 11  10,000,000     --      --
+GLAXOSMITHKLINE PLC   SPONSORED ADR 37733W105     68,833   1,510,500 Shared-Defined       4, 11   1,510,500     --      --
+ INTERNATIONAL
+ BUSINESS MACHS       COM           459200101      2,367      12,100 Shared-Defined    4, 8, 11      12,100     --      --
+INTERNATIONAL
+BUSINESS MACHS        COM           459200101 13,032,140  66,633,296 Shared-Defined       4, 11  66,633,296     --      --
+JOHNSON & JOHNSON     COM           478160104     82,916   1,227,300 Shared-Defined           4   1,227,300     --      --
+JOHNSON & JOHNSON     COM           478160104    133,407   1,974,648 Shared-Defined    2, 4, 11   1,974,648     --      --
+JOHNSON & JOHNSON     COM           478160104     64,807     959,250 Shared-Defined        4, 5     959,250     --      --
+JOHNSON & JOHNSON     COM           478160104    273,054   4,041,657 Shared-Defined    4, 8, 11   4,041,657     --      --
+JOHNSON & JOHNSON     COM           478160104    105,074   1,555,273 Shared-Defined       4, 11   1,555,273     --      --
+JOHNSON & JOHNSON     COM           478160104     38,847     575,000 Shared-Defined       4, 14     575,000     --      --
+KRAFT FOODS INC       CL A          50075N104     86,885   2,249,740 Shared-Defined           4   2,249,740     --      --
+KRAFT FOODS INC       CL A          50075N104    207,419   5,370,766 Shared-Defined        4, 5   5,370,766     --      --
+KRAFT FOODS INC       CL A          50075N104    386,200  10,000,000 Shared-Defined    4, 8, 11  10,000,000     --      --
+KRAFT FOODS INC       CL A          50075N104  1,591,371  41,205,884 Shared-Defined       4, 11  41,205,884     --      --
+LEE ENTERPRISES INC   COM           523768109      5,226   3,225,822 Shared-Defined        4, 5   3,225,822     --      --
+LIBERTY MEDIA
+ CORPORATION          LIB CAP COM A 530322106    219,775   2,500,000 Shared-Defined           4   2,500,000     --      --
+LIBERTY MEDIA
+ CORPORATION          LIB CAP COM A 530322106    263,730   3,000,000 Shared-Defined    4, 8, 11   3,000,000     --      --
+M & T BK CORP         COM           55261F104     45,083     546,000 Shared-Defined    4, 8, 11     546,000     --      --
+M & T BK CORP         COM           55261F104     13,607     164,795 Shared-Defined       4, 10     164,795     --      --
+M & T BK CORP         COM           55261F104    385,705   4,671,245 Shared-Defined       4, 11   4,671,245     --      --
+MASTERCARD INC        CL A          57636Q104    174,195     405,000 Shared-Defined    4, 8, 11     405,000     --      --
+MOODYS CORP           COM           615369105    574,544  15,719,400 Shared-Defined    4, 8, 11  15,719,400     --      --
+MOODYS CORP           COM           615369105    464,033  12,695,850 Shared-Defined       4, 11  12,695,850     --      --
+NATIONAL OILWELL
+ VARCO INC            COM           637071101    120,380   1,868,100 Shared-Defined           4   1,868,100     --      --
+NATIONAL OILWELL
+VARCO INC             COM           637071101     62,707     973,100 Shared-Defined    4, 8, 11     973,100     --      --
+PHILLIPS 66           COM           718546104    215,920   6,495,800 Shared-Defined           4   6,495,800     --      --
+PHILLIPS 66           COM           718546104    302,938   9,113,650 Shared-Defined    4, 8, 11   9,113,650     --      --
+PHILLIPS 66           COM           718546104     33,228     999,650 Shared-Defined       4, 10     999,650     --      --
+PHILLIPS 66           COM           718546104    350,842  10,554,818 Shared-Defined       4, 11  10,554,818     --      --
+PROCTER & GAMBLE CO   COM           742718109     73,716   1,203,525 Shared-Defined           4   1,203,525     --      --
+PROCTER & GAMBLE CO   COM           742718109  1,242,150  20,280,000 Shared-Defined        4, 5  20,280,000     --      --
+PROCTER & GAMBLE CO   COM           742718109     95,550   1,560,000 Shared-Defined        4, 6   1,560,000     --      --
+PROCTER & GAMBLE CO   COM           742718109    382,200   6,240,000 Shared-Defined    4, 8, 11   6,240,000     --      --
+PROCTER & GAMBLE CO   COM           742718109    382,200   6,240,000 Shared-Defined       4, 10   6,240,000     --      --
+PROCTER & GAMBLE CO   COM           742718109  1,427,044  23,298,678 Shared-Defined       4, 11  23,298,678     --      --
+PROCTER & GAMBLE CO   COM           742718109     47,775     780,000 Shared-Defined       4, 12     780,000     --      --
+SANOFI                SPONSORED ADR 80105N105     18,456     488,500 Shared-Defined    4, 8, 11     488,500     --      --
+SANOFI                SPONSORED ADR 80105N105     19,258     509,742 Shared-Defined     4, 5, 9     509,742     --      --
+SANOFI                SPONSORED ADR 80105N105      6,396     169,300 Shared-Defined       4, 10     169,300     --      --
+</TABLE>
+
+<PAGE>
+
+
+<TABLE>
+<S>                   <C>           <C>       <C>        <C>         <C>            <C>         <C>         <C>    <C>
+SANOFI                SPONSORED ADR 80105N105    109,416   2,896,133 Shared-Defined       4, 11   2,896,133     --      --
+TORCHMARK CORP        COM           891027104      5,880     116,326 Shared-Defined    2, 4, 11     116,326     --      --
+TORCHMARK CORP        COM           891027104     34,101     674,592 Shared-Defined        4, 5     674,592     --      --
+TORCHMARK CORP        COM           891027104     48,505     959,550 Shared-Defined       4, 10     959,550     --      --
+TORCHMARK CORP        COM           891027104    125,634   2,485,350 Shared-Defined       4, 11   2,485,350     --      --
+US BANCORP DEL        COM NEW       902973304    171,297   5,326,387 Shared-Defined           4   5,326,387     --      --
+US BANCORP DEL        COM NEW       902973304    749,563  23,307,300 Shared-Defined        4, 5  23,307,300     --      --
+US BANCORP DEL        COM NEW       902973304    407,766  12,679,300 Shared-Defined    4, 8, 11  12,679,300     --      --
+US BANCORP DEL        COM NEW       902973304     69,916   2,174,000 Shared-Defined     4, 5, 9   2,174,000     --      --
+US BANCORP DEL        COM NEW       902973304    667,922  20,768,726 Shared-Defined       4, 11  20,768,726     --      --
+US BANCORP DEL        COM NEW       902973304     56,119   1,745,000 Shared-Defined       4, 14   1,745,000     --      --
+U S G CORP            COM NEW       903293405    325,225  17,072,192 Shared-Defined       4, 11  17,072,192     --      --
+UNITED PARCEL SERVICE
+ INC                  CL B          911312106     20,627     261,900 Shared-Defined           4     261,900     --      --
+VERISK ANALYTICS INC  CL A          92345Y106     92,208   1,871,871 Shared-Defined    4, 8, 11   1,871,871     --      --
+VIACOM INC NEW        CL B          92553P201    185,917   3,954,000 Shared-Defined           4   3,954,000     --      --
+VIACOM INC NEW        CL B          92553P201    134,440   2,859,200 Shared-Defined    4, 8, 11   2,859,200     --      --
+VISA INC              COM CL A      92826C839    257,108   2,079,659 Shared-Defined    4, 8, 11   2,079,659     --      --
+WAL MART STORES INC   COM           931142103     20,219     290,000 Shared-Defined           4     290,000     --      --
+WAL MART STORES INC   COM           931142103     11,852     170,000 Shared-Defined 1, 2, 4, 11     170,000     --      --
+WAL MART STORES INC   COM           931142103      2,057      29,500 Shared-Defined    2, 4, 11      29,500     --      --
+WAL MART STORES INC   COM           931142103    292,824   4,200,000 Shared-Defined     3, 4, 5   4,200,000     --      --
+WAL MART STORES INC   COM           931142103     17,779     255,000 Shared-Defined        4, 5     255,000     --      --
+WAL MART STORES INC   COM           931142103     17,848     256,000 Shared-Defined        4, 6     256,000     --      --
+WAL MART STORES INC   COM           931142103     65,955     946,000 Shared-Defined    4, 8, 11     946,000     --      --
+WAL MART STORES INC   COM           931142103    124,729   1,789,000 Shared-Defined     4, 5, 9   1,789,000     --      --
+WAL MART STORES INC   COM           931142103     59,192     849,000 Shared-Defined       4, 10     849,000     --      --
+WAL MART STORES INC   COM           931142103  2,608,409  37,412,642 Shared-Defined       4, 11  37,412,642     --      --
+WAL MART STORES INC   COM           931142103     35,627     511,000 Shared-Defined       4, 14     511,000     --      --
+WASHINGTON POST CO    CL B          939640108     55,442     148,311 Shared-Defined 1, 2, 4, 11           -     -- 148,311
+WASHINGTON POST CO    CL B          939640108    242,297     648,165 Shared-Defined       4, 10           -     -- 648,165
+WASHINGTON POST CO    CL B          939640108    334,309     894,304 Shared-Defined       4, 11           -     -- 894,304
+WASHINGTON POST CO    CL B          939640108     13,826      36,985 Shared-Defined       4, 12           -     --  36,985
+WELLS FARGO & CO NEW  COM           949746101    347,776  10,400,000 Shared-Defined           4  10,400,000     --      --
+WELLS FARGO & CO NEW  COM           949746101    535,040  16,000,000 Shared-Defined 1, 2, 4, 11  16,000,000     --      --
+WELLS FARGO & CO NEW  COM           949746101    177,349   5,303,500 Shared-Defined    2, 4, 11   5,303,500     --      --
+WELLS FARGO & CO NEW  COM           949746101    227,822   6,812,857 Shared-Defined     3, 4, 5   6,812,857     --      --
+WELLS FARGO & CO NEW  COM           949746101  2,205,819  65,963,496 Shared-Defined        4, 5  65,963,496     --      --
+WELLS FARGO & CO NEW  COM           949746101     27,421     820,000 Shared-Defined        4, 6     820,000     --      --
+WELLS FARGO & CO NEW  COM           949746101     56,848   1,700,000 Shared-Defined        4, 7   1,700,000     --      --
+WELLS FARGO & CO NEW  COM           949746101  1,191,236  35,623,100 Shared-Defined    4, 8, 11  35,623,100     --      --
+</TABLE>
+
+<PAGE>
+
+
+<TABLE>
+<S>                   <C>           <C>       <C>        <C>         <C>            <C>         <C>         <C>    <C>
+WELLS FARGO & CO NEW  COM           949746101    343,328  10,267,000 Shared-Defined     4, 5, 9  10,267,000     --      --
+WELLS FARGO & CO NEW  COM           949746101  1,682,141  50,303,270 Shared-Defined       4, 10  50,303,270     --      --
+WELLS FARGO & CO NEW  COM           949746101  6,736,632 201,454,302 Shared-Defined       4, 11 201,454,302     --      --
+WELLS FARGO & CO NEW  COM           949746101     93,231   2,788,000 Shared-Defined       4, 12   2,788,000     --      --
+WELLS FARGO & CO NEW  COM           949746101     53,829   1,609,720 Shared-Defined       4, 13   1,609,720     --      --
+WELLS FARGO & CO NEW  COM           949746101     66,880   2,000,000 Shared-Defined       4, 14   2,000,000     --      --
+INGERSOLL-RAND PLC    SHS           G47791101        860      20,400 Shared-Defined           4      20,400     --      --
+                      Total                   74,321,382
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

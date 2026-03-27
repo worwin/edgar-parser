@@ -1,0 +1,232 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ H8RurTbMfehiEVjWivNZIuRLzQVDorgRnGKLuOi6zdXaOP+JOiQtANprKfMyP48J
+ XtYL+KI4gQFx2ieON2TmwQ==
+
+<SEC-DOCUMENT>/in/edgar/work/20000906/0000950150-00-000752/0000950150-00-000752.txt : 20000922
+<SEC-HEADER>0000950150-00-000752.hdr.sgml : 20000922
+ACCESSION NUMBER:		0000950150-00-000752
+CONFORMED SUBMISSION TYPE:	13F-HR/A
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20000630
+FILED AS OF DATE:		20000906
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BERKSHIRE HATHAWAY INC
+		CENTRAL INDEX KEY:			0001067983
+		STANDARD INDUSTRIAL CLASSIFICATION:	 [6331
+]		IRS NUMBER:				470813844
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+</COMPANY-DATA>
+
+		FILING VALUES:
+			FORM TYPE:		13F-HR/A
+			SEC ACT:		
+			SEC FILE NUMBER:	028-04545
+			FILM NUMBER:		717317
+</FILING-VALUES>
+
+			BUSINESS ADDRESS:	
+				STREET 1:		1440 KIEWIT PLZ
+				CITY:			OMAHA
+				STATE:			NE
+				ZIP:			68131
+				BUSINESS PHONE:		4023461400
+</BUSINESS-ADDRESS>
+
+				MAIL ADDRESS:	
+					STREET 1:		1440 KIEWIT PLAZA
+					CITY:			OMAHA
+					STATE:			NE
+					ZIP:			68131
+</MAIL-ADDRESS>
+
+					FORMER COMPANY:	
+						FORMER CONFORMED NAME:	NBH INC
+						DATE OF NAME CHANGE:	19980810
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR/A
+<SEQUENCE>1
+<FILENAME>a65360e13f-hra.txt
+<DESCRIPTION>AMENDMENT #2 TO FORM13F
+<TEXT>
+
+<PAGE>   1
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: June 30, 2000
+
+Check here if Amendment [X]; Amendment Number: 2
+  This Amendment (Check only one.): [X] is a restatement.
+                                    [ ] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:       Berkshire Hathaway Inc.
+            ------------------------------
+Address:    1440 Kiewit Plaza
+            ------------------------------
+            Omaha, NE 68131
+            ------------------------------
+
+            ------------------------------
+
+Form 13F File Number: 28-4545
+                     ---------------------
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:       Marc D. Hamburg
+            ------------------------------
+Title:      Vice President
+            ------------------------------
+Phone:      402-346-1400
+            ------------------------------
+
+Signature, Place, and Date of Signing:
+
+<TABLE>
+<S>                       <C>                   <C>
+(s) Marc D. Hamburg       Omaha, NE             September 6, 2000
+- -------------------       -------------         -----------------
+[Signature]               [City, State]         [Date]
+</TABLE>
+
+Report Type (Check only one.):
+
+[ ]   13F HOLDINGS REPORT.  (Check here if all holdings of this reporting
+       manager are reported in this report.)
+
+[ ]   13F NOTICE.  (Check here if no holdings reported are in this report, and
+      all holdings are reported by other reporting manager(s).)
+
+[X]   13F COMBINATION REPORT. (Check here if a portion of the holdings
+      for this reporting manager are reported in this report and a portion
+      are reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+<TABLE>
+<CAPTION>
+Form 13F File Number         Name
+<S>                          <C>
+28-5194                      General Re - New England Asset Management, Inc.
+
+</TABLE>
+
+
+
+<PAGE>   2
+
+                              Form 13F SUMMARY PAGE
+
+
+Report Summary:
+
+
+<TABLE>
+<S>                                              <C>
+Number of Other Included Managers:                     18
+
+Form 13F Information Table Entry Total:                 2
+                                                 --------
+
+Form 13F Information Table Value Total:          $352,745
+                                                 --------
+                                                (thousands)
+</TABLE>
+
+
+List of Other Included Managers:
+
+
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+
+<TABLE>
+<CAPTION>
+NO.  FORM 13F FILE NUMBER       NAME
+<S>  <C>                        <C>
+1.   28-5678                    Berkshire Hathaway Life Insurance Co. of Nebraska
+2.   28-5676                    BHG Life Insurance Co.
+3.   28-719                     Blue Chip Stamps
+4.   28-554                     Buffett, Warren E.
+5.   28-1517                    Columbia Insurance Co.
+6.   28-2226                    Cornhusker Casualty Co.
+7.   28-6102                    Cypress Insurance Co.
+8.   28-852                     GEICO Corp.
+9.   28-101                     Government Employees Ins. Corp.
+10.  28-1066                    National Fire & Marine
+11.  28-718                     National Indemnity Co.
+12.  28-5006                    National Liability & Fire Ins. Co.
+13.  28-6104                    Nebraska Furniture Mart
+14.  28-717                     OBH Inc.
+15.  28-2740                    Plaza Investment Managers
+16.  28-1357                    Wesco Financial Corp.
+17.  28-3091                    Wesco Financial Ins. Co.
+18.  28-3105                    Wesco Holdings Midwest, Inc.
+</TABLE>
+
+
+
+<PAGE>   3
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                  June 30, 2000
+
+
+<TABLE>
+<CAPTION>
+                                                                    Column 6
+                                                               Investment Discretion                                Column 8
+                                       Column 4    Column 5   ----------------------                            Voting Authority
+                 Column 2 Column 3      Market     Shares or           (b)      (c)     Column 7             ----------------------
+Column 1         Title of CUSIP       Value (In    Principal  (a)    Shared-  Shared-    Other               (a)        (b)     (c)
+Name of Issuer   Class    Number      Thousands)    Amount    Sole   Defined   Other    Managers             Sole      Shared  None
+- --------------   -----    ------      ----------    ------    ----   -------   -----    --------             ----      ------  ----
+<S>              <C>      <C>         <C>         <C>         <C>    <C>      <C>       <C>                  <C>       <C>     <C>
+Shaw
+ Communications
+ Inc.            Cl B     82028k 20 0  $328,057   13,288,100            X               4, 8, 9, 11, 14, 15  13,288,100
+                                         24,688    1,000,000            X               4, 8, 11, 14, 15      1,000,000
+                                       --------
+                                       $352,745
+                                       ========
+</TABLE>
+
+
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

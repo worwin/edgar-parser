@@ -1,0 +1,102 @@
+{
+  "accession_number": "0000950123-13-009874",
+  "cik": "0001067983",
+  "filing_date": "2013-11-14",
+  "form": "13F-HR/A",
+  "holdings": [
+    {
+      "accession_number": "0000950123-13-009874",
+      "cik": "0001067983",
+      "cusip": "30231G102",
+      "filing_date": "2013-11-14",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "EXXON MOBIL CORP",
+      "other_managers": [
+        "Buffett Warren E",
+        "Columbia Insurance Co"
+      ],
+      "parser_format": "xml_information_table",
+      "report_period": "2013-06-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": "SH",
+      "shares_or_principal": 10607400,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2013-11-14_0000950123-13-009874/0000950123-13-009874.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "COM",
+      "validation_status": "pass",
+      "value_usd": 958379,
+      "voting_authority_none": 0,
+      "voting_authority_shared": 0,
+      "voting_authority_sole": 10607400
+    },
+    {
+      "accession_number": "0000950123-13-009874",
+      "cik": "0001067983",
+      "cusip": "30231G102",
+      "filing_date": "2013-11-14",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "EXXON MOBIL CORP",
+      "other_managers": [
+        "Buffett Warren E",
+        "National Fire & Marine Insurance Co"
+      ],
+      "parser_format": "xml_information_table",
+      "report_period": "2013-06-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": "SH",
+      "shares_or_principal": 2760700,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2013-11-14_0000950123-13-009874/0000950123-13-009874.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "COM",
+      "validation_status": "pass",
+      "value_usd": 249429,
+      "voting_authority_none": 0,
+      "voting_authority_shared": 0,
+      "voting_authority_sole": 2760700
+    },
+    {
+      "accession_number": "0000950123-13-009874",
+      "cik": "0001067983",
+      "cusip": "30231G102",
+      "filing_date": "2013-11-14",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "EXXON MOBIL CORP",
+      "other_managers": [
+        "Buffett Warren E",
+        "National Indemnity Co"
+      ],
+      "parser_format": "xml_information_table",
+      "report_period": "2013-06-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": "SH",
+      "shares_or_principal": 17876010,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2013-11-14_0000950123-13-009874/0000950123-13-009874.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "COM",
+      "validation_status": "pass",
+      "value_usd": 1615098,
+      "voting_authority_none": 0,
+      "voting_authority_shared": 0,
+      "voting_authority_sole": 17876010
+    }
+  ],
+  "parser_format": "xml_information_table",
+  "report_period": "2013-06-30",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2013-11-14_0000950123-13-009874/0000950123-13-009874.txt",
+  "validation": {
+    "accession_number": "0000950123-13-009874",
+    "expected_entry_total": 3,
+    "expected_value_total": 2822906,
+    "filing_date": "2013-11-14",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 3,
+    "parsed_value_total": 2822906,
+    "parser_format": "xml_information_table",
+    "validation_status": "pass",
+    "warnings": []
+  }
+}

@@ -1,0 +1,1528 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ N1Piz/Ywr9OnMqojFNRRLoHwJdFNjiXTIT7XVAyt2tbvlr3fZfwq8SzQYgHQASeE
+ qWaB6wljK34pT9Uv32Sp3g==
+
+<SEC-DOCUMENT>0000950150-02-000133.txt : 20020414
+<SEC-HEADER>0000950150-02-000133.hdr.sgml : 20020414
+ACCESSION NUMBER:		0000950150-02-000133
+CONFORMED SUBMISSION TYPE:	13F-HR
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20011231
+FILED AS OF DATE:		20020214
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BERKSHIRE HATHAWAY INC
+		CENTRAL INDEX KEY:			0001067983
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				470813844
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	028-04545
+		FILM NUMBER:		02547847
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1440 KIEWIT PLZ
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+		BUSINESS PHONE:		4023461400
+
+	MAIL ADDRESS:	
+		STREET 1:		1440 KIEWIT PLAZA
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NBH INC
+		DATE OF NAME CHANGE:	19980810
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR
+<SEQUENCE>1
+<FILENAME>a78911e13f-hr.txt
+<DESCRIPTION>FORM 13F COMBINATION REPORT
+<TEXT>
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Berkshire Hathaway Inc.
+Address:     1440 Kiewit Plaza
+             Omaha, NE 68131
+
+Form 13F File Number:  28-4545
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Vice President
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[ ]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[X]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-5194                  General Re - New England Asset Management, Inc.
+
+
+<PAGE>
+
+                              Form 13F SUMMARY PAGE
+
+Report Summary:
+
+
+Number of Other Included Managers:                                            18
+                                                                     -----------
+Form 13F Information Table Entry Total:                                       65
+                                                                     -----------
+Form 13F Information Table Value Total:                              $28,057,437
+                                                                     -----------
+                                                                     (thousands)
+
+Confidential Information has been omitted from the public Form 13F and filed
+separately with the Commission. Included in this information is information
+regarding Berkshire's position in First Data Corporation included in its
+September 30, 2001 public Form 13F.
+
+List of Other Included Managers:
+
+
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+<TABLE>
+<CAPTION>
+    NO.       FORM 13F FILE NUMBER      NAME
+<S>  <C>      <C>                       <C>
+     1.       28-5678                   Berkshire Hathaway Life Insurance Co. of Nebraska
+     2.       28-5676                   BHG Life Insurance Co.
+     3.       28-719                    Blue Chip Stamps
+     4.       28-554                    Buffett, Warren E.
+     5.       28-1517                   Columbia Insurance Co.
+     6.       28-2226                   Cornhusker Casualty Co.
+     7.       28-6102                   Cypress Insurance Co.
+     8.       28-852                    GEICO Corp.
+     9.       28-101                    Government Employees Ins. Corp.
+    10.       28-1066                   National Fire & Marine
+    11.       28-718                    National Indemnity Co.
+    12.       28-5006                   National Liability & Fire Ins. Co.
+    13.       28-6104                   Nebraska Furniture Mart
+    14.       28-717                    OBH Inc.
+    15.       28-2740                   Plaza Investment Managers
+    16.       28-1357                   Wesco Financial Corp.
+    17.       28-3091                   Wesco Financial Ins. Co.
+    18.       28-3105                   Wesco Holdings Midwest, Inc.
+</TABLE>
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Berkshire Hathaway Life Insurance Co. of Nebraska
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-5678
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Assistant Secretary
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        BHG Life Insurance Company
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-5676
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Assistant Secretary
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Blue Chip Stamps
+Address:     301 E. Colorado Blvd.
+             Pasadena, CA 91101
+
+Form 13F File Number:  28-719
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Assistant Secretary
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Warren E. Buffett
+Address:     1440 Kiewit Plaza
+             Omaha, NE 68131
+
+Form 13F File Number:  28-554
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Warrent E. Buffett
+Title:
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Warren E. Buffett      Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[ ]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[X]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                              Form 13F SUMMARY PAGE
+
+Report Summary:
+
+
+Number of Other Included Managers:                                        0
+                                                                     -----------
+Form 13F Information Table Entry Total:                                   0
+                                                                     -----------
+Form 13F Information Table Value Total:                             $     0
+                                                                     -----------
+                                                                     (thousands)
+
+Confidential Information has been omitted from the public Form 13F and filed
+separately with the Commission.
+
+List of Other Included Managers:
+
+
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+
+                                      NONE
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Columbia Insurance Company
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-1517
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Treasurer
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Cornhusker Casualty Company
+Address:     9290 West Dodge Rd.
+             Omaha, NE 68114
+
+Form 13F File Number:  28-2226
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Assistant Secretary
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Cypress Insurance Company
+Address:     1825 S. Grant St.
+             San Mateo, CA 94402
+
+Form 13F File Number:  28-6102
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Assistant Secretary
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        GEICO Corporation
+Address:     One GEICO Plaza
+             Washington, DC 20076
+
+Form 13F File Number:  28-852
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Charles R. Davies
+Title:  Vice President
+Phone:  301-986-2652
+
+Signature, Place, and Date of Signing:
+
+(s) Charles R. Davies      Washington, DC       February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Government Employees Insurance Company
+Address:     One GEICO Plaza
+             Washington, DC 20076-0001
+
+Form 13F File Number:  28-101
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Charles R. Davies
+Title:  Vice President
+Phone:  301-986-2652
+
+Signature, Place, and Date of Signing:
+
+(s) Charles R. Davies      Washington, DC       February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        National Fire & Marine Insurance Company
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-1066
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Treasurer
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        National Indemnity Company
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-718
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Treasurer
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        National Liability & Fire Insurance Company
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-5006
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Treasurer
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Nebraska Furniture Mart, Inc.
+Address:     700 South 72nd Street
+             Omaha, NE 68114
+
+Form 13F File Number:  28-6104
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Treasurer
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        OBH Inc.
+Address:     1440 Kiewit Plaza
+             Omaha, NE 68131
+
+Form 13F File Number:  28-717
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Vice President
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Plaza Investment Managers, Inc.
+Address:     One GEICO Plaza
+             Washington, DC 20076-0001
+
+Form 13F File Number:  28-2740
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Thomas M. Wells
+Title:  Treasurer
+Phone:  301-986-3433
+
+Signature, Place, and Date of Signing:
+
+(s) Thomas M. Wells        Washington, DC       February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Wesco Financial Corporation
+Address:     301 E. Colorado Blvd.
+             Pasadena, CA 91101
+
+Form 13F File Number:  28-1357
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Jeffrey L. Jacobson
+Title:  Vice President
+Phone:  626-585-6700
+
+Signature, Place, and Date of Signing:
+
+(s) Jeffrey L. Jacobson    Pasadena, CA         February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Wesco Financial Insurance Company
+Address:     3024 Harney St.
+             Omaha, NE 68131
+
+Form 13F File Number:  28-3091
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Assistant Secretary
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2001
+
+Check here if Amendment [ ];  Amendment Number: ______
+
+        This Amendment (Check only one.):   [ ]  is a restatement.
+                                            [ ]  adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Wesco Holdings Midwest, Inc.
+Address:     1440 Kiewit Plaza
+             Omaha, NE 68131
+
+Form 13F File Number:  28-3105
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:   Marc D. Hamburg
+Title:  Treasurer
+Phone:  402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg        Omaha, NE            February 13, 2002
+- -----------------------    -----------------    -------------------
+[Signature]                [City, State]        [Date]
+
+Report Type (Check only one.):
+
+[ ]     13F HOLDINGS REPORT. (Check here if all holdings of this reporting
+        manager are reported in this report.)
+
+[X]     13F NOTICE. (Check here if no holdings reported are in this report, and
+        all holdings are reported by other reporting manager(s).)
+
+[ ]     13F COMBINATION REPORT. (Check here if a portion of the holdings for
+        this reporting manager are reported in this report and a portion are
+        reported by other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+        Form 13F File Number     Name
+
+        28-4545                  Berkshire Hathaway Inc.
+
+<PAGE>
+
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                December 31, 2001
+
+
+<TABLE>
+<CAPTION>
+                                                                    Column 6
+                                     Column 4                 Investment Discretion                                Column 8
+                                      Market      Column 5    ----------------------                            Voting Authority
+Column 1    Column 2  Column 3         Value      Shares or           (b)      (c)          Column 7        ------------------------
+Name of     Title of    CUSIP           (In       Principal   (a)   Shared-  Shared-         Other             (a)       (b)    (c)
+Issuer        Class     Number       Thousands)    Amount $   Sole  Defined   Other         Managers           Sole     Shared  None
+- ---------   --------  -------        ----------  ----------   ----  -------  -------        --------           ----     ------  ----
+<S>         <C>      <C>           <C>          <C>           <C>   <C>      <C>      <C>                   <C>         <C>     <C>
+American
+ Express
+ Co.          Com    025816 10 9      614,775    17,225,400           X               4, 5, 14               17,225,400
+                                      285,328     7,994,634           X               4, 10, 14               7,994,634
+                                    4,291,932   120,255,879           X               4, 11, 14             120,255,879
+                                       69,349     1,943,100           X               4, 3, 14, 16, 17, 18    1,943,100
+                                       49,956     1,399,713           X               4, 13, 14               1,399,713
+                                       99,646     2,791,974           X               4, 14                   2,791,974
+Block H & R   Com    093671 10 5      715,164    15,999,200           X               4, 11, 14              15,999,200
+Coca Cola     Com    191216 10 0       18,860       400,000           X               4, 14                     400,000
+                                       83,738     1,776,000           X               4, 12, 14               1,776,000
+                                      339,744     7,205,600           X               4, 3, 14, 16, 17, 18    7,205,600
+                                    1,892,676    40,141,600           X               4, 5, 14               40,141,600
+                                    6,598,436   139,945,600           X               4, 11, 14             139,945,600
+                                      430,913     9,139,200           X               4, 10, 14               9,139,200
+                                       43,001       912,000           X               4, 7, 14                  912,000
+                                       22,632       480,000           X               4, 13, 14                 480,000
+Dun &
+ Bradstreet
+ Corp.        Com    26483E 10 0       46,368     1,313,550           X               4, 11, 14               1,313,550
+                                      138,724     3,929,850           X               4, 8, 9, 11, 14, 15     3,929,850
+
+First Energy  Com    337932 10 7       75,004     2,144,205           X               4, 11, 14               2,144,205
+GATX Corp.    Com    361448 10 3      147,664     4,540,700           X               4, 11, 14               4,540,700
+                                       91,056     2,800,000           X               4, 8, 9, 11, 14, 15     2,800,000
+
+Gannett Inc.  Com    364730 10 1      244,502     3,636,800           X               4, 11, 14               3,636,800
+The Gillette
+ Co.          Com    375766 10 2    2,004,000    60,000,000           X               4, 11, 14              60,000,000
+                                      694,720    20,800,000           X               4, 5, 14               20,800,000
+                                      213,760     6,400,000           X               4, 10, 14               6,400,000
+                                      213,760     6,400,000           X               4, 3, 14, 16, 17, 18    6,400,000
+                                       26,720       800,000           X               4, 12, 14                 800,000
+                                       53,440     1,600,000           X               4, 7, 14                1,600,000
+Great Lakes
+ Chemical
+ Corp.        Com    390568 10 3      168,714     6,948,700           X               4, 8, 9, 11, 14, 15     6,948,700
+
+Jones
+ Apparel
+ Group Inc.   Com    480074 10 3      286,891     8,649,100           X               4, 8, 9, 11, 14, 15     8,649,100
+
+La-Z-Boy      Com    505336 10 7        1,180        54,100           X               4, 11, 14                  54,100
+Liz
+ Claiborne    Com    539320 10 1       48,969       984,300           X               4, 11, 14                 984,300
+                                      -------
+                                   20,011,622
+                                   ----------
+</TABLE>
+
+
+<PAGE>
+
+                            BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                               December 31, 2001
+
+
+<TABLE>
+<CAPTION>
+                                                                     Column 6
+                                       Column 4               Investment Discretion                               Column 8
+                                        Market    Column 5   ----------------------                           Voting Authority
+Column 1      Column 2  Column 3        Value     Shares or         (b)      (c)          Column 7         ----------------------
+Name of       Title of    CUSIP          (In      Principal  (a)   Shared-  Shared-        Other              (a)     (b)    (c)
+Issuer         Class     Number       Thousands)  Amount $   Sole  Defined  Other         Managers            Sole   Shared  None
+- ------------  --------  -------       ---------- ----------  ----  -------  -------       --------            ----   ------  ----
+<S>            <C>      <C>         <C>           <C>         <C>   <C>      <C>    <C>                   <C>         <C>    <C>
+M & T Bank
+ Corporation     Com    55261F 10 4     436,886    5,997,060           X            4, 11, 14              5,997,060
+                                         39,776      546,000           X            4, 8, 9, 11, 14, 15      546,000
+                                         12,071      165,700           X            4, 10, 14                165,700
+Moody's          Com    615369 10 5     643,352   16,140,300           X            4, 11, 14             16,140,300
+                                        313,288    7,859,700           X            4, 8, 9, 11, 14, 15    7,859,700
+Mueller
+ Industries      Com    624756 10 2     106,962    3,216,900           X            4, 11, 14              3,216,900
+Nike Inc.        Com    654106 10 3     247,777    4,405,700           X            4, 8, 9, 11, 14, 15    4,405,700
+                                         29,526      525,000           X            4, 8, 11, 14, 15         525,000
+Outback
+ Steakhouse
+ Inc.            Com    689899 10 2      63,962    1,867,500           X            4, 8, 9, 11, 14, 15    1,867,500
+
+Sealed Air
+ Corporation     Com    81211K 10 0     124,432    3,048,300           X            4, 11, 14              3,048,300
+Sealed Air
+ Corporation   PVD CVA  81211K 20 9      28,165      679,500           X            4, 11, 14                679,500
+Shaw Communi-
+ cations Inc.    Cl B   82028K 20 0     445,200   21,000,000           X            4, 8, 9, 11, 14, 15   21,000,000
+                                         21,200    1,000,000           X            4, 8, 11, 14, 15       1,000,000
+Sun Trusts
+ Banks Inc.      Com    867914 10 3     310,133    4,946,300           X            4, 11, 14              4,946,300
+                                         53,922      860,000           X            4, 5, 14                 860,000
+Torchmark
+ Corp.           Com    891027 10 4       8,371      212,834           X            4, 1, 11, 14             212,834
+                                         17,688      449,728           X            4, 5, 14                 449,728
+                                         30,331      771,200           X            4, 11, 14                771,200
+                                         25,159      639,700           X            4, 10, 14                639,700
+USG
+ Corporation     Com    903293 40 5      37,180    6,500,000           X            4, 11, 14              6,500,000
+Washington
+ Post Co.        Cl B   939640 10 8     473,981      894,304           X            4, 11, 14                                894,304
+                                         78,605      148,311           X            4, 1, 2, 6, 11, 14                       148,311
+                                        343,527      648,165           X            4, 10, 14                                648,165
+                                         19,602       36,985           X            4, 12, 14                                 36,985
+Wells Fargo
+ & Co. Del       Com    949746 10 1     553,303   12,728,390           X            4, 5, 14              12,728,390
+                                          6,521      150,000           X            4, 7, 14                 150,000
+                                         44,409    1,021,600           X            4, 3, 14, 16, 17, 18   1,021,600
+                                          5,259      120,970           X            4, 10, 14                120,970
+                                         26,293      604,860           X            4, 13, 14                604,860
+                                         60,597    1,394,000           X            4, 12, 14              1,394,000
+                                         36,946      850,000           X            4, 14                    850,000
+                                      1,582,102   36,395,260           X            4, 11, 14             36,395,260
+Wesco Finl
+ Corp.           Com    950817 10 6   1,796,472    5,703,087           X            4, 3, 14               5,703,087
+Zenith
+ National
+ Ins. Corp.      Com    989390 10 9      22,817      816,655           X            4, 11, 14                816,655
+                                    -----------
+                                      8,045,815
+                                    -----------
+               GRAND TOTAL          $28,057,437
+                                    ===========
+</TABLE>
+
+
+<PAGE>
+
+                             BERKSHIRE HATHAWAY INC.
+                                1440 KIEWIT PLAZA
+                              OMAHA, NEBRASKA 68131
+                            TELEPHONE (402) 346-1400
+                               FAX (402) 346-3375
+
+
+
+                                February 13, 2002
+
+
+
+Securities and Exchange Commission
+Judiciary Plaza
+450 Fifth Street, N.W.
+
+Washington, DC  20549
+
+Gentlemen:
+
+        Enclosed herewith for filing is one Form 13F for the Quarter ended
+December 31, 2001 for the following nineteen "Institutional Investment
+Managers":
+
+<TABLE>
+<CAPTION>
+                                                       13F File Number
+                                                       ---------------
+<S>                                                    <C>
+Berkshire Hathaway Inc.                                   28-4545
+Berkshire Hathaway Life Ins. Co. of NE                    28-5678
+BHG Life Insurance Company                                28-5676
+Blue Chip Stamps                                          28-719
+Warren E. Buffett                                         28-554
+Columbia Insurance Company                                28-1517
+Cornhusker Casualty Company                               28-2226
+Cypress Insurance Company                                 28-6102
+GEICO Corporation                                         28-852
+Government Employees Insurance Company                    28-101
+National Fire & Marine Ins. Co.                           28-1066
+National Indemnity Company                                28-718
+National Liability and Fire Ins. Co.                      28-5006
+Nebraska Furniture Mart, Inc.                             28-6104
+OBH Inc.                                                  28-717
+Plaza Investment Managers                                 28-2740
+Wesco Financial Corporation                               28-1357
+Wesco Financial Insurance Company                         28-3091
+Wesco Holdings Midwest, Inc.                              28-3105
+</TABLE>
+
+
+        Also enclosed under separate cover are two separate envelopes marked
+"Confidential Treatment" relating to information omitted from the Forms 13F in
+accordance with SEC Rule 24b-2.
+
+
+
+                                            Yours truly,
+
+                                            BERKSHIRE HATHAWAY INC.
+
+
+                                            /s/ Marc D. Hamburg
+                                            --------------------------------
+                                            Marc D. Hamburg
+                                            Vice President
+Enclosures
+
+
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

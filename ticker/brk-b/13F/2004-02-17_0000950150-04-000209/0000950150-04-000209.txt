@@ -1,0 +1,366 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ H0FhE7GHxPutCZOkEbPNX6dJN23zau1Hn+Ahm6BFyTbDPu5ukC+oHDPnS42dp+bi
+ 3DeP5P3liKn1w9RU7CRjlQ==
+
+<SEC-DOCUMENT>0000950150-04-000209.txt : 20040217
+<SEC-HEADER>0000950150-04-000209.hdr.sgml : 20040216
+<ACCEPTANCE-DATETIME>20040217133721
+ACCESSION NUMBER:		0000950150-04-000209
+CONFORMED SUBMISSION TYPE:	13F-HR
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20031231
+FILED AS OF DATE:		20040217
+EFFECTIVENESS DATE:		20040217
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BERKSHIRE HATHAWAY INC
+		CENTRAL INDEX KEY:			0001067983
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				470813844
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	028-04545
+		FILM NUMBER:		04606690
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1440 KIEWIT PLZ
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+		BUSINESS PHONE:		4023461400
+
+	MAIL ADDRESS:	
+		STREET 1:		1440 KIEWIT PLAZA
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NBH INC
+		DATE OF NAME CHANGE:	19980810
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR
+<SEQUENCE>1
+<FILENAME>a96383re13fvhr.txt
+<DESCRIPTION>FORM 13F
+<TEXT>
+<PAGE>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: December 31, 2003
+
+Check here if Amendment [      ]; Amendment Number: ______
+     This Amendment (Check only one.):          [   ] is a restatement.
+
+                                                [   ] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:        Berkshire Hathaway Inc.
+Address:     1440 Kiewit Plaza
+             Omaha, NE 68131
+
+Form 13F File Number: 28-4545
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:        Marc D. Hamburg
+Title:       Vice President
+Phone:       402-346-1400
+
+Signature, Place, and Date of Signing:
+
+(s) Marc D. Hamburg                Omaha, NE                   February 13, 2004
+- ------------------------           ----------------            -----------------
+[Signature]                        [City, State]               [Date]
+
+Report Type (Check only one.):
+
+[ ]  13F HOLDINGS REPORT. (Check here if all holdings of this reporting manager
+     are reported in this report.)
+
+[ ]  13F NOTICE. (Check here if no holdings reported are in this report, and all
+     holdings are reported by other reporting manager(s).)
+
+[X]  13F COMBINATION REPORT. (Check here if a portion of the holdings for this
+     reporting manager are reported in this report and a portion are reported by
+     other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+     Form 13F File Number        Name
+
+     28-5194                     General Re - New England Asset Management, Inc.
+
+<PAGE>
+
+                              Form 13F SUMMARY PAGE
+
+Report Summary:
+
+<TABLE>
+<S>                                            <C>
+Number of Other Included Managers:                       17
+                                               ------------
+
+Form 13F Information Table Entry Total:                  64
+                                               ------------
+
+Form 13F Information Table Value Total:        $ 34,868,757
+                                               ------------
+                                                 (thousands)
+</TABLE>
+
+List of Other Included Managers:
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+<TABLE>
+<CAPTION>
+NO.  FORM 13F FILE NUMBER                              NAME
+<S>  <C>                        <C>
+ 1.         28-5678             Berkshire Hathaway Life Insurance Co. of Nebraska
+ 2.         28-                 BH Columbia Inc.
+ 3.         28-5676             BHG Life Insurance Co.
+ 4.         28-719              Blue Chip Stamps
+ 5.         28-554              Buffett, Warren E.
+ 6.         28-1517             Columbia Insurance Co.
+ 7.         28-2226             Cornhusker Casualty Co.
+ 8.         28-852              GEICO Corp.
+ 9.         28-101              Government Employees Ins. Corp.
+10.         28-1066             National Fire & Marine
+11.         28-718              National Indemnity Co.
+12.         28-5006             National Liability & Fire Ins. Co.
+13.         28-717              OBH Inc.
+14.         28-2740             Plaza Investment Managers
+15.         28-1357             Wesco Financial Corp.
+16.         28-3091             Wesco Financial Ins. Co.
+17.         28-3105             Wesco Holdings Midwest, Inc.
+</TABLE>
+
+<PAGE>
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                December 31, 2003
+
+<TABLE>
+<CAPTION>
+                                                                                           Column 6
+                                                        Column 4      Column 5      Investment Discretion
+                             Column 2   Column 3         Market      Shares or   ----------------------------
+         Column 1            Title of    CUSIP           Value       Principal   (a)  (b) Shared- (c) Shared-
+      Name of Issuer          Class      Number     (In Thousands)    Amount $   Sole   Defined      Other
+      --------------          -----      ------     --------------    --------   ----   -------      -----
+<S>                          <C>       <C>          <C>             <C>          <C>  <C>         <C>
+American Express Co.           Com     025816 10 9       830,781     17,225,400           X
+                                                         385,581      7,994,634           X
+                                                       5,799,941    120,255,879           X
+                                                          93,716      1,943,100           X
+                                                         202,165      4,191,687           X
+American Standard Companies    Com     029712 10 6       325,462      3,232,000           X
+Automatic Data Processing      Com     053015 10 3        56,076      1,415,700           X
+Block H & R                    Com     093671 10 5       809,006     14,610,900           X
+Cadbury Schweppes & PLC        ADR     127209 30 2        73,311     10,000,000           X
+Coca Cola                      Com     191216 10 0        90,944      1,792,000           X
+                                                          90,132      1,776,000           X
+                                                         365,684      7,205,600           X
+                                                       2,037,186     40,141,600           X
+                                                       7,102,239    139,945,600           X
+                                                         463,814      9,139,200           X
+Comdisco Holding Co.           Com     200334 10 0        47,184      1,179,592           X
+                                                          11,726        293,153           X
+                                                             667         16,669           X
+Costco Wholesale Corp.         Com     22160K 10 5       195,344      5,254,000           X
+Dover Corp.                    Com     260003 10 8        79,500      2,000,000           X
+First Data Corporation         Com     319963 10 4       328,720      8,000,000           X
+Gannett Inc.                   Com     364730 10 1       308,190      3,456,600           X
+Gap Inc.                       Com     364760 10 8       348,150     15,000,000           X
+The Gillette Co.               Com     375766 10 2     2,203,800     60,000,000           X
+                                                         763,984     20,800,000           X
+                                                         235,072      6,400,000           X
+                                                         235,072      6,400,000           X
+                                                          29,384        800,000           X
+                                                          58,768      1,600,000           X
+HCA Inc.                        Com    404119 10 9       429,600     10,000,000           X
+                                                         192,310      4,476,500           X
+                                                          42,960      1,000,000           X
+                                                      ----------
+                                                      24,236,469
+                                                      ----------
+
+<CAPTION>
+
+                                                           Column 8
+                                                       Voting Authority
+                                   Column 7        -------------------------
+         Column 1                   Other              (a)       (b)    (c)
+      Name of Issuer               Managers           Sole      Shared  None
+      --------------               --------        -----------  ------  ----
+<S>                          <C>                   <C>          <C>     <C>
+American Express Co.         5, 2, 6, 13            17,225,400
+                             5, 10, 13               7,994,634
+                             5, 11, 13             120,255,879
+                             5, 4, 13, 15, 16, 17    1,943,100
+                             5, 13                   4,191,687
+American Standard Companies  5, 8, 9, 11, 13, 14     3,232,000
+Automatic Data Processing    5, 8, 9, 11, 13, 14     1,415,700
+Block H & R                  5, 11, 13              14,610,900
+Cadbury Schweppes & PLC      5, 8, 9, 11, 13, 14    10,000,000
+Coca Cola                    5, 13                   1,792,000
+                             5, 12, 13               1,776,000
+                             5, 4, 13, 15, 16, 17    7,205,600
+                             5, 2, 6, 13            40,141,600
+                             5, 11, 13             139,945,600
+                             5, 10, 13               9,139,200
+Comdisco Holding Co.         5, 11, 13               1,179,592
+                             5, 2, 6, 13               293,153
+                             5, 10, 13                  16,669
+Costco Wholesale Corp.       5, 11, 13               5,254,000
+Dover Corp.                  5, 8, 9, 11, 13, 14     2,000,000
+First Data Corporation       5, 8, 9, 11, 13, 14     8,000,000
+Gannett Inc.                 5, 11, 13               3,456,600
+Gap Inc.                     5, 8, 9, 11, 13, 14    15,000,000
+The Gillette Co.             5, 11, 13              60,000,000
+                             5, 2, 6, 13            20,800,000
+                             5, 10, 13               6,400,000
+                             5, 4, 13, 15, 16, 17    6,400,000
+                             5, 12, 13                 800,000
+                             5, 13                   1,600,000
+HCA Inc.                     5, 8, 9, 11, 13, 14    10,000,000
+                             5, 2, 6, 13             4,476,500
+                             5, 13                   1,000,000
+</TABLE>
+
+<PAGE>
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                December 31, 2003
+
+<TABLE>
+<CAPTION>
+                                                                                           Column 6
+                                                       Column 4      Column 5       Investment Discretion
+                             Column 2   Column 3        Market       Shares or   ----------------------------
+        Column 1             Title of    CUSIP          Value        Principal   (a)  (b) Shared- (c) Shared-
+     Name of Issuer            Class     Number     (In Thousands)    Amount $   Sole   Defined     Other
+     --------------            -----     ------     --------------    --------   ---- -----------  ----------
+<S>                          <C>       <C>          <C>             <C>          <C>  <C>         <C>
+Iron Mountain Inc.             Com     462846 10 6         198,431   5,018,500             X
+M & T Bank Corporation         Com     55261F 10 4         589,511   5,997,060             X
+                                                            53,672     546,000             X
+                                                            16,288     165,700             X
+Moody's                        Com     615369 10 5         977,295  16,140,300             X
+                                                           475,905   7,859,700             X
+Mueller Industries             Com     624756 10 2          84,075   2,446,900             X
+Nike Inc.                      Com     654106 10 3         410,760   6,000,000             X
+Outback Steakhouse Inc.        Com     689899 10 2          82,562   1,867,500             X
+Petrochina Co LTD              ADR     71646E 10 0           4,159      72,900             X
+                                                            33,437     586,100             X
+Sealed Air Corporation         Com     81211K 10 0          60,843   1,123,800             X
+Shaw Communications Inc.       Cl B    82028K 20 0         341,440  22,000,000             X
+Sun Trusts Banks Inc.          Com     867914 10 3         353,660   4,946,300             X
+                                                            61,490     860,000             X
+Torchmark Corp.                Com     891027 10 4           3,531      77,551             X
+                                                            20,481     449,728             X
+                                                            35,120     771,200             X
+                                                            29,132     639,700             X
+USG Corporation                Com     903293 40 5         107,705   6,500,000             X
+Washington Post Co.            Cl B    939640 10 8         707,752     894,304             X
+                                                           117,373     148,311             X
+                                                           512,958     648,165             X
+                                                            29,270      36,985             X
+Wells Fargo & Co. Del          Com     949746 10 1         759,834  12,902,590             X
+                                                            60,162   1,021,600             X
+                                                             7,124     120,970             X
+                                                            82,093   1,394,000             X
+                                                           153,400   2,604,860             X
+                                                         2,261,633  38,404,360             X
+Wesco Finl Corp.               Com     950817 10 6       1,996,080   5,703,087             X
+Zenith National Ins. Corp.     Com     989390 10 9           5,112     157,055             X
+                                                    --------------
+                                                        10,632,288
+                                                    --------------
+
+                GRAND TOTAL                         $   34,868,757
+                                                    ==============
+
+<CAPTION>
+                                                             Column 8
+                                                         Voting Authority
+                                   Column 7        ---------------------------
+        Column 1                    Other             (a)        (b)      (c)
+     Name of Issuer                Managers           Sole      Shared    None
+     --------------                --------        -----------  ------    ----
+<S>                          <C>                   <C>          <C>     <C>
+Iron Mountain Inc.           5, 8, 9, 11, 13, 14     5,018,500
+M & T Bank Corporation       5 11, 13                5,997,060
+                             5, 8, 9, 11, 13, 14       546,000
+                             5, 10, 13                 165,700
+Moody's                      5, 11, 13              16,140,300
+                             5, 8, 9, 11, 13, 14     7,859,700
+Mueller Industries           5, 11, 13               2,446,900
+Nike Inc.                    5, 8, 9, 11, 13, 14     6,000,000
+Outback Steakhouse Inc.      5, 8, 9, 11, 13, 14     1,867,500
+Petrochina Co LTD            5, 11, 13                  72,900
+                             5, 8, 9, 11, 13, 14       586,100
+Sealed Air Corporation       5, 11, 13               1,123,800
+Shaw Communications Inc.     5, 8, 9, 11, 13, 14    22,000,000
+Sun Trusts Banks Inc.        5, 11, 13               4,946,300
+                             5, 2, 6, 13               860,000
+Torchmark Corp.              5, 1, 11, 13               77,551
+                             5, 2, 6, 13               449,728
+                             5, 11, 13                 771,200
+                             5, 10, 13                 639,700
+USG Corporation              5, 11, 13               6,500,000
+Washington Post Co.          5, 11, 13                                  894,304
+                             5, 1, 3, 7, 11, 13                         148,311
+                             5, 10, 13                                  648,165
+                             5, 12, 13                                   36,985
+Wells Fargo & Co. Del        5, 2, 6, 13            12,902,590
+                             5, 4, 13, 15, 16, 17    1,021,600
+                             5, 10, 13                 120,970
+                             5, 12, 13               1,394,000
+                             5, 13                   2,604,860
+                             5, 11, 13              38,404,360
+Wesco Finl Corp.             5, 4, 13                5,703,087
+Zenith National Ins. Corp.   5, 11, 13                 157,055
+</TABLE>
+
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

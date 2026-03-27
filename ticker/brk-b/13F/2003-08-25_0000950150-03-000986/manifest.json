@@ -1,0 +1,14 @@
+{
+  "accession_number": "0000950150-03-000986",
+  "cik": "0001067983",
+  "company_name": "BERKSHIRE HATHAWAY INC",
+  "documents": [],
+  "filing_date": "2003-08-25",
+  "filing_group": "13F",
+  "filing_text_url": "https://www.sec.gov/Archives/edgar/data/1067983/0000950150-03-000986.txt",
+  "form": "13F-HR/A",
+  "owner_type": "ticker",
+  "owner_value": "brk-b",
+  "report_date": "2003-06-30",
+  "source": "D:/Projects/edgar-parser/sec/submissions/CIK0001067983-submissions-001.json"
+}

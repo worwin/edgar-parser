@@ -1,0 +1,114 @@
+{
+  "accession_number": "0000950129-05-011287",
+  "cik": "0001067983",
+  "filing_date": "2005-11-21",
+  "form": "13F-HR/A",
+  "holdings": [
+    {
+      "accession_number": "0000950129-05-011287",
+      "cik": "0001067983",
+      "cusip": "035229103",
+      "filing_date": "2005-11-21",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Anheuser Busch Cos. Inc.",
+      "other_managers": [
+        "1",
+        "4",
+        "5"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2005-09-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 44711000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2005-11-21_0000950129-05-011287/0000950129-05-011287.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "warn",
+      "value_usd": 1924361000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 44711000
+    },
+    {
+      "accession_number": "0000950129-05-011287",
+      "cik": "0001067983",
+      "cusip": "931142103",
+      "filing_date": "2005-11-21",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Wal-Mart Stores, Inc.",
+      "other_managers": [
+        "1",
+        "4",
+        "5"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2005-09-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 18998300,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2005-11-21_0000950129-05-011287/0000950129-05-011287.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "warn",
+      "value_usd": 832505000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 18998300
+    },
+    {
+      "accession_number": "0000950129-05-011287",
+      "cik": "0001067983",
+      "cusip": "931142103",
+      "filing_date": "2005-11-21",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Wal-Mart Stores, Inc.",
+      "other_managers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2005-09-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 946000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2005-11-21_0000950129-05-011287/0000950129-05-011287.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "warn",
+      "value_usd": 41454000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 946000
+    }
+  ],
+  "parser_format": "legacy_text_table",
+  "report_period": "2005-09-30",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2005-11-21_0000950129-05-011287/0000950129-05-011287.txt",
+  "validation": {
+    "accession_number": "0000950129-05-011287",
+    "expected_entry_total": null,
+    "expected_value_total": 2798328000,
+    "filing_date": "2005-11-21",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 3,
+    "parsed_value_total": 2798320000,
+    "parser_format": "legacy_text_table",
+    "validation_status": "warn",
+    "warnings": [
+      {
+        "code": "value_total_mismatch",
+        "message": "Expected total value 2798328000 but parsed 2798320000.",
+        "severity": "warning"
+      }
+    ]
+  }
+}

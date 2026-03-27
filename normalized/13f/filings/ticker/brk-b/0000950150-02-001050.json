@@ -1,0 +1,107 @@
+{
+  "accession_number": "0000950150-02-001050",
+  "cik": "0001067983",
+  "filing_date": "2002-11-14",
+  "form": "13F-HR/A",
+  "holdings": [
+    {
+      "accession_number": "0000950150-02-001050",
+      "cik": "0001067983",
+      "cusip": "22160K105",
+      "filing_date": "2002-11-14",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Costco Wholesale Corp",
+      "other_managers": [
+        "4",
+        "11",
+        "14"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2001-09-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 9137000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2002-11-14_0000950150-02-001050/0000950150-02-001050.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "warn",
+      "value_usd": 324912000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 9137000
+    },
+    {
+      "accession_number": "0000950150-02-001050",
+      "cik": "0001067983",
+      "cusip": "364760108",
+      "filing_date": "2002-11-14",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Gap Inc.",
+      "other_managers": [
+        "4",
+        "8",
+        "9"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2001-09-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 15000000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2002-11-14_0000950150-02-001050/0000950150-02-001050.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "warn",
+      "value_usd": 179250000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 15000000
+    },
+    {
+      "accession_number": "0000950150-02-001050",
+      "cik": "0001067983",
+      "cusip": "364760108",
+      "filing_date": "2002-11-14",
+      "form": "13F-HR/A",
+      "investment_discretion": null,
+      "issuer_name": "Gap Inc.",
+      "other_managers": [],
+      "parser_format": "legacy_text_table",
+      "report_period": "2001-09-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 14,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2002-11-14_0000950150-02-001050/0000950150-02-001050.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "warn",
+      "value_usd": 11000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 15
+    }
+  ],
+  "parser_format": "legacy_text_table",
+  "report_period": "2001-09-30",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2002-11-14_0000950150-02-001050/0000950150-02-001050.txt",
+  "validation": {
+    "accession_number": "0000950150-02-001050",
+    "expected_entry_total": null,
+    "expected_value_total": 504162000,
+    "filing_date": "2002-11-14",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 3,
+    "parsed_value_total": 504173000,
+    "parser_format": "legacy_text_table",
+    "validation_status": "warn",
+    "warnings": [
+      {
+        "code": "value_total_mismatch",
+        "message": "Expected total value 504162000 but parsed 504173000.",
+        "severity": "warning"
+      }
+    ]
+  }
+}

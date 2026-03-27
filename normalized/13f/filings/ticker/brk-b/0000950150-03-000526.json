@@ -1,0 +1,29 @@
+{
+  "accession_number": "0000950150-03-000526",
+  "cik": "0001067983",
+  "filing_date": "2003-05-06",
+  "form": "13F-HR/A",
+  "holdings": [],
+  "parser_format": "parse_error",
+  "report_period": "2002-12-31",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2003-05-06_0000950150-03-000526/0000950150-03-000526.txt",
+  "validation": {
+    "accession_number": "0000950150-03-000526",
+    "expected_entry_total": null,
+    "expected_value_total": null,
+    "filing_date": "2003-05-06",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 0,
+    "parsed_value_total": 0,
+    "parser_format": "parse_error",
+    "validation_status": "fail",
+    "warnings": [
+      {
+        "code": "parse_error",
+        "message": "Could not locate legacy holdings table in filing",
+        "severity": "error"
+      }
+    ]
+  }
+}

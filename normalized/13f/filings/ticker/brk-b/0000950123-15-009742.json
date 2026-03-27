@@ -1,0 +1,75 @@
+{
+  "accession_number": "0000950123-15-009742",
+  "cik": "0001067983",
+  "filing_date": "2015-09-04",
+  "form": "13F-HR/A",
+  "holdings": [
+    {
+      "accession_number": "0000950123-15-009742",
+      "cik": "0001067983",
+      "cusip": "718546104",
+      "filing_date": "2015-09-04",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "PHILLIPS 66",
+      "other_managers": [
+        "Buffett Warren E"
+      ],
+      "parser_format": "xml_information_table",
+      "report_period": "2015-06-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": "SH",
+      "shares_or_principal": 6102000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2015-09-04_0000950123-15-009742/0000950123-15-009742.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "COM",
+      "validation_status": "pass",
+      "value_usd": 491577,
+      "voting_authority_none": 0,
+      "voting_authority_shared": 0,
+      "voting_authority_sole": 6102000
+    },
+    {
+      "accession_number": "0000950123-15-009742",
+      "cik": "0001067983",
+      "cusip": "718546104",
+      "filing_date": "2015-09-04",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "PHILLIPS 66",
+      "other_managers": [
+        "Buffett Warren E",
+        "National Indemnity Co"
+      ],
+      "parser_format": "xml_information_table",
+      "report_period": "2015-06-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": "SH",
+      "shares_or_principal": 23595948,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2015-09-04_0000950123-15-009742/0000950123-15-009742.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "COM",
+      "validation_status": "pass",
+      "value_usd": 1900890,
+      "voting_authority_none": 0,
+      "voting_authority_shared": 0,
+      "voting_authority_sole": 23595948
+    }
+  ],
+  "parser_format": "xml_information_table",
+  "report_period": "2015-06-30",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2015-09-04_0000950123-15-009742/0000950123-15-009742.txt",
+  "validation": {
+    "accession_number": "0000950123-15-009742",
+    "expected_entry_total": 2,
+    "expected_value_total": 2392467,
+    "filing_date": "2015-09-04",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 2,
+    "parsed_value_total": 2392467,
+    "parser_format": "xml_information_table",
+    "validation_status": "pass",
+    "warnings": []
+  }
+}

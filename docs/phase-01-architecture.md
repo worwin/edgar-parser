@@ -19,8 +19,8 @@ This repository should not own:
 
 Recommended naming split:
 - repo: `edgar-parser`
-- Python package: `edgar_foundry`
-- CLI: `edgar-foundry`
+- Python package: `edgar_parser`
+- CLI: `edgar-parser`
 
 That keeps the repo name descriptive while giving the reusable package a stable product-style interface.
 
@@ -267,53 +267,62 @@ Expose:
 Recommended on-disk layout:
 
 ```text
-<workspace>/
-  edgar-foundry.toml
-  data/
-    raw/
-      indexes/
-      submissions/
+<repo-root>/
+  edgar-parser.toml
+  ticker/
+    brk-b/
+      13F/
+        2026-02-17_0001193125-26-054580/
+  cik/
+    0001067983/
+      13F/
+  sec/
+    indexes/
+    submissions/
+  catalog/
+    filings.jsonl
+  normalized/
+    13f/
       filings/
-    catalog/
-      filings.jsonl
-    normalized/
-      13f/
-        filings/
-    datasets/
-      13f/
-        filing_catalog.jsonl
-        positions.jsonl
-        aggregated_positions.jsonl
-    exports/
-      csv/
-      parquet/
-      excel/
+  datasets/
+    13f/
+      filing_catalog.jsonl
+      positions.jsonl
+      aggregated_positions.jsonl
+  exports/
+    csv/
+    parquet/
+    excel/
   cache/
     sqlite/
     duckdb/
 ```
 
 Rules:
+- `ticker/<ticker>/<filing-family>/...` is the primary human-readable store when a ticker is known
+- `cik/<cik>/<filing-family>/...` is the fallback when fetched by CIK
+- SEC metadata downloads live under `sec/`
+- catalog JSONL is canonical for fetched-filing inventory
 - raw files are immutable once written
 - normalized JSON is canonical
 - cache databases are disposable
 
 ## CLI Boundary
 
-Initial CLI surface:
-- `edgar-foundry init`
-- `edgar-foundry layout print`
-- `edgar-foundry schema list`
-- `edgar-foundry schema show <name>`
-- `edgar-foundry schema export`
+Current CLI surface:
+- `edgar-parser init`
+- `edgar-parser layout print`
+- `edgar-parser schema list`
+- `edgar-parser schema show <name>`
+- `edgar-parser schema export`
+- `edgar-parser fetch filings`
 
 Planned CLI surface:
-- `edgar-foundry fetch filings`
-- `edgar-foundry catalog build`
-- `edgar-foundry parse 13f`
-- `edgar-foundry normalize 13f`
-- `edgar-foundry validate 13f`
-- `edgar-foundry export 13f`
+- `edgar-parser catalog build`
+- `edgar-parser parse 13f`
+- `edgar-parser normalize 13f`
+- `edgar-parser validate 13f`
+- `edgar-parser export 13f`
 
 Design rule:
 - keep commands coarse and durable
@@ -326,10 +335,10 @@ Initial Python API:
 - `IdentityConfig`
 - schema model classes
 - schema registry helpers
+- `fetch_filings(...)`
 
 Planned Python API:
-- `FoundryClient`
-- `fetch_filings(...)`
+- `ParserClient`
 - `parse_thirteenf_filing(...)`
 - `normalize_thirteenf_filing(...)`
 - `validate_thirteenf_filing(...)`
@@ -464,3 +473,21 @@ For 10-K, 10-Q, 8-K, and DEF 14A, structure the pipeline in layers:
 - 10-K / 10-Q / 8-K / DEF 14A ingestion
 - XBRL and narrative extraction layers
 - reusable downstream API surface
+
+## Current Fetch Implementation
+
+The current code turns the Berkshire notebook pattern into three readable layers:
+- `sec_client.py`: SEC-compliant HTTP access with declared identity and moderate rate limiting
+- `discovery.py`: ticker-to-CIK resolution plus filing inventory parsing and filtering
+- `fetch.py`: raw artifact download and catalog writing
+
+Current CLI:
+- `edgar-parser fetch filings --ticker BRK-B --forms 13F-HR --include-amends`
+- `edgar-parser fetch filings --cik 0001067983 --forms 13F-HR,13F-HR/A --download-attachments`
+
+Current raw download behavior per selected filing:
+- writes the raw filing text to a repo-root accession directory under `ticker/` or `cik/`
+- writes accession `index.json` when available
+- optionally downloads listed accession documents into `documents/`
+- writes `manifest.json` for the accession
+- upserts one filing record into `catalog/filings.jsonl`

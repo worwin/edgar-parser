@@ -19,7 +19,7 @@ class CliTestCase(unittest.TestCase):
         src_path = str(REPO_ROOT / "src")
         env["PYTHONPATH"] = src_path if not existing_pythonpath else f"{src_path}{os.pathsep}{existing_pythonpath}"
         return subprocess.run(
-            [sys.executable, "-m", "edgar_foundry", *args],
+            [sys.executable, "-m", "edgar_parser", *args],
             cwd=REPO_ROOT,
             text=True,
             capture_output=True,
@@ -40,8 +40,8 @@ class CliTestCase(unittest.TestCase):
         self.assertIn("filing_catalog_record", result.stdout)
         self.assertIn("thirteenf_parsed_filing", result.stdout)
 
-    def test_init_creates_workspace_layout_and_config(self) -> None:
-        root = TMP_ROOT / "workspace-init"
+    def test_init_creates_project_layout_and_config(self) -> None:
+        root = TMP_ROOT / "project-root"
         result = self.run_cli(
             "init",
             "--root",
@@ -52,8 +52,9 @@ class CliTestCase(unittest.TestCase):
             "ops@example.com",
         )
         self.assertEqual(result.returncode, 0, msg=result.stderr)
-        self.assertTrue((root / "edgar-foundry.toml").exists())
-        self.assertTrue((root / "data" / "raw" / "filings").exists())
+        self.assertTrue((root / "edgar-parser.toml").exists())
+        self.assertTrue((root / "ticker").exists())
+        self.assertTrue((root / "sec" / "submissions").exists())
         self.assertIn("Example Research ops@example.com", result.stdout)
 
     def test_schema_export_writes_files(self) -> None:

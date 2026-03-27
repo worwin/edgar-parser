@@ -1,0 +1,178 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ MGmmd7UtiARQ2xZzcfXhpeN0V4k6rfxs0t9gBH6K9y3wTyRqYYZQKK0Nz3jxISos
+ 9kNdIzimaCQGRL3GJqDEgw==
+
+<SEC-DOCUMENT>0000950134-07-003315.txt : 20070214
+<SEC-HEADER>0000950134-07-003315.hdr.sgml : 20070214
+<ACCEPTANCE-DATETIME>20070214164919
+ACCESSION NUMBER:		0000950134-07-003315
+CONFORMED SUBMISSION TYPE:	13F-HR/A
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20060331
+FILED AS OF DATE:		20070214
+DATE AS OF CHANGE:		20070214
+EFFECTIVENESS DATE:		20070214
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BERKSHIRE HATHAWAY INC
+		CENTRAL INDEX KEY:			0001067983
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				470813844
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR/A
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	028-04545
+		FILM NUMBER:		07621834
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1440 KIEWIT PLZ
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+		BUSINESS PHONE:		4023461400
+
+	MAIL ADDRESS:	
+		STREET 1:		1440 KIEWIT PLAZA
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NBH INC
+		DATE OF NAME CHANGE:	19980810
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR/A
+<SEQUENCE>1
+<FILENAME>a27108a2e13fvhrza.txt
+<DESCRIPTION>AMENDMENT TO FORM 13F - COMBINATION REPORT
+<TEXT>
+<PAGE>
+
+THIS FILING LISTS SECURITIES HOLDINGS REPORTED ON THE FORM 13F FILED ON MAY 15,
+2006 PURSUANT TO A REQUEST FOR CONFIDENTIAL TREATMENT AND FOR WHICH CONFIDENTIAL
+TREATMENT EXPIRED ON FEBRUARY 14, 2007.
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: March 31, 2006
+
+Check here if Amendment [X]; Amendment Number: 2
+This Amendment (Check only one.):   [ ] is a restatement.
+                                    [X] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:      Berkshire Hathaway Inc.
+Address:   1440 Kiewit Plaza
+           Omaha, NE 68131
+
+Form 13F File Number: 28-4545
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:    Marc D. Hamburg
+Title:   Vice President
+Phone:   402-346-1400
+
+Signature, Place, and Date of Signing:
+
+
+(s) Marc D. Hamburg                           Omaha, NE        February 14, 2007
+- -------------------------------------   --------------------   -----------------
+[Signature]                                 [City, State]      [Date]
+
+Report Type (Check only one.):
+
+[ ]  13F HOLDINGS REPORT. (Check here if all holdings of this reporting manager
+     are reported in this report.)
+
+[ ]  13F NOTICE. (Check here if no holdings reported are in this report, and all
+     holdings are reported by other reporting manager(s).)
+
+[X]  13F COMBINATION REPORT. (Check here if a portion of the holdings for this
+     reporting manager are reported in this report and a portion are reported by
+     other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+     Form 13F File Number   Name
+
+     28- 5194               General Re - New England Asset Management, Inc.
+
+<PAGE>
+
+                                    Form 13F
+                                  SUMMARY PAGE
+
+Report Summary:
+
+Number of Other Included Managers:                 4
+Form 13F Information Table Entry Total:            1
+Form 13F Information Table Value Total:     $186,264
+                                          (thousands)
+
+List of Other Included Managers:
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+NO.   FORM 13F FILE NUMBER   NAME
+
+1.    28-                    BH Columbia Inc.
+         ----
+2.    28-554                 Buffett, Warren E.
+3.    28-1517                Columbia Insurance Company
+4.    28-717                 OBH Inc.
+
+<PAGE>
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                 March 31, 2006
+
+<TABLE>
+<CAPTION>
+COLUMN 1        COLUMN 2    COLUMN 3   COLUMN 4        COLUMN 5         COLUMN 6    COLUMN 7           COLUMN 8
+- ----------------------------------------------------------------------------------------------------------------------
+NAME OF         TITLE OF                 VALUE    SHRS OR   SH/  PUT/  INVESTMENT     OTHER        VOTING AUTHORITY
+ISSUER            CLASS      CUSIP     [X$1000]   PRN AMT   PRN  CALL  DISCRETION   MANAGERS     SOLE     SHARED  NONE
+- ----------------------------------------------------------------------------------------------------------------------
+<S>             <C>       <C>          <C>       <C>        <C>  <C>   <C>         <C>         <C>         <C>     <C>
+US Bancorp      Com       902973 30 4   186,264  6,107,000                  X      1, 2, 3, 4  6,107,000
+                                       --------
+                                       $186,264
+                                       ========
+</TABLE>
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

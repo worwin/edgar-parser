@@ -1,0 +1,373 @@
+<SEC-DOCUMENT>0001193125-11-223118.txt : 20110815
+<SEC-HEADER>0001193125-11-223118.hdr.sgml : 20110815
+<ACCEPTANCE-DATETIME>20110815160320
+ACCESSION NUMBER:		0001193125-11-223118
+CONFORMED SUBMISSION TYPE:	13F-HR
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20110630
+FILED AS OF DATE:		20110815
+DATE AS OF CHANGE:		20110815
+EFFECTIVENESS DATE:		20110815
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			BERKSHIRE HATHAWAY INC
+		CENTRAL INDEX KEY:			0001067983
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				470813844
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	028-04545
+		FILM NUMBER:		111036216
+
+	BUSINESS ADDRESS:	
+		STREET 1:		1440 KIEWIT PLZ
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+		BUSINESS PHONE:		4023461400
+
+	MAIL ADDRESS:	
+		STREET 1:		1440 KIEWIT PLAZA
+		CITY:			OMAHA
+		STATE:			NE
+		ZIP:			68131
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	NBH INC
+		DATE OF NAME CHANGE:	19980810
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR
+<SEQUENCE>1
+<FILENAME>d13fhr.txt
+<DESCRIPTION>FORM 13F
+<TEXT>
+<PAGE>
+
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                             Washington, D.C. 20549
+
+                                    Form 13F
+
+                               Form 13F COVER PAGE
+
+Report for the Calendar Year or Quarter Ended: June 30, 2011
+
+Check here if Amendment [_]; Amendment Number: ______
+This Amendment (Check only one.): [_] is a restatement.
+                                  [_] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:    Berkshire Hathaway Inc.
+Address: 1440 Kiewit Plaza
+         Omaha, NE 68131
+
+Form 13F File Number: 28-4545
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists, and tables, are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:  Marc D. Hamburg
+Title: Senior Vice President
+Phone: 402-346-1400
+
+Signature, Place, and Date of Signing:
+
+
+    (s) Marc D. Hamburg              Omaha, NE               August 12, 2011
+--------------------------   ------------------------   ------------------------
+     [Signature]                  [City, State]                [Date]
+
+Report Type (Check only one.):
+
+[_]  13F HOLDINGS REPORT. (Check here if all holdings of this reporting manager
+     are reported in this report.)
+
+[_]  13F NOTICE. (Check here if no holdings reported are in this report, and all
+     holdings are reported by other reporting manager(s).)
+
+[X]  13F COMBINATION REPORT. (Check here if a portion of the holdings for this
+     reporting manager are reported in this report and a portion are reported by
+     other reporting manager(s).)
+
+List of Other Managers Reporting for this Manager:
+
+Form 13F File Number   Name
+--------------------   -----------------------------------------------
+28-5194                General Re - New England Asset Management, Inc.
+
+<PAGE>
+
+
+                              Form 13F SUMMARY PAGE
+
+Report Summary:
+
+Number of Other Included Managers:                 21
+
+Form 13F Information Table Entry Total:            96
+
+Form 13F Information Table Value Total:   $52,357,493
+                                           (thousands)
+
+Confidential information has been omitted from the Form 13F and filed separately
+with the Commission.
+
+List of Other Included Managers:
+
+Provide a numbered list of the name(s) and Form 13F file number(s) of all
+institutional investment managers with respect to which this report is filed,
+other than the manager filing this report.
+
+[If there are no entries in this list, state "NONE" and omit the column headings
+and list entries.]
+
+<TABLE>
+<CAPTION>
+NO.   FORM 13F FILE NUMBER   NAME
+---   --------------------   ---------------------------------------------------
+<S>   <C>                    <C>
+1.    28-5678                Berkshire Hathaway Life Insurance Co. of Nebraska
+2.    28-10388               BH Columbia Inc.
+3.    28-______              BH Finance LLC
+4.    28-719                 BCS Holdings, LLC
+5.    28-554                 Buffett, Warren E.
+6.    28-1517                Columbia Insurance Co.
+7.    28-2226                Cornhusker Casualty Co.
+8.    28-06102               Cypress Insurance Company
+9.    28-11217               Fechheimer Brothers Company
+10.   28-852                 GEICO Corp.
+11.   28-101                 Government Employees Ins. Corp.
+12.   28-_____               Medical Protective Corp.
+13.   28-1066                National Fire & Marine
+14.   28-718                 National Indemnity Co.
+15.   28-5006                National Liability & Fire Ins. Co.
+16.   28-11222               Nebraska Furniture Mart
+17.   28-717                 OBH LLC
+18.   28-_____               U.S. Investment Corp.
+19.   28-1357                Wesco Financial LLC
+20.   28-3091                Wesco Financial Ins. Co.
+21.   28-3105                Wesco Holdings Midwest, Inc.
+</TABLE>
+
+<PAGE>
+
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                  June 30, 2011
+
+<TABLE>
+<CAPTION>
+    Column 1     Column 2   Column 3     Column 4      Column 5           Column 6          Column 7          Column 8
+---------------- -------- ----------- -------------- ----------- ------------------------- ---------- -----------------------
+                                                                   Investment Discretion
+                                          Market      Shares or                    (c)                    Voting Authority
+                 Title of    CUSIP         Value      Principal  (a)  (b) Shared-  Shared-    Other       (a)       (b)   (c)
+ Name of Issuer    Class     Number   (In Thousands)   Amount $  Sole   Defined     Other   Managers      Sole    Shared None
+---------------- -------- ----------- -------------- ----------- ---- ----------- -------- ---------- ----------- ------ ----
+<S>              <C>      <C>         <C>            <C>         <C>  <C>         <C>      <C>        <C>         <C>    <C>
+American Express  Com     025816 10 9        890,553  17,225,400          X                5, 2, 6,    17,225,400
+   Co.                                                                                     17
+                                             413,323   7,994,634          X                5, 13, 17    7,994,634
+                                           6,217,229 120,255,879          X                5, 14, 17  120,255,879
+                                             100,458   1,943,100          X                5, 4, 17,    1,943,100
+                                                                                           19, 20, 21
+                                              72,365   1,399,713          X                5, 16, 17    1,399,713
+                                              43,419     839,832          X                5, 9, 17       839,832
+                                             100,926   1,952,142          X                5, 17        1,952,142
+Bank of New York  Com     064058 10 0         45,960   1,793,915          X                5, 1, 14,    1,793,915
+   Mellon Corp.                                                                            17
+Coca Cola         Com     191216 10 0         26,916     400,000          X                5, 17          400,000
+                                             119,507   1,776,000          X                5, 15, 17    1,776,000
+                                             484,865   7,205,600          X                5, 4, 17,    7,205,600
+                                                                                           19, 20, 21
+                                           2,701,128  40,141,600          X                5, 2, 6,    40,141,600
+                                                                                           17
+                                           9,416,939 139,945,600          X                5, 14, 17  139,945,600
+                                             614,977   9,139,200          X                5, 13, 17    9,139,200
+                                              32,299     480,000          X                5, 16, 17      480,000
+                                              61,368     912,000          X                5, 8, 17       912,000
+Comdisco Holding  Com     200334 10 0          7,589   1,218,199          X                5, 14, 17    1,218,199
+   Co.
+                                               1,887     302,963          X                5, 3, 14,      302,963
+                                                                                           17
+                                                 107      17,215          X                5, 13, 17       17,215
+ConocoPhillips    Com     20825C 10 4      1,587,234  21,109,637          X                5, 14, 17   21,109,637
+                                             150,380   2,000,000          X                5, 13, 17    2,000,000
+                                             450,538   5,992,000          X                5, 10,       5,992,000
+                                                                                           11, 14, 17
+Costco Wholesale  Com     22160K 10 5        352,042   4,333,363          X                5, 14, 17    4,333,363
+   Corp.
+Dollar General    Com     256677 10 5         50,760   1,497,800          X                5, 10,       1,497,800
+   Corp.                                                                                   11, 14, 17
+Exxon Mobil Corp. Com     30231G 10 2         34,326     421,800          X                5              421,800
+Gannett Inc.      Com     364730 10 1         24,920   1,740,231          X                5, 14, 17    1,740,231
+General Electric  Com     369604 10 3        146,691   7,777,900          X                5            7,777,900
+   Co.
+GlaxoSmithKline   ADR     37733W 10 5         64,800   1,510,500          X                5, 14, 17    1,510,500
+Ingersoll-Rd      CLA     G4776G 10 1         28,881     636,600          X                5              636,000
+   Company LTD.
+                                      --------------
+                                          24,242,387
+                                      --------------
+</TABLE>
+
+
+<PAGE>
+
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                  June 30, 2011
+
+<TABLE>
+<CAPTION>
+    Column 1     Column 2   Column 3     Column 4      Column 5           Column 6          Column 7          Column 8
+---------------- -------- ----------- -------------- ----------- ------------------------- ---------- -----------------------
+                                                                   Investment Discretion
+                                          Market      Shares or                    (c)                    Voting Authority
+                 Title of    CUSIP         Value      Principal  (a)  (b) Shared-  Shared-    Other       (a)       (b)   (c)
+ Name of Issuer    Class     Number   (In Thousands)   Amount $  Sole   Defined     Other   Managers      Sole    Shared None
+---------------- -------- ----------- -------------- ----------- ---- ----------- -------- ---------- ----------- ------ ----
+<S>              <C>      <C>         <C>            <C>         <C>  <C>         <C>      <C>        <C>         <C>    <C>
+Johnson & Johnson  Com    478160 10 4        287,533   4,322,500          X                5              4,322,500
+                                             131,353   1,974,648          X                5, 1, 14, 17   1,974,648
+                                             997,216  14,991,217          X                5, 14, 17     14,991,217
+                                             927,079  13,936,841          X                5, 2, 6, 17   13,936,841
+                                               9,603     144,357          X                5, 4, 17, 19,
+                                                                                           20, 21           144,357
+                                             141,821   2,132,000          X                5, 2, 6,
+                                                                                           12, 17         2,132,000
+                                              38,249     575,000          X                5, 18            575,000
+                                             302,533   4,548,000          X                5, 10, 11,
+                                                                                           14, 17         4,548,000
+Kraft Foods Inc.   Com    50075N 10 4      1,825,104  51,805,384          X                5, 14, 17     51,805,384
+                                           1,035,848  29,402,440          X                5, 2, 6, 17   29,402,440
+                                             352,300  10,000,000          X                5, 4, 17, 19,
+                                                                                           20, 21        10,000,000
+                                               9,153     259,800          X                5, 2, 6, 12,
+                                                                                           17               259,800
+                                             281,840   8,000,000          X                5              8,000,000
+M & T Bank
+   Corporation     Com    55261F 10 4        409,234   4,653,026          X                5, 14, 17      4,653,026
+                                              48,021     546,000          X                5, 10, 11,
+                                                                                           14, 17           546,000
+                                              14,494     164,795          X                5, 13, 17        164,795
+Mastercard Inc.    Com    57636Q 10 4        122,043     405,000          X                5, 10, 11,
+                                                                                           14, 17           405,000
+Moody's            Com    615369 10 5        486,886  12,695,850          X                5, 14, 17     12,695,850
+                                             602,839  15,719,400          X                5, 10, 11,
+                                                                                           14, 17        15,719,400
+Procter & Gamble
+   Co.             Com    742718 10 9      2,370,591  37,291,036          X                5, 14, 17     37,291,036
+                                           1,289,200  20,280,000          X                5, 2, 6, 17   20,280,000
+                                             396,677   6,240,000          X                5, 13, 17      6,240,000
+                                             396,677   6,240,000          X                5, 4, 17,
+                                                                                           19, 20, 21     6,240,000
+                                              49,585     780,000          X                5, 15, 17        780,000
+                                              99,169   1,560,000          X                5, 8, 17       1,560,000
+                                             278,119   4,375,000          X                5              4,375,000
+Sanofi Aventis     ADR    80105N 10 5         19,623     488,500          X                5, 10, 11,
+                                                                                           14, 17           488,500
+                                             116,338   2,896,133          X                5, 14, 17      2,896,133
+                                               6,801     169,300          X                5, 13, 17        169,300
+                                              20,476     509,742          X                5, 2, 6,
+                                                                                           12, 17           509,742
+                                      --------------
+                                          13,066,405
+                                      --------------
+</TABLE>
+
+<PAGE>
+
+
+                             BERKSHIRE HATHAWAY INC.
+                           Form 13F Information Table
+                                  June 30, 2011
+
+<TABLE>
+<CAPTION>
+    Column 1     Column 2   Column 3     Column 4      Column 5           Column 6          Column 7          Column 8
+---------------- -------- ----------- -------------- ----------- ------------------------- ---------- -----------------------
+                                                                   Investment Discretion
+                                          Market      Shares or                    (c)                    Voting Authority
+                 Title of    CUSIP         Value      Principal  (a)  (b) Shared-  Shared-    Other       (a)       (b)   (c)
+ Name of Issuer    Class     Number   (In Thousands)   Amount $  Sole   Defined     Other   Managers      Sole    Shared None
+---------------- -------- ----------- -------------- ----------- ---- ----------- -------- ---------- ----------- ------ ----
+<S>              <C>      <C>         <C>            <C>         <C>  <C>         <C>      <C>        <C>         <C>    <C>
+Torchmark Corp.    Com    891027 10 4          4,974      77,551           X               5, 1, 14, 17       77,551
+                                              28,846     449,728           X               5, 2, 6, 17       449,728
+                                             106,274   1,656,900           X               5, 14, 17       1,656,900
+                                              41,030     639,700           X               5, 13, 17         639,700
+US Bancorp         Com    902973 30 4        594,569  23,307,300           X               5, 2, 6, 17    23,307,300
+                                             529,813  20,768,826           X               5, 14, 17      20,768,826
+                                             213,391   8,365,000           X               5               8,365,000
+                                             255,100  10,000,000           X               5, 4, 17, 19,
+                                                                                           20, 21         10,000,000
+                                              55,459   2,174,000           X               5, 2, 6, 12,
+                                                                                           17              2,174,000
+                                              44,515   1,745,000           X               5, 18           1,745,000
+                                              68,349   2,679,300           X               5, 10, 11,
+                                                                                           14, 17          2,679,300
+USG Corporation    Com    903293 40 5        244,815  17,072,192           X               5, 14, 17      17,072,192
+United Parcel
+   Service Inc.    Com    911312 10 6        104,232   1,429,200           X               5               1,429,200
+Verisk Analytics   CI A   92345Y 10 6         72,741   2,101,125           X               5, 10, 11, 14,
+                                                                                           17              2,101,125
+Wal-Mart Stores,
+   Inc.            Com    931142 10 3      1,800,975  33,891,142           X               5, 14, 17      33,891,142
+                                             223,188   4,200,000           X               5, 3, 14, 17    4,200,000
+                                              50,270     946,000           X               5, 10, 11,
+                                                                                           14, 17            946,000
+Washington Post
+   Co.             Cl B   939640 10 8        374,669     894,304           X               5, 14, 17                        894,304
+                                              62,135     148,311           X               5, 1, 7, 14,
+                                                                                           17                               148,311
+                                             271,549     648,165           X               5, 13, 17                        648,165
+                                              15,495      36,985           X               5, 15, 17                         36,985
+Wells Fargo & Co.
+   Del             Com    949746 10 1      1,741,190  62,052,396           X               5, 2, 6, 17    62,052,396
+                                             354,768  12,643,200           X               5, 4, 17, 19,
+                                                                                           20, 21         12,643,200
+                                           1,306,495  46,560,770           X               5, 13, 17      46,560,770
+                                              78,231   2,788,000           X               5, 15, 17       2,788,000
+                                              28,060   1,000,000           X               5, 17           1,000,000
+                                           4,500,562 160,390,665           X               5, 14, 17     160,390,665
+                                              45,169   1,609,720           X               5, 16, 17       1,609,720
+                                              47,702   1,700,000           X               5, 9, 17        1,700,000
+                                              23,009     820,000           X               5, 8, 17          820,000
+                                             617,320  22,000,000           X               5, 10, 11,
+                                                                                           14, 17         22,000,000
+                                             448,960  16,000,000           X               5, 1, 7,
+                                                                                           14, 17         16,000,000
+                                             224,480   8,000,000           X               5               8,000,000
+                                              75,762   2,700,000           X               5, 2, 6,
+                                                                                           12, 17          2,700,000
+                                              56,120   2,000,000           X               5, 18           2,000,000
+                                             147,315   5,250,000           X               5, 1, 14, 17    5,250,000
+                                             191,169   6,812,857           X               5, 3, 14, 17    6,812,857
+                                         -----------
+                                          15,048,701
+                                         -----------
+GRAND TOTAL                              $52,357,493
+                                         ===========
+</TABLE>
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

@@ -1,0 +1,54 @@
+{
+  "accession_number": "0000950150-03-000986",
+  "cik": "0001067983",
+  "filing_date": "2003-08-25",
+  "form": "13F-HR/A",
+  "holdings": [
+    {
+      "accession_number": "0000950150-03-000986",
+      "cik": "0001067983",
+      "cusip": "053015103",
+      "filing_date": "2003-08-25",
+      "form": "13F-HR/A",
+      "investment_discretion": "shared-defined",
+      "issuer_name": "Automatic Data Processing",
+      "other_managers": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "parser_format": "legacy_text_table",
+      "report_period": "2003-06-30",
+      "schema_version": "0.1.0",
+      "share_amount_type": null,
+      "shares_or_principal": 5735000,
+      "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2003-08-25_0000950150-03-000986/0000950150-03-000986.txt",
+      "ticker_workspace": "brk-b",
+      "title_of_class": "Com",
+      "validation_status": "pass",
+      "value_usd": 194187000,
+      "voting_authority_none": null,
+      "voting_authority_shared": null,
+      "voting_authority_sole": 5735000
+    }
+  ],
+  "parser_format": "legacy_text_table",
+  "report_period": "2003-06-30",
+  "schema_version": "0.1.0",
+  "source_path": "D:/Projects/edgar-parser/ticker/brk-b/13F/2003-08-25_0000950150-03-000986/0000950150-03-000986.txt",
+  "validation": {
+    "accession_number": "0000950150-03-000986",
+    "expected_entry_total": null,
+    "expected_value_total": 194187000,
+    "filing_date": "2003-08-25",
+    "form": "13F-HR/A",
+    "parsed_holdings_count": 1,
+    "parsed_value_total": 194187000,
+    "parser_format": "legacy_text_table",
+    "validation_status": "pass",
+    "warnings": []
+  }
+}
