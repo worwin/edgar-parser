@@ -278,6 +278,135 @@ class ParseThirteenFTestCase(unittest.TestCase):
         self.assertEqual(parsed.holdings[11].issuer_name, "COCA COLA CO")
         self.assertEqual(parsed.holdings[11].other_managers, ["4", "5"])
 
+    def test_parse_real_berkshire_2013_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_2013_0001193125-13-222307.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0001193125-13-222307",
+                "cik": "0001067983",
+                "form": "13F-HR",
+                "filing_date": "2013-05-15",
+                "report_period": "2013-03-31",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(len(parsed.holdings), 125)
+        self.assertEqual(parsed.validation.expected_entry_total, 125)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 125)
+        self.assertEqual(parsed.validation.expected_value_total, 85001344000)
+        self.assertEqual(parsed.validation.parsed_value_total, 85001344000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+
+    def test_parse_real_berkshire_2003_split_amendment_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_2003_0000950150-03-000988.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000950150-03-000988",
+                "cik": "0001067983",
+                "form": "13F-HR/A",
+                "filing_date": "2003-08-25",
+                "report_period": "2002-12-31",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_split_table")
+        self.assertEqual(len(parsed.holdings), 1)
+        self.assertEqual(parsed.validation.parsed_value_total, 17406000)
+        self.assertEqual(parsed.validation.expected_value_total, 17406000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+        self.assertEqual(parsed.holdings[0].other_managers, ["1", "2", "3", "4", "5", "6"])
+        self.assertEqual(parsed.holdings[0].investment_discretion, "shared-defined")
+
+    def test_parse_real_berkshire_2000_lowercase_cusip_fixture(self) -> None:
+        fixture_path = FIXTURES / "berkshire_2000_0000950150-00-000752.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000950150-00-000752",
+                "cik": "0001067983",
+                "form": "13F-HR/A",
+                "filing_date": "2000-09-06",
+                "report_period": "2000-06-30",
+            },
+            ticker_symbol="brk-b",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(len(parsed.holdings), 2)
+        self.assertEqual(parsed.validation.expected_entry_total, 2)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 2)
+        self.assertEqual(parsed.validation.expected_value_total, 352745000)
+        self.assertEqual(parsed.validation.parsed_value_total, 352745000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+
+    def test_parse_real_loews_2013_fixture(self) -> None:
+        fixture_path = FIXTURES / "loews_2013_0000060086-13-000013.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000060086-13-000013",
+                "cik": "0000060086",
+                "form": "13F-HR",
+                "filing_date": "2013-05-13",
+                "report_period": "2013-03-31",
+            },
+            ticker_symbol="l",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(len(parsed.holdings), 172)
+        self.assertEqual(parsed.validation.expected_entry_total, 172)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 172)
+        self.assertEqual(parsed.validation.expected_value_total, 17014246000)
+        self.assertEqual(parsed.validation.parsed_value_total, 17014246000)
+        self.assertEqual(parsed.validation.validation_status, "pass")
+        self.assertEqual(parsed.holdings[0].issuer_name, "ADVANCE AUTO PARTS INC")
+        self.assertEqual(parsed.holdings[0].share_amount_type, "SH")
+        self.assertEqual(parsed.holdings[2].issuer_name, "AMERICAN INTERNATIONAL GROUP")
+
+    def test_parse_real_loews_2003_fixture(self) -> None:
+        fixture_path = FIXTURES / "loews_2003_0000060086-03-000046.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000060086-03-000046",
+                "cik": "0000060086",
+                "form": "13F-HR",
+                "filing_date": "2003-11-12",
+                "report_period": "2003-09-30",
+            },
+            ticker_symbol="l",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(parsed.validation.validation_status, "warn")
+        self.assertEqual(parsed.validation.expected_entry_total, 224)
+        self.assertEqual(parsed.validation.parsed_holdings_count, 225)
+        self.assertEqual(parsed.holdings[0].issuer_name, "ACCENTURE LTD BERMUDA")
+        self.assertEqual(parsed.holdings[0].title_of_class, "Common")
+        self.assertEqual(parsed.holdings[0].share_amount_type, "SH")
+
+    def test_parse_real_loews_2001_fixture(self) -> None:
+        fixture_path = FIXTURES / "loews_2001_0000060086-01-500013.txt"
+        parsed = parse_thirteenf_filing(
+            fixture_path,
+            filing_metadata={
+                "accession_number": "0000060086-01-500013",
+                "cik": "0000060086",
+                "form": "13F-HR/A",
+                "filing_date": "2001-05-15",
+                "report_period": "2001-03-31",
+            },
+            ticker_symbol="l",
+        )
+        self.assertEqual(parsed.parser_format, "legacy_text_table")
+        self.assertEqual(parsed.validation.validation_status, "warn")
+        self.assertEqual(parsed.validation.expected_value_total, 8698982000)
+        self.assertEqual(parsed.validation.parsed_value_total, 8695453000)
+        self.assertEqual(parsed.holdings[0].issuer_name, "AES Corp.")
+        self.assertEqual(parsed.holdings[0].title_of_class, "Common")
+        self.assertEqual(parsed.holdings[0].investment_discretion, "shared-defined")
+
     def test_parse_downloaded_filings_continues_after_parse_error(self) -> None:
         root = self.tmp_root / "parse-project"
         layout = ProjectLayout(root)

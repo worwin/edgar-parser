@@ -1,0 +1,955 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ HhdS16NRhIueeDn2Men0+hN8V9J59BgLEnUftxVwkj470Aoe2ML1G6FfSnIQ9ETL
+ C0eJJ03okG86eNz7Rwsi2g==
+
+<SEC-DOCUMENT>0000060086-03-000046.txt : 20031112
+<SEC-HEADER>0000060086-03-000046.hdr.sgml : 20031111
+<ACCEPTANCE-DATETIME>20031112152358
+ACCESSION NUMBER:		0000060086-03-000046
+CONFORMED SUBMISSION TYPE:	13F-HR
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20031112
+FILED AS OF DATE:		20031112
+EFFECTIVENESS DATE:		20031112
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			LOEWS CORP
+		CENTRAL INDEX KEY:			0000060086
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				132646102
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	028-00217
+		FILM NUMBER:		03993432
+
+	BUSINESS ADDRESS:	
+		STREET 1:		667 MADISON AVE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10021-8087
+		BUSINESS PHONE:		212-521-2000
+
+	MAIL ADDRESS:	
+		STREET 1:		667 MADISON AVE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10021-8087
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR
+<SEQUENCE>1
+<FILENAME>fsept.txt
+<DESCRIPTION>LOEWS CORPORATION 13-F, SEPTEMBER 30, 2003
+<TEXT>
+                                   FORM 13F
+
+                                 UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                              Washington, D.C.  20549
+
+                              ------------------
+
+                              FORM 13F COVER PAGE
+
+       Report for the Calendar Year or Quarter Ended        September 30, 2003
+
+                Check here if Amendment:  [ ]; Amendment Number:
+                                                                 -------
+
+                                This Amendment:
+
+                             [ ] is a restatement.
+
+                        [ ] adds new holdings entries.
+
+Institutional Investment Manager Filing this Report:
+
+Name:                           Loews Corporation
+- ------------------------------------------------------------------------------
+
+Address:                 667 Madison Avenue    New York     New York     10021
+- ------------------------------------------------------------------------------
+                               (Street)        (City)        (State)     (Zip)
+
+Form 13F File Number: 28-217
+
+The institutional investment manager filing this report and the person by whom
+it is signed hereby represent that the person signing the report is authorized
+to submit it, that all information contained herein is true, correct and
+complete, and that it is understood that all required items, statements,
+schedules, lists and tables are considered integral parts of this form.
+
+Person Signing this Report on Behalf of Reporting Manager:
+
+Name:       Gary W. Garson
+- ------------------------------------------------------------------------------
+
+Title:      General Counsel and Senior Vice President
+- ------------------------------------------------------------------------------
+
+Phone:      212-521-2932
+- ------------------------------------------------------------------------------
+
+Signature, Place, and Date of Signing:
+
+/s/ Gary W. Garson
+- ------------------------------------------------------------------------------
+(Signature)
+
+Place:      667 Madison Avenue    New York     New York     10021
+- ------------------------------------------------------------------------------
+                  (Street)        (City)        (State)     (Zip)
+
+Date:       November 12, 2003
+- ------------------------------------------------------------------------------
+
+                                  Page 1 of 19
+  Loews Corporation ("Loews"), by virtue of its approximately 90% ownership of
+voting securities of CNA Financial Corporation whose business address is CNA
+Plaza, Chicago, Illinois 60685 ("CNA"), may be deemed to have investment
+discretion regarding certain securities (the "CNA Securities") as to which
+investment discretion is deemed to be exercised by CNA. CNA is reporting on
+behalf of Loews regarding the CNA Securities.
+
+  Mr. Laurence A. Tisch owns approximately 10% and Mr. Preston R. Tisch owns
+approximately 16% of the outstanding Common Stock of Loews. Mr. Laurence A.
+Tisch and Mr. Preston R. Tisch are the Co-Chairmen of the Board of Loews.
+Laurence A. Tisch and Preston R. Tisch are brothers and may be deemed to be
+control persons of Loews.
+
+      Report Type:
+
+[ ]   13F HOLDINGS REPORT.
+
+[ ]   13F NOTICE.
+
+[X]   13F COMBINATION REPORT.
+
+List of Other Managers Reporting for this Manager.
+
+Form 13F File Number:  28-346
+
+Name:  CNA Financial Corporation
+
+                                  Page 2 of 19
+
+                              FORM 13F SUMMARY PAGE
+
+                                REPORT SUMMARY
+
+Number of Other Included Managers:  NONE.
+
+Form 13F Information Table Entry Total:  224
+
+Form 13F Information Table Value Total:  $6,107.9 (thousands)
+
+List of Other Included Managers:  NONE.
+
+                                  Page 3 of 19
+
+
+
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+ACCENTURE LTD       Common G1150G111        293        13,100  SH                   Sole                  13,100
+BERMUDA
+
+ACUITY BRANDS INC   Common 00508Y102        247        13,650  SH                   Sole                  13,650
+
+AES CORP            Common 00130H105        742       100,000  SH                   Sole                 100,000
+
+AETNA INC NEW       Common 00817Y108        561         9,200  SH                   Sole                   9,200
+
+AGILYSYS INC        Common 00847J105        281        32,000  SH                   Sole                  32,000
+
+AGRIUM INC          Common 008916108     10,028       798,400  SH                   Sole                 798,400
+
+ALCATEL             Common 013904305        118        10,000  SH                   Sole                  10,000
+
+ALLSTATE CORP       Common 020002101        691        18,925  SH                   Sole                  18,925
+
+AMBAC FINL GROUP    Common 023139108      1,920        30,000  SH                   Sole                  30,000
+INC
+
+AMERADA HESS CORP   Common 023551104      1,358        27,100  SH                   Sole                  27,100
+
+AMERICAN NATL INS   Common 028591105      1,937        22,775  SH                   Sole                  22,775
+CO
+
+AMERICAN PHYSICIANS Common 028884104        394        14,225  SH                   Sole                  14,225
+ CAPITAL
+
+ANADARKO PETE CORP  Common 032511107      2,297        55,000  SH                   Sole                  55,000
+
+ANGEION CORP        Common 03462H404        611       421,665  SH                   Sole                 421,665
+
+ANIXTER INTL INC    Common 035290105        293        12,875  SH                   Sole                  12,875
+
+AOL TIME WARNER INC Common 00184A105      3,400       225,000  SH                   Sole                 225,000
+
+AON CORP            Common 037389103      1,376        65,975  SH                   Sole                  65,975
+                                   ------------
+                         TOTAL $         26,547
+                                   ------------
+</TABLE>
+
+                                                      Page 4 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+APPLICA INC         Common 03815A106        605       100,000  SH                   Sole                 100,000
+
+ARCH COAL INC       Common 039380100        267        12,000  SH                   Sole                  12,000
+
+ARTESYN             Common 043127109        107        14,150  SH                   Sole                  14,150
+TECHNOLOGIES INC
+
+ASHLAND INC         Common 044204105      1,011        30,775  SH                   Sole                  30,775
+
+AT&T WIRELESS SVCS  Common 00209A106      4,908       600,000  SH                   Sole                 600,000
+INC
+
+BALLARD PWR SYS INC Common 05858H104        530        40,300  SH                   Sole                  40,300
+
+BANK NEW YORK INC   Common 064057102        512        17,600  SH                   Sole                  17,600
+
+BARRICK GOLD CORP   Common 067901108      9,249       491,200  SH                   Sole                 491,200
+
+BECKMAN COULTER INC Common 075811109        455        10,000  SH                   Sole                  10,000
+
+BECTON DICKINSON &  Common 075887109        722        20,000  SH                   Sole                  20,000
+CO
+
+BOEING CO           Common 097023105      9,430       274,675  SH                   Sole                 274,675
+
+BOWNE & CO INC      Common 103043105        324        21,700  SH                   Sole                  21,700
+
+BP PLC              Common 055622104        522        12,400  SH                   Sole                  12,400
+
+BRISTOL MYERS       Common 110122108        692        26,975  SH                   Sole                  26,975
+SQUIBB CO
+
+CABLEVISION SYS     Common 12686C109        775        42,800  SH                   Sole                  42,800
+CORP
+
+CALPINE CORP        Common 131347106      2,608       533,400  SH                   Sole                 533,400
+                                   ------------
+                         TOTAL $         32,717
+                                   ------------
+</TABLE>
+
+                                                      Page 5 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+CAPSTONE TURBINE    Common 14067D102        555       293,500  SH                   Sole                 293,500
+CORP
+
+CENTEX CORP         Common 152312104      2,336        30,000  SH                   Sole                  30,000
+
+CHEVRONTEXACO CORP  Common 166764100      1,072        15,000  SH                   Sole                  15,000
+
+CHICAGO BRIDGE &    Common 167250109        679        25,000  SH                   Sole                  25,000
+IRON CO N V
+
+CHIQUITA BRANDS     Common 170032809        354        20,000  SH                   Sole                  20,000
+INTL INC
+
+CHUNGHWA TELECOM CO Common 17133Q205      1,083        77,300  SH                   Sole                  77,300
+ LTD
+
+CIGNA CORP          Common 125509109      1,148        25,700  SH                   Sole                  25,700
+
+CISCO SYS INC       Common 17275R102        392        20,000  SH                   Sole                  20,000
+
+CIT GROUP INC       Common 125581108        869        30,225  SH                   Sole                  30,225
+
+CITIGROUP INC       Common 172967101      5,297       116,400  SH                   Sole                 116,400
+
+CITIZENS            Common 17453B101      1,682       150,000  SH                   Sole                 150,000
+COMMUNICATIONS CO
+
+CLEVELAND CLIFFS    Common 185896107     13,334       520,850  SH                   Sole                 520,850
+INC
+
+CNA FINL CORP       Common 126117100  4,231,189   201,293,500  SH                   Sole             201,293,500
+
+CNF INC             Common 12612W104        984        30,700  SH                   Sole                  30,700
+
+CNH GLOBAL N V      Common N20935206      1,315       102,600  SH                   Sole                 102,600
+                                   ------------
+                         TOTAL $      4,262,289
+                                   ------------
+</TABLE>
+
+                                                      Page 6 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+COMMSCOPE INC       Common 203372107        241        19,950  SH                   Sole                  19,950
+
+COMPANHIA VALE DO   Common 204412100      6,177       167,400  SH                   Sole                 167,400
+RIO DOCE
+
+COMPUTER ASSOC INTL Common 204912109        800        30,650  SH                   Sole                  30,650
+ INC
+
+CONOCOPHILLIPS      Common 20825C104      1,771        32,350  SH                   Sole                  32,350
+
+COOPER INDS LTD     Common G24182100      1,724        35,900  SH                   Sole                  35,900
+
+CYTEC INDS INC      Common 232820100        734        20,100  SH                   Sole                  20,100
+
+D R HORTON INC      Common 23331A109      4,905       150,000  SH                   Sole                 150,000
+
+DEL MONTE FOODS CO  Common 24522P103        280        32,200  SH                   Sole                  32,200
+
+DELPHI FINL GROUP   Common 247131105      1,955        42,025  SH                   Sole                  42,025
+INC
+
+DIAMOND OFFSHORE    Common 25271C102  1,338,910    70,100,000  SH                   Sole              70,100,000
+DRILLING INC
+
+DILLARDS INC        Common 254067101        798        57,100  SH                   Sole                  57,100
+
+DISNEY WALT CO      Common 254687106        807        40,000  SH                   Sole                  40,000
+
+DU PONT E I DE      Common 263534109        400        10,000  SH                   Sole                  10,000
+NEMOURS & CO
+
+DUKE ENERGY CORP    Common 264399106        518        29,100  SH                   Sole                  29,100
+
+EL PASO CORP        Common 28336L109        350        47,900  SH                   Sole                  47,900
+                                   ------------
+                         TOTAL $      1,360,370
+                                   ------------
+</TABLE>
+
+                                                      Page 7 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+ELDERTRUST          Common 284560109        176        17,900  SH                   Sole                  17,900
+
+ENTERGY CORP NEW    Common 29364G103        704        13,000  SH                   Sole                  13,000
+
+ESTERLINE           Common 297425100        264        13,700  SH                   Sole                  13,700
+TECHNOLOGIES CORP
+
+EXPRESSJET HOLDINGS Common 30218U108        195        14,100  SH                   Sole                  14,100
+ INC
+
+F M C CORP          Common 302491303      8,382       332,600  SH                   Sole                 332,600
+
+FEDERAL HOME LN MTG Common 313400301      1,042        19,900  SH                   Sole                  19,900
+ CORP
+
+FEDERATED DEPT      Common 31410H101      3,130        74,700  SH                   Sole                  74,700
+STORES INC DEL
+
+FIRST NIAGARA FINL  Common 33582V108        151        10,000  SH                   Sole                  10,000
+GP INC
+
+FLEETBOSTON FINL    Common 339030108        390        12,925  SH                   Sole                  12,925
+CORP
+
+FMC TECHNOLOGIES    Common 30249U101        693        32,375  SH                   Sole                  32,375
+INC
+
+FOOTSTAR INC        Common 344912100        179        26,475  SH                   Sole                  26,475
+
+FORD MTR CO DEL     Common 345370860        668        62,000  SH                   Sole                  62,000
+
+FPL Group Inc       Common 302571104        891        14,100  SH                   Sole                  14,100
+
+GAP INC DEL         Common 364760108      1,541        90,000  SH                   Sole                  90,000
+
+GENERAL CABLE CORP  Common 369300108     10,095     1,268,225  SH                   Sole               1,268,225
+DEL NEW
+                                   ------------
+                         TOTAL $         28,501
+                                   ------------
+</TABLE>
+
+                                                      Page 8 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+GENERAL ELEC CO     Common 369604103        695        23,300  SH                   Sole                  23,300
+
+GENERAL MTRS CORP   Common 370442832      1,431       100,000  SH                   Sole                 100,000
+
+GENESIS HEALTH      Common 37183F107     12,807       529,000  SH                   Sole                 529,000
+VENTURE INC NEW
+
+GEORGIA PAC CORP    Common 373298108        592        24,425  SH                   Sole                  24,425
+
+GIBRALTAR STL CORP  Common 37476F103      3,906       180,000  SH                   Sole                 180,000
+
+GLAMIS GOLD LTD     Common 376775102      2,825       214,000  SH                   Sole                 214,000
+
+GLIMCHER RLTY TR    Common 379302102        281        13,350  SH                   Sole                  13,350
+
+GROUP 1 AUTOMOTIVE  Common 398905109      4,994       144,600  SH                   Sole                 144,600
+INC
+
+HEALTH NET INC      Common 42222G108        501        15,825  SH                   Sole                  15,825
+
+HEINZ H J CO        Common 423074103      1,028        30,000  SH                   Sole                  30,000
+
+HEWLETT PACKARD CO  Common 428236103        963        49,750  SH                   Sole                  49,750
+
+IMC GLOBAL INC      Common 449669100      1,952       304,500  SH                   Sole                 304,500
+
+INFOCUS CORP        Common 45665B106        156        32,100  SH                   Sole                  32,100
+
+INGERSOLL-RAND      Common 456866102        534        10,000  SH                   Sole                  10,000
+COMPANY LTD
+                                   ------------
+                         TOTAL $         32,665
+                                   ------------
+</TABLE>
+
+                                                      Page 9 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+INGRAM MICRO INC    Common 457153104        261        20,000  SH                   Sole                  20,000
+
+INTERNATIONAL       Common 459200101      4,417        50,000  SH                   Sole                  50,000
+BUSINESS MACHS
+
+INTERSTATE BAKERIES Common 46072H108        337        22,475  SH                   Sole                  22,475
+ CORP DEL
+
+IONICS INC          Common 462218108        978        40,000  SH                   Sole                  40,000
+
+IPC HLDGS LTD       Common G4933P101      1,360        38,825  SH                   Sole                  38,825
+
+ISHARES INC         Common 464286871      6,156       650,000  SH                   Sole                 650,000
+
+ISHARES INC         Common 464286848     12,264     1,400,000  SH                   Sole               1,400,000
+
+ISHARES INC         Common 464286673      2,842       508,400  SH                   Sole                 508,400
+
+KERR MCGEE CORP     Common 492386107      2,009        45,000  SH                   Sole                  45,000
+
+KINDRED HEALTHCARE  Common 494580103      5,616       150,000  SH                   Sole                 150,000
+INC
+
+KOREA ELECTRIC PWR  Common 500631106      3,932       373,800  SH                   Sole                 373,800
+
+KROGER CO           Common 501044101      1,340        75,000  SH                   Sole                  75,000
+
+LA QUINTA CORP      Common 50419U202     10,309     1,654,800  SH                   Sole               1,654,800
+
+LEAR CORP           Common 521865105        924        17,550  SH                   Sole                  17,550
+
+LENNOX INTL INC     Common 526107107      9,778       669,300  SH                   Sole                 669,300
+
+LIBERTY MEDIA CORP  Common 530718105      1,907       191,300  SH                   Sole                 191,300
+NEW
+
+LINCOLN NATL CORP   Common 534187109      1,415        40,000  SH                   Sole                  40,000
+IND
+
+LOCKHEED MARTIN     Common 539830109        609        13,200  SH                   Sole                  13,200
+CORP
+                                   ------------
+                         TOTAL $         66,454
+                                   ------------
+</TABLE>
+
+                                                      Page 10 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+LUBRIZOL CORP       Common 549271104        402        12,375  SH                   Sole                  12,375
+
+MBIA INC            Common 55262C100        526         9,575  SH                   Sole                   9,575
+
+MEDIACOM            Common 58446K105        671       100,000  SH                   Sole                 100,000
+COMMUNICATIONS CORP
+
+METALS USA INC      Common 591324207        630       100,000  SH                   Sole                 100,000
+
+METHANEX CORP       Common 59151K108        558        59,700  SH                   Sole                  59,700
+
+METROMEDIA INTL     Common 591695101          7        50,213  SH                   Sole                  50,213
+GROUP INC
+
+MICROSOFT CORP      Common 594918104        414        14,900  SH                   Sole                  14,900
+
+MILACRON INC        Common 598709103         72        31,500  SH                   Sole                  31,500
+
+MIRAMAR MINING CORP Common 60466E100        501       300,000  SH                   Sole                 300,000
+
+MONSANTO CO NEW     Common 61166W101      3,112       130,000  SH                   Sole                 130,000
+
+MORGAN STANLEY ASIA Common 61744U106        360        37,800  SH                   Sole                  37,800
+ PAC FD INC
+
+MORGAN STANLEY      Common 61745C105        352        23,100  SH                   Sole                  23,100
+INDIA INVS FD
+
+MOTOROLA INC        Common 620076109        598        50,000  SH                   Sole                  50,000
+
+MUELLER INDS INC    Common 624756102     10,371       407,500  SH                   Sole                 407,500
+
+NACCO INDS INC      Common 629579103        327         4,575  SH                   Sole                   4,575
+                                   ------------
+                         TOTAL $         18,901
+                                   ------------
+</TABLE>
+
+                                                      Page 11 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+NEWHALL LAND &      Common 651426108        407        10,300  SH                   Sole                  10,300
+FARMING CO CAL
+
+NEWS CORP LTD       Common 652487802      3,187       116,800  SH                   Sole                 116,800
+
+NEWS CORP LTD       Common 652487703      3,280       100,000  SH                   Sole                 100,000
+
+NORTEL NETWORKS     Common 656568102        164        40,000  SH                   Sole                  40,000
+CORP NEW
+
+NORTHERN TR CORP    Common 665859104        652        15,400  SH                   Sole                  15,400
+
+OFFICE DEPOT INC    Common 676220106      4,087       290,900  SH                   Sole                 290,900
+
+OHIO CAS CORP       Common 677240103        349        24,150  SH                   Sole                  24,150
+
+OLD REP INTL CORP   Common 680223104      2,124        64,200  SH                   Sole                  64,200
+
+ORIENT-EXPRESS      Common G67743107      5,767       369,700  SH                   Sole                 369,700
+HOTELS LTD
+
+PATHMARK STORES INC Common 70322A101        802       115,030  SH                   Sole                 115,030
+ NEW
+
+PAYLESS SHOESOURCE  Common 704379106        704        54,425  SH                   Sole                  54,425
+INC
+
+PEABODY ENERGY CORP Common 704549104        314        10,000  SH                   Sole                  10,000
+
+PEPCO HOLDINGS INC  Common 713291102        527        30,500  SH                   Sole                  30,500
+
+PFIZER INC          Common 717081103      2,166        71,300  SH                   Sole                  71,300
+                                   ------------
+                         TOTAL $         24,530
+                                   ------------
+</TABLE>
+
+                                                      Page 12 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+PITNEY BOWES INC    Common 724479100        383        10,000  SH                   Sole                  10,000
+
+PLACER DOME INC     Common 725906101      6,113       444,600  SH                   Sole                 444,600
+
+PNM RES INC         Common 69349H107        264         9,400  SH                   Sole                   9,400
+
+POTASH CORP SASK    Common 73755L107      4,304        61,000  SH                   Sole                  61,000
+INC
+
+PPL CORP            Common 69351T106        774        18,900  SH                   Sole                  18,900
+
+PULTE HOMES INC     Common 745867101      3,060        45,000  SH                   Sole                  45,000
+
+R H DONNELLEY CORP  Common 74955W307        226         5,600  SH                   Sole                   5,600
+
+RADIAN GROUP INC    Common 750236101        464        10,450  SH                   Sole                  10,450
+
+RAYTHEON CO         Common 755111507      3,080       110,000  SH                   Sole                 110,000
+
+RELIANT RES INC     Common 75952B105        293        57,200  SH                   Sole                  57,200
+
+RENAISSANCE RE      Common G7496G103      1,825        40,000  SH                   Sole                  40,000
+HLDGS LTD
+
+RUSSELL CORP        Common 782352108      4,458       273,500  SH                   Sole                 273,500
+
+RYERSON TULL INC    Common 78375P107     11,012     1,411,800  SH                   Sole               1,411,800
+NEW
+
+SCANA CORP NEW      Common 80589M102        349        10,200  SH                   Sole                  10,200
+
+SCHERING PLOUGH     Common 806605101      1,573       103,225  SH                   Sole                 103,225
+CORP
+
+SCHLUMBERGER LTD    Common 806857108      1,936        40,000  SH                   Sole                  40,000
+                                   ------------
+                         TOTAL $         40,114
+                                   ------------
+</TABLE>
+
+                                                      Page 13 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+SERVICEMASTER CO    Common 81760N109        325        31,725  SH                   Sole                  31,725
+
+SPHERION CORP       Common 848420105        304        43,650  SH                   Sole                  43,650
+
+SPRINT CORP         Common 852061506      2,887       503,900  SH                   Sole                 503,900
+
+STEIN MART INC      Common 858375108        119        22,050  SH                   Sole                  22,050
+
+SUNTERRA CORP       Common 86787D208      1,100       100,000  SH                   Sole                 100,000
+
+TEJON RANCH CO DEL  Common 879080109        296         8,900  SH                   Sole                   8,900
+
+TELLABS INC         Common 879664100        315        46,225  SH                   Sole                  46,225
+
+TENET HEALTHCARE    Common 88033G100        687        47,450  SH                   Sole                  47,450
+CORP
+
+TEXTRON INC         Common 883203101        466        11,800  SH                   Sole                  11,800
+
+THORATEC CORP       Common 885175307      5,097       300,000  SH                   Sole                 300,000
+
+TRANSOCEAN INC      Common G90078109      9,500       475,000  SH                   Sole                 475,000
+
+TRAVELERS PPTY CAS  Common 89420G109        635        40,000  SH                   Sole                  40,000
+CORP NEW
+
+TRIARC COS-B W/I    Common 895927309        180        17,300  SH                   Sole                  17,300
+
+TRINITY INDS INC    Common 896522109        225         8,700  SH                   Sole                   8,700
+                                   ------------
+                         TOTAL $         22,136
+                                   ------------
+</TABLE>
+
+                                                      Page 14 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+TXU CORP            Common 873168108      3,534       150,000  SH                   Sole                 150,000
+
+TYCO INTL LTD NEW   Common 902124106        231        11,325  SH                   Sole                  11,325
+
+UNIFI INC           Common 904677101      7,396     1,540,800  SH                   Sole               1,540,800
+
+UNIVERSAL CORP VA   Common 913456109        268         6,350  SH                   Sole                   6,350
+
+UNIVERSAL HLTH SVCS Common 913903100      1,236        25,000  SH                   Sole                  25,000
+ INC
+
+UNOCAL CORP         Common 915289102      1,431        45,400  SH                   Sole                  45,400
+
+USEC INC            Common 90333E108      2,801       428,900  SH                   Sole                 428,900
+
+USF CORP            Common 91729Q101        271         8,575  SH                   Sole                   8,575
+
+VALERO ENERGY CORP  Common 91913Y100      1,339        35,000  SH                   Sole                  35,000
+NEW
+
+VENTAS INC          Common 92276F100      9,453       552,150  SH                   Sole                 552,150
+
+VIAD CORP           Common 92552R109      1,196        50,075  SH                   Sole                  50,075
+
+VISTEON CORP        Common 92839U107      5,497       832,900  SH                   Sole                 832,900
+
+VODAFONE GROUP PLC  Common 92857W100      3,038       150,000  SH                   Sole                 150,000
+NEW
+
+WASHINGTON MUT INC  Common 939322103        807        20,500  SH                   Sole                  20,500
+
+WHIRLPOOL CORP      Common 963320106        998        14,725  SH                   Sole                  14,725
+
+WILLIAMS COS INC    Common 969457100      1,122       119,100  SH                   Sole                 119,100
+DEL
+
+WILSONS THE LEATHER Common 972463103        232        29,075  SH                   Sole                  29,075
+ EXPERTS
+                                   ------------
+                         TOTAL $         40,582
+                                   ------------
+</TABLE>
+
+                                                      Page 15 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+WISCONSIN ENERGY    Common 976657106        352        11,500  SH                   Sole                  11,500
+CORP
+
+XCEL ENERGY INC     Common 98389B100        764        49,400  SH                   Sole                  49,400
+
+YORK INTL CORP NEW  Common 986670107        419        12,125  SH                   Sole                  12,125
+                                      ----------
+                      TOTAL $              1,535
+                                      ----------
+</TABLE>
+
+                                                      Page 16 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+ABBOTT LABS         Common 002824950      4,255       100,000  SH     Put           Sole                 100,000
+
+AES CORP            Common 00130H955        742       100,000  SH     Put           Sole                 100,000
+
+ALCATEL             Common 013904955      1,775       150,000  SH     Put           Sole                 150,000
+
+AMERADA HESS CORP   Common 023551954      6,758       134,900  SH     Put           Sole                 134,900
+
+BALLARD PWR SYS INC Common 05858H954      2,104       160,000  SH     Put           Sole                 160,000
+
+BARRICK GOLD CORP   Common 067901908     15,817       840,000  SH     Call          Sole                 840,000
+
+BROADCOM CORP       Common 111320957      3,732       140,000  SH     Put           Sole                 140,000
+
+CALPINE CORP        Common 131347956      1,467       300,000  SH     Put           Sole                 300,000
+
+CENDANT CORP        Common 151313953      3,215       172,000  SH     Put           Sole                 172,000
+
+CHUBB CORP          Common 171232951      2,595        40,000  SH     Put           Sole                  40,000
+
+CISCO SYS INC       Common 17275R952      2,743       140,000  SH     Put           Sole                 140,000
+
+DISNEY WALT CO      Common 254687956      5,043       250,000  SH     Put           Sole                 250,000
+
+DU PONT E I DE      Common 263534959      4,001       100,000  SH     Put           Sole                 100,000
+NEMOURS & CO
+
+FEDERAL NATL MTG    Common 313586959     19,656       280,000  SH     Put           Sole                 280,000
+ASSN
+
+FORD MTR CO DEL     Common 345370950      1,077       100,000  SH     Put           Sole                 100,000
+
+GAP INC DEL         Common 364760958      3,424       200,000  SH     Put           Sole                 200,000
+
+GENERAL MTRS CORP   Common 370442955      1,637        40,000  SH     Put           Sole                  40,000
+                                   ------------
+                         TOTAL $         80,041
+                                   ------------
+</TABLE>
+
+                                                      Page 17 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+INTERNATIONAL       Common 459200951      4,417        50,000  SH     Put           Sole                  50,000
+BUSINESS MACHS
+
+INTL PAPER CO       Common 460146953      3,902       100,000  SH     Put           Sole                 100,000
+
+MONSANTO CO NEW     Common 61166W951      2,394       100,000  SH     Put           Sole                 100,000
+
+MOTOROLA INC        Common 620076959        717        60,000  SH     Put           Sole                  60,000
+
+NETFLIX COM INC     Common 64110L906        671        20,000  SH     Call          Sole                  20,000
+
+NORTEL NETWORKS     Common 656568952        820       200,000  SH     Put           Sole                 200,000
+CORP NEW
+
+PFIZER INC          Common 717081953      7,595       250,000  SH     Put           Sole                 250,000
+
+PHELPS DODGE CORP   Common 717265952      6,786       145,000  SH     Put           Sole                 145,000
+
+PLACER DOME INC     Common 725906901      4,813       350,000  SH     Call          Sole                 350,000
+
+QUALCOMM INC        Common 747525953      1,667        40,000  SH     Put           Sole                  40,000
+
+SCHERING PLOUGH     Common 806605951      1,829       120,000  SH     Put           Sole                 120,000
+CORP
+
+SCHLUMBERGER LTD    Common 806857958      4,840       100,000  SH     Put           Sole                 100,000
+
+SEARS ROEBUCK & CO  Common 812387958      2,624        60,000  SH     Put           Sole                  60,000
+
+SOUTHWEST AIRLS CO  Common 844741958      2,655       150,000  SH     Put           Sole                 150,000
+
+SUNOCO INC          Common 86764P909      6,837       170,000  SH     Call          Sole                 170,000
+                                   ------------
+                         TOTAL $         52,567
+                                   ------------
+</TABLE>
+
+                                                      Page 18 of 19 Pages
+
+<TABLE>
+<CAPTION>
+
+<s>                 <c>     <c>        <c>          <c>        <c>    <c>       <c>          <c>       <c>      <c>      <c>
+Column              Column  Column     Column       Column                      Column       Column    Column
+1:                  2:      3:         4:           5:                          6:           7:        8:
+
+                    Title                           Shares or                                          Voting Authority(Shares)
+                    of      CUSIP      Value        Principal                   Investment   Other     -------------------------
+Name of Issuer      Class   Number     (x$1000)     Amount     SH/PRN Put/Call  Discretion   Managers  Sole   Shared    None
+
+TEXAS INSTRS INC    Common 882508954      2,280       100,000  SH     Put           Sole                 100,000
+
+TIFFANY & CO NEW    Common 886547958      3,733       100,000  SH     Put           Sole                 100,000
+
+TYCO INTL LTD NEW   Common 902124956      6,129       300,000  SH     Put           Sole                 300,000
+
+UNION PAC CORP      Common 907818958      5,817       100,000  SH     Put           Sole                 100,000
+                                      ----------
+                      TOTAL $             17,959
+                                      ----------
+            AGGREGATE TOTAL $          6,107,908
+                                      ==========
+</TABLE>
+
+                                                      Page 19 of 19 Pages
+
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

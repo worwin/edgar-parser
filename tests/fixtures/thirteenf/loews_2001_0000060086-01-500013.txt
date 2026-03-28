@@ -1,0 +1,752 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ DVTuS/8MQCCsj4nwmsp96UvYqIKVo2t6YhoRMT/fQXUoTj/NlFBz1e3rF6cqlAX3
+ 8Y8YZAFcTBaGCnrzNRmdbg==
+
+<SEC-DOCUMENT>0000060086-01-500013.txt : 20010516
+<SEC-HEADER>0000060086-01-500013.hdr.sgml : 20010516
+ACCESSION NUMBER:		0000060086-01-500013
+CONFORMED SUBMISSION TYPE:	13F-HR/A
+PUBLIC DOCUMENT COUNT:		1
+CONFORMED PERIOD OF REPORT:	20010331
+FILED AS OF DATE:		20010515
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			LOEWS CORP
+		CENTRAL INDEX KEY:			0000060086
+		STANDARD INDUSTRIAL CLASSIFICATION:	FIRE, MARINE & CASUALTY INSURANCE [6331]
+		IRS NUMBER:				132646102
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1231
+
+	FILING VALUES:
+		FORM TYPE:		13F-HR/A
+		SEC ACT:		
+		SEC FILE NUMBER:	028-00217
+		FILM NUMBER:		1639554
+
+	BUSINESS ADDRESS:	
+		STREET 1:		667 MADISON AVE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10021-8087
+		BUSINESS PHONE:		2125452000
+
+	MAIL ADDRESS:	
+		STREET 1:		667 MADISON AVE
+		CITY:			NEW YORK
+		STATE:			NY
+		ZIP:			10021-8087
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>13F-HR/A
+<SEQUENCE>1
+<FILENAME>maramd.txt
+<DESCRIPTION>LOEWS CORPORATIION 13F AMENDMENT #1
+<TEXT>
+
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+                              Washington, D.C.  20549
+
+                                  FORM 13F-HR/A
+
+     INFORMATION REQUIRED OF INSTITUTIONAL INVESTMENT MANAGERS PURSUANT TO
+   SECTION 13(f)OF THE SECURITIES EXCHANGE ACT OF 1934 AND RULES THEREUNDER
+
+                   Report for the Quarter Ended March 31, 2001
+                                                --------------
+
+Check here if amendment [x]; Amendment Number 1
+
+This Amendment (check only one): [x] is a restatment.
+                                 [ ] adds new holdings entries.
+
+                          Loews Corporation
+- ------------------------------------------------------------------------------
+Name of Institutional Investment Manager
+
+                        667 Madison Avenue    New York     New York     10021
+- ------------------------------------------------------------------------------
+Business Address              (Street)        (City)        (State)     (Zip)
+
+  Barry Hirsch, Senior Vice President          (212) 521-2920
+- ------------------------------------------------------------------------------
+Name, Phone No., and Title of Person Duly Authorized to Submit This Report.
+
+  The institutional investment manager submitting this Form and its
+attachments and the person by whom it is signed represent hereby that all
+information contained therein is true, correct and complete. It is understood
+that all required items, statements and schedules are considered integral
+parts of this Form and that the submission of any amendment represents that
+all unamended items, statements and schedules remain true, correct and
+complete as previously submitted.
+
+  Pursuant to the requirements of Securities Exchange Act of 1934, the
+undersigned Institutional investment manager has caused this report to be
+signed on its behalf in the City of          New York          and State of
+                                    --------------------------
+New York  on the     15th     day of May, 2001.
+- --------         -----------         ---------
+
+
+                                   Loews Corporation
+                                   -------------------------------------------
+                                   (Name of Institutional Investment Manager)
+
+
+                                   By:  /s/ Barry Hirsch
+                                   -------------------------------------------
+                                   (Manual Signature of Person Duly Authorized
+                                             to Submit This Report)
+
+Name and 13F file number of ALL Institutional Investment Managers with respect
+to which this schedule is filled (other than the one filing this report):
+(List in alphabetical order).
+
+13F File Numbers will be assigned to Institutional Investment Managers after
+they file their first report.
+
+Name:                      13F File No.:  Name:                    13F File
+No.:
+- -------------------------- -------------  ------------------------ -----------
+1.     None                               6.
+- -------------------------- -------------  ------------------------ -----------
+2.                                        7.
+- -------------------------- -------------  ------------------------ -----------
+3.                                        8.
+- -------------------------- -------------  ------------------------ -----------
+4.                                        9.
+- -------------------------- -------------  ------------------------ -----------
+5.                                        10.
+- -------------------------- -------------  ------------------------ -----------
+
+                                Page 1 of 12 Pages
+
+                                Loews Corporation
+
+                                  FORM 13F-HR/A
+
+                          Report for the Quarter Ended
+
+                                 March 31, 2001
+
+
+
+
+  Loews Corporation ("Loews"), by virtue of its approximately 87% ownership of
+voting securities of CNA Financial Corporation whose business address is CNA
+Plaza, Chicago, Illinois 60685 ("CNA"), may be deemed to have investment
+discretion regarding certain securities (the "CNA Securities") as to which
+investment discretion is deemed to be exercised by CNA. Pursuant to General
+Instruction B of Form 13F, CNA is reporting on behalf of Loews regarding the
+CNA Securities.
+
+  Mr. Laurence A. Tisch and Mr. Preston R. Tisch own in the aggregate
+approximately 27% of the outstanding Common Stock of Loews. Mr. Laurence A.
+Tisch and Mr. Preston R. Tisch are the Co-Chairman of the Board of Loews.
+Laurence A. Tisch and Preston R. Tisch are brothers and may be deemed to be
+control persons of Loews.
+
+                                Page 2 of 12 Pages
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+AES Corp.         Common  00130H105 $       225       4,500     X                                         4,500
+
+Agnico Eagle      Common  008474108       6,046     980,000     X                                       980,000
+ Mines Ltd.
+
+Allamerica Finl   Common  019754100         285       5,500     X                                         5,500
+ Corp
+
+American Natl     Common  028591105       1,411      20,500     X                                        20,500
+ Ins Co.
+
+Apex Silver       Common  G04074103       1,592     200,000     X                                       200,000
+ Mines Ltd.
+
+Apex Silver       WTS     G04074111          50     167,000     X                                       167,000
+ Mines Ltd.       110402
+
+Applica Inc.      Common  03815A106       1,240     200,000     X                                       200,000
+
+AT&T Corp         Common  001957208         560      40,000     X                                        40,000
+ Liberty Media-A
+
+Ballard Pwr       Common  05858H104         212       5,300     X                                         5,300
+ Sys Inc.
+
+Barrick Gold      Common  067901108      23,078   1,615,000     X                                     1,615,000
+ Corp.
+
+Bear Stearns      Common  073902108       1,144      25,000     X                                        25,000
+ Cos. Inc.
+
+Belo Corp         Common  080555105       1,235      75,000     X                                        75,000
+
+Black & Decker    Common  091797100         202       5,500     X                                         5,500
+ Corp
+
+BMC Software      Common  055921100         430      20,000     X                                        20,000
+
+Bristol Myers     Common  110122108         594      10,000     X                                        10,000
+ Squibb Co.
+                                    -----------
+                          TOTAL     $    38,304
+                                    -----------
+</TABLE>
+
+                                           Page 3 of 12 Pages
+
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Cabelvision       Common  12686C109 $       260       3,700     X                                         3,700
+ Sys Corp
+
+Cadiz Inc.        Common  127537108       1,490     150,000     X                                       150,000
+
+Cambior Inc.      Common  13201L103          93     300,000     X                                       300,000
+
+Carnival Corp     Common  143658102         210       7,600     X                                         7,600
+
+Caterpillar Inc.  Common  149123101       4,881     110,000     X                                       110,000
+
+Chubb Corp.       Common  171232101       1,811      25,000     X                                        25,000
+
+Cleveland Cliffs  Common  185896107       4,142     230,100     X                                       230,100
+ Inc.
+
+CMS Energy Corp   Common  125896100         317      10,700     X                                        10,700
+
+CNA Financial     Common  126117100   5,585,923 159,457,480     X                                   159,457,480
+ Corp.
+
+Comcast Corp      Common  200300200         285       6,800     X                                         6,800
+
+Compaq Computer   Common  204493100       1,463      80,400     X                                        80,400
+ Corp.
+
+Conexant Systems  Common  207142100         137      15,300     X                                        15,300
+
+Consolidated      Common  209232107         460      68,200     X                                        68,200
+ Frtwys Corp.
+
+Countrywide Cr    Common  222372104         212       4,300     X                                         4,300
+ Inds
+
+CTS Corp          Common  126501105         415      20,000     X                                        20,000
+
+Deere & Co.       Common  244199105       1,817      50,000     X                                        50,000
+
+Delphi Finl Group Common  247131105       1,480      50,000     X                                        50,000
+ Inc
+
+Delta Airlines    Common  247361108       2,568      65,000     X                                        65,000
+ Inc Del
+                                    -----------
+                          TOTAL     $ 5,607,964
+                                    -----------
+</TABLE>                                             Page 4 of 12 Pages
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Dollar Thrifty    Common  256743105 $     1,236      60,000     X                                        60,000
+ Automotive GP
+
+Diamond Offshore  Common  25271C112   2,800,495  70,100,000     X                                    70,100,000
+ Drilling
+
+Dow Chemical Co.  Common  260543103       4,261     135,000     X                                       135,000
+
+Dow Jones & Co    Common  260561105         235       4,500     X                                         4,500
+ Inc.
+
+DuPont E.I. De    Common  263534109       2,035      50,000     X                                        50,000
+ Nemours & Co.
+
+Eaton Corp.       Common  278058102         356       5,200     X                                         5,200
+
+Echelon Corp      Common  27874N105         249      16,800     X                                        16,800
+
+Equity            Common  29476L107         302       5,800     X                                         5,800
+ Residential
+ Pptys Tr
+
+Fairchild         Common  303726103         162      12,200     X                                        12,200
+ Semiconductor
+ Intl
+
+Frontline Ltd     Common  35906P105       1,742     100,000     X                                       100,000
+
+Furniture Brands  Common  360921100       1,689      71,250     X                                        71,250
+ International
+
+Goodyear Tire &   Common  382550101       1,145      48,000     X                                        48,000
+ Rubber Co
+
+General Elec Co   Common  369604103         306       7,300     X                                         7,300
+
+General Motors    Common  370442105       2,074      40,000     X                                        40,000
+ Corp
+
+Glamis Gold Ltd   Common  376775102       1,832     930,000     X                                       930,000
+
+GPU Inc           Common  36225X100         260       8,000     X                                         8,000
+                                    -----------
+                          TOTAL     $ 2,818,379
+                                    -----------
+</TABLE>
+                                           Page 5 of 12 Pages
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Gulf CDA Res Ltd  Common  40218L305 $     1,096     200,000     X                                       200,000
+
+Hearst-Argyle     Common  422317107       1,030      50,000     X                                        50,000
+ Television Inc.
+
+Hershey Foods     Common  427866108         229       3,300     X                                         3,300
+ Corp
+
+Hewlett Packard   Common  428236103         625      20,000     X                                        20,000
+ Co
+
+Hilton Hotels     Common  432848109         943      90,200     X                                        90,200
+ Corp
+
+Homestake Mining  Common  437614100      35,142   6,681,000     X                                     6,681,000
+
+Household Intl    Common  441815107         255       4,300     X                                         4,300
+ Inc
+
+Intl. Paper Inc.  Common  460146103       6,134     170,000     X                                       170,000
+
+IBM               Common  459200101       4,809      50,000     X                                        50,000
+
+Inktomi Corp      Common  457277101         665     100,000     X                                       100,000
+
+Interstate        Common  46072H108         306      20,000     X                                        20,000
+ Bakeries
+
+Jabil Circuit     Common  466313103         225      10,400     X                                        10,400
+ Inc
+
+Jefferson Pilot   Common  475070108         360       5,300     X                                         5,300
+ Corp
+
+Johnson & Johnson Common  478160104         306       3,500     X                                         3,500
+
+Jones Apparel     Common  480074103         333       8,800     X                                         8,800
+ Grp Inc
+
+Keithley Instrs   Common  487584104         165      10,200     X                                        10,200
+ Inc
+                                    -----------
+                          TOTAL     $    52,623
+                                    -----------
+
+</TABLE>
+                                           Page 6 of 12 Pages
+
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Kinross Gold      Common  496902107 $       457     915,000     X                                       915,000
+ Corp.
+
+Kroger Co         Common  501044101         281      10,900     X                                        10,900
+
+Lincoln Natl      Common  534187109       1,274      30,000     X                                        30,000
+ Corp Ind
+
+Loews Cos. Inc    Common  548661107         257       4,400     X                                         4,400
+
+Lucent Tech       Common  549463107         167      16,800     X                                        16,800
+
+Marriott Intl     Common  571903202         222       5,400     X                                         5,400
+ Inc. New
+
+Marsh & McLennan  Common  571748102         256       2,700     X                                         2,700
+ Cos. Cin
+
+Maytag Corp.      Common  578592107       3,225     100,000     X                                       100,000
+
+MBIA Inc          Common  55262C100       1,589      19,700     X                                        19,700
+
+McGraw Hill       Common  580645109         286       4,800     X                                         4,800
+ Cos Inc
+
+Med-Design Corp.  Common  583926100         270      20,000     X                                        20,000
+
+Metromedia Int'l. Common  591695101         157      50,213     X                                        50,213
+ Group Inc.
+
+MGIC Invt Corp    Common  552848103         349       5,100     X                                         5,100
+ WIS
+
+Millipore Corp    Common  601073109         347       7,500     X                                         7,500
+
+Mine Safety       Common  602720104         766      30,000     X                                        30,000
+ Appliances Co.
+
+Miramar Mining    Common  60466E100         345     460,000     X                                       460,000
+ Corp.
+                                    -----------
+                          TOTAL     $    10,248
+                                    -----------
+
+
+</TABLE>
+                                           Page 7 of 12 Pages
+
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Montana Power Co  Common  612085100 $       217      15,400     X                                        15,400
+
+Money Group Inc   Common  615337102         332      10,000     X                                        10,000
+
+Motorola Inc.     Common  620076109       1,183      83,000     X                                        83,000
+
+National City     Common  635405103         201       7,500     X                                         7,500
+ Corp
+
+Navistar Int'l.   Common  63934E108       3,192     140,000     X                                       140,000
+ Corp.
+
+New York Times    Common  650111107         221       5,400     X                                         5,400
+ Co
+
+News Corp LTD-    Common  652487802         821      30,000     X                                        30,000
+ Spons Adr Prf
+
+Nortek Inc        Common  656559101       1,094      40,000     X                                        40,000
+
+Nortel Networks   Common  656568102       1,405     100,000     X                                       100,000
+ Corp New
+
+Omnicom Group Inc Common  681919106         829      10,000     X                                        10,000
+
+On Command Corp.  Common  682160106         537      85,876     X                                        85,876
+
+On Command Corp.  WTS B   682160122          26      27,920     X                                        27,920
+                  100703
+
+Overseas Ship-    Common  690368105       3,711     135,000     X                                       135,000
+ holding Group
+ Inc
+
+Perrigo Co.       Common  714290103         494      50,000     X                                        50,000
+
+Pitney Bowes Inc  Common  724479100         202       5,800     X                                         5,800
+
+Placer Dome Inc.  Common  725906101      24,462   2,828,000     X                                     2,828,000
+                                    -----------
+                          TOTAL     $    38,927
+                                    -----------
+
+
+
+</TABLE>
+                                           Page 8 of 12 Pages
+
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Potash Corp.      Common  73755L107 $     4,061      70,000     X                                        70,000
+ Sask Inc.
+
+Praxair Inc       Common  74005P104         254       5,700     X                                         5,700
+
+Robert Half Intl  Common  770323103         255      11,400     X                                        11,400
+ Inc
+
+Ryerson Tull Inc  Common  78375P107       7,246     721,000     X                                       721,000
+ New
+
+Sapient Corp      Common  803062108         111      15,400     X                                        15,400
+
+Snap-On Inc.      Common  833034101       1,165      40,000     X                                        40,000
+
+Sonic Automotive  Common  83545G102         468      60,000     X                                        60,000
+ Inc
+
+Southtrust Corp   Common  844730101         380       8,300     X                                         8,300
+
+Sovereign Bancorp Common  845905108       1,482     175,000     X                                       175,000
+ Inc
+
+Starwood Hotels & Common  85590A203         289       8,500     X                                         8,500
+ Resorts wrldwd
+
+Stillwater Mining
+ Co.              Common  86074Q102         226       8,350     X                                         8,350
+
+Steward WP & Co   Common  None              760      35,000     X                                        35,000
+ Ltd
+
+St Jude Med Inc   Common  790849103         269       5,000     X                                         5,000
+
+Symantec Corp     Common  871503108         272       6,500     X                                         6,500
+
+Teekay Shipping   Common  None            2,769      65,000     X                                        65,000
+ Marshall Islnd
+                                    -----------
+                          TOTAL     $    20,007
+                                    -----------
+
+
+</TABLE>
+
+                                           Page 9 of 12 Pages
+
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Tele Norte Leste  Common  879246106 $       163      10,000      X                                       10,000
+ Part SA
+
+Telephone and     Common  879433100         281       3,000      X                                        3,000
+ Data Sys Inc
+
+Teva Pharm-       Common  881624209         229        4,200     X                                        4,200
+ aceutical Inds
+
+Textron Inc       Common  883203101       2,842       50,000     X                                       50,000
+
+Torchmark Corp    Common  891027104       1,553       40,000     X                                       40,000
+
+United Parcel     Common  911312106         319        5,600     X                                        5,600
+ Service Inc
+
+USX Marathon      Common  902905827       1,347       50,000     X                                       50,000
+ Group
+
+Vivendi Universal Common  92851S204         315        5,200     X                                        5,200
+
+Wackenhut Corp    Common  929794303         156       15,000     X                                       15,000
+
+Wellpoint Health  Common  94973H108         210        2,200     X                                        2,200
+ Network
+
+Wells Fargo &     Common  949746101         227        4,600     X                                        4,600
+ Co. New
+
+Thoratec Corp     Common  885175307       2,839      334,000     X                                       334,000
+
+TIBCO Software    Common  88632Q103         850      100,000     X                                       100,000
+ Inc
+
+TVX Gold Inc.     Common  87308K101         396      430,000     X                                       430,000
+
+Viacom Inc.       Common  925524100         254        5,700     X                                         5,700
+                  CL A
+
+Visteon Corp.     Common  92839U107       1,504      100,000     X                                       100,000
+                                    -----------
+                          TOTAL     $    13,485
+                                    -----------
+
+</TABLE>
+
+                                             Page 10 of 12 Pages
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+Barrick Gold      Common  067901908 $       572      40,000(c)  X                                        40,000(c)
+ Corp.
+
+Barrick Gold      Common  067901958       7,860     550,000(p)  X                                       550,000(p)
+ Corp.
+
+BMC Software      Common  055921900       2,150     100,000(p)  X                                       100,000(p)
+
+Boeing            Common  097023955       6,964     125,000(p)  X                                       125,000(p)
+
+Bristol Meyers    Common  110122958       2,376     400,000(p)  X                                       400,000(p)
+ Squibb Co.
+
+Caterpillar Inc.  Common  149123951       6,657     150,000(p)  X                                       150,000(p)
+
+Caterpillar Inc.  Common  149123901         444      10,000(c)  X                                        10,000(c)
+
+Chubb Corp.       Common  191232951       5,070      70,000(p)  X                                        70,000(p)
+
+Compaq            Common  204493950       1,820     100,000(p)  X                                       100,000(p)
+
+Deere & Co.       Common  244199955       7,268     200,000(p)  X                                       200,000(p)
+
+Dow Chemical Co.  Common  260543953       5,683     180,000(p)  X                                       180,000(p)
+
+DuPont E I de     Common  263534959       2,035      50,000(p)  X                                        50,000(p)
+ Nemours & Co.
+
+Ford Motor Co.    Common  345370950       2,868     100,000(p)  X                                       100,000(p)
+
+GoodYear Tire &   Common  382550951       3,101     130,000(p)  X                                       130,000(p)
+ Rubber Co.
+
+Homestake Mining  Common  437614950       6,154   1,170,000(p)  X                                     1,170,000(p)
+
+Intl Paper Co.    Common  460146903         305      20,000(c)  X                                        20,000(c)
+
+Intl Paper Co.    Common  460146953       7,216     200,000(p)  X                                       200,000(p)
+                                    -----------
+                          TOTAL     $    68,543
+                                    -----------
+</TABLE>
+
+
+
+                                             Page 11 of 12 Pages
+<TABLE>
+<CAPTION>
+
+<S>               <C>     <C>       <C>          <C>       <C>     <C>          <C>         <C>         <C>      <C>      <C>
+Item 1:           Item 2: Item 3:   Item 4:      Item 5:           Item 6:                  Item 7:     Item 8:
+                                                                   Investment Discretion
+                                                                   -----------------------
+                  Title             Fair Market  Shares or         (b) Shared-              Managers    Voting Authority (Shares)
+                  of      CUSIP     Value (In    Principal         As Defined   (c)Shared-  See         -------------------------
+Name of Issuer    Class   Number    Thousands)   Amount    (a)Sole In Instr. v     Other    Instr. v    (a)Sole (b)Shared (c)None
+
+
+JP Morgan         Common  46625H950 $     1,796      40,000(p)  X                                        40,000(p)
+
+Maytag Corp.      Common  578592907       1,613      50,000(c)  X                                        50,000(c)
+
+Maytag Corp.      Common  578592957       6,450     200,000(p)  X                                       200,000(p)
+
+Motorola          Common  620076959       1,426     100,000(p)  X                                       100,000(p)
+
+Navistar Int'l.   Common  63934E958       2,280     100,000(p)  X                                       100,000(p)
+ Corp.
+
+Navistar          Common  63934E908         912      40,000(c)  X                                        40,000(c)
+
+Omnicom Group     Common  681919956       2,486      30,000(p)  X                                        30,000(p)
+ Inc.
+
+Placer Dome       Common  725906901       2,595     300,000(c)  X                                       300,000(c)
+
+Placer Dome       Common  725906951       3,244     375,000(p)  X                                       375,000(p)
+
+Potash Corp.      Common  73755L957       5,801     100,000(p)  X                                       100,000(p)
+ Sask Inc.
+
+Salton Inc.       Common  795757953         395      26,000(p)  X                                        26,000(p)
+
+Visteon Corp.     Common  92839U957       1,504     100,000(p)  X                                       100,000(p)
+                                    -----------
+                          TOTAL     $    30,502
+                                    -----------
+                AGGREGATE TOTAL     $ 8,698,982
+                                    ===========
+
+</TABLE>
+
+
+
+
+
+
+
+
+
+
+
+                                             Page 12 of 12 Pages
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

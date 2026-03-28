@@ -23,7 +23,7 @@ from edgar_parser.schemas import (
 TABLE_BLOCK_RE = re.compile(r"<TABLE>(.*?)</TABLE>", re.IGNORECASE | re.DOTALL)
 XML_BLOCK_RE = re.compile(r"<XML>\s*(.*?)\s*</XML>", re.IGNORECASE | re.DOTALL)
 TAG_RE = re.compile(r"<[^>]+>")
-CUSIP_RE = re.compile(r"\b((?=[0-9A-Z\s]*\d)[0-9A-Z]{6}\s*[0-9A-Z]{2}\s*[0-9A-Z])\b")
+CUSIP_RE = re.compile(r"\b((?=[0-9A-Z\s]*\d)[0-9A-Z]{6}\s*[0-9A-Z]{2}\s*[0-9A-Z])\b", re.IGNORECASE)
 ACCESSION_RE = re.compile(r"ACCESSION NUMBER:\s*([0-9-]+)")
 FORM_RE = re.compile(r"CONFORMED SUBMISSION TYPE:\s*([^\n\r]+)")
 FILED_AS_OF_RE = re.compile(r"FILED AS OF DATE:\s*(\d{8})")
@@ -55,14 +55,16 @@ class _PartialRow:
     shares_or_principal: int | None
     investment_discretion: str | None
     share_amount_type: str | None = None
+    other_managers: tuple[str, ...] = ()
 
 
 @dataclass(frozen=True, slots=True)
 class _VotingRow:
-    other_managers: list[str]
+    other_managers: tuple[str, ...]
     voting_authority_sole: int | None
     voting_authority_shared: int | None
     voting_authority_none: int | None
+    investment_discretion: str | None = None
 
 
 def parse_downloaded_thirteenf_filings(layout: ProjectLayout, request: ParseThirteenFFilingsRequest) -> ParseThirteenFFilingsResult:
@@ -240,9 +242,16 @@ def detect_thirteenf_format(text: str) -> str:
         return "xml_information_table"
 
     table_blocks = TABLE_BLOCK_RE.findall(text)
-    has_split_investment = any("Investment Discretion" in block and "Voting Authority" not in block for block in table_blocks)
-    has_split_voting = any("Voting Authority" in block and "Managers" in block for block in table_blocks)
-    if has_split_investment and has_split_voting:
+    normalized_blocks = [_normalize_spaces(TAG_RE.sub(" ", block)).upper() for block in table_blocks]
+    has_split_value_block = any(
+        "NAME OF ISSUER" in block and ("CUSIP" in block or "COLUMN 3" in block) and "VOTING AUTHORITY" not in block
+        for block in normalized_blocks
+    )
+    has_split_voting_block = any(
+        "VOTING AUTHORITY" in block and "NAME OF ISSUER" in block and "CUSIP" not in block
+        for block in normalized_blocks
+    )
+    if has_split_value_block and has_split_voting_block:
         return "legacy_split_table"
     return "legacy_text_table"
 
@@ -339,7 +348,8 @@ def _parse_legacy_single_table(
     value_start, managers_start, sole_start, shared_start, none_start = _single_table_column_positions(table_blocks[0])
 
     for block in table_blocks:
-        for raw_line in _clean_table_lines(block):
+        block_lines = _clean_table_lines(block)
+        for line_index, raw_line in enumerate(block_lines):
             if _should_skip_table_line(raw_line):
                 continue
             cusip_match = _find_cusip_match(raw_line)
@@ -360,6 +370,16 @@ def _parse_legacy_single_table(
                 continue
             elif current_identity and re.match(r"^\s*[\d,$-]", raw_line):
                 issuer_name, title_of_class, cusip = current_identity
+            elif current_identity and position_rows:
+                continuation = _normalize_spaces(raw_line)
+                next_raw_line = block_lines[line_index + 1] if line_index + 1 < len(block_lines) else ""
+                if continuation and not next_raw_line.strip():
+                    position_rows[-1]["issuer_name"] = _normalize_spaces(f"{position_rows[-1]['issuer_name']} {continuation}")
+                    issuer_name, title_of_class, cusip = current_identity
+                    current_identity = (position_rows[-1]["issuer_name"], title_of_class, cusip)
+                elif continuation:
+                    pending_issuer_lines.append(continuation)
+                continue
             else:
                 pending_issuer_lines.append(_normalize_spaces(raw_line))
                 continue
@@ -396,7 +416,7 @@ def _parse_legacy_single_table(
             cusip=partial_row["cusip"],
             value_usd=partial_row["value_usd"],
             shares_or_principal=partial_row["shares_or_principal"],
-            share_amount_type=None,
+            share_amount_type=partial_row["share_amount_type"],
             investment_discretion=partial_row["investment_discretion"],
             other_managers=partial_row["other_managers"],
             voting_authority_sole=partial_row["voting_authority_sole"],
@@ -432,8 +452,14 @@ def _parse_legacy_split_table(
     source_path: str,
 ) -> tuple[list[ThirteenFPositionRecord], ValidationSummary]:
     table_blocks = TABLE_BLOCK_RE.findall(text)
-    investment_block = next((block for block in table_blocks if "Investment Discretion" in block and "Name of Issuer" in block and "Voting Authority" not in block), None)
-    voting_block = next((block for block in table_blocks if "Voting Authority" in block and "Managers" in block), None)
+    investment_block = None
+    voting_block = None
+    for block in table_blocks:
+        normalized = _normalize_spaces(TAG_RE.sub(" ", block)).upper()
+        if investment_block is None and "NAME OF ISSUER" in normalized and ("CUSIP" in normalized or "COLUMN 3" in normalized) and "VOTING AUTHORITY" not in normalized:
+            investment_block = block
+        if voting_block is None and "VOTING AUTHORITY" in normalized and "NAME OF ISSUER" in normalized and "CUSIP" not in normalized:
+            voting_block = block
     if investment_block is None or voting_block is None:
         raise ValueError("Could not locate split legacy 13F tables in filing")
 
@@ -467,8 +493,8 @@ def _parse_legacy_split_table(
                 value_usd=partial_row.value_usd,
                 shares_or_principal=partial_row.shares_or_principal,
                 share_amount_type=partial_row.share_amount_type,
-                investment_discretion=partial_row.investment_discretion,
-                other_managers=voting_row.other_managers,
+                investment_discretion=partial_row.investment_discretion or voting_row.investment_discretion,
+                other_managers=list(voting_row.other_managers or partial_row.other_managers),
                 voting_authority_sole=voting_row.voting_authority_sole,
                 voting_authority_shared=voting_row.voting_authority_shared,
                 voting_authority_none=voting_row.voting_authority_none,
@@ -493,6 +519,7 @@ def _parse_legacy_split_table(
 def _parse_split_investment_rows(block: str) -> list[_PartialRow]:
     lines = _clean_table_lines(block)
     value_start = _value_start_from_lines(lines)
+    has_discretion_column = any("INVESTMENT DISCRETION" in line.upper() for line in lines)
     rows: list[_PartialRow] = []
     pending_issuer_lines: list[str] = []
     current_identity: tuple[str, str | None, str | None] | None = None
@@ -516,6 +543,22 @@ def _parse_split_investment_rows(block: str) -> list[_PartialRow]:
 
         issuer_name, title_of_class, cusip = current_identity
         row_value_start = cusip_match.end() if cusip_match else _row_value_start(raw_line, value_start)
+        parsed_tail = _parse_legacy_single_tail(raw_line[row_value_start:])
+        if parsed_tail is not None:
+            rows.append(
+                _PartialRow(
+                    issuer_name=issuer_name,
+                    title_of_class=title_of_class,
+                    cusip=cusip,
+                    value_usd=parsed_tail["value_usd"],
+                    shares_or_principal=parsed_tail["shares_or_principal"],
+                    investment_discretion=parsed_tail["investment_discretion"] or ("sole" if has_discretion_column else None),
+                    share_amount_type=parsed_tail["share_amount_type"],
+                    other_managers=tuple(parsed_tail["other_managers"]),
+                )
+            )
+            continue
+
         middle = raw_line[row_value_start:].strip()
         parts = [part.strip() for part in re.split(r"\s{2,}", middle) if part.strip()]
         if len(parts) < 2:
@@ -527,8 +570,9 @@ def _parse_split_investment_rows(block: str) -> list[_PartialRow]:
                 cusip=cusip,
                 value_usd=_safe_int(parts[0], thousands=True),
                 shares_or_principal=_safe_int(parts[1]),
-                investment_discretion=_normalize_investment_discretion(parts[2] if len(parts) > 2 else "sole"),
+                investment_discretion=_normalize_investment_discretion(parts[2] if len(parts) > 2 else ("sole" if has_discretion_column else None)),
                 share_amount_type=None,
+                other_managers=tuple(_split_manager_tokens(parts[3] if len(parts) > 3 else None)),
             )
         )
     return rows
@@ -536,32 +580,52 @@ def _parse_split_investment_rows(block: str) -> list[_PartialRow]:
 
 def _parse_split_voting_rows(block: str) -> list[_VotingRow]:
     lines = _clean_table_lines(block)
-    managers_start, sole_start, shared_start, none_start = _voting_positions_from_lines(lines)
     rows: list[_VotingRow] = []
+    has_seen_issuer = False
 
     for raw_line in lines:
         if _should_skip_table_line(raw_line):
             continue
         if not re.search(r"\d", raw_line):
             continue
-        managers_text = raw_line[managers_start:sole_start].strip() if len(raw_line) > managers_start else ""
-        sole_text = raw_line[sole_start:shared_start].strip() if len(raw_line) > sole_start else ""
-        shared_text = raw_line[shared_start:none_start].strip() if len(raw_line) > shared_start else ""
-        none_text = raw_line[none_start:].strip() if len(raw_line) > none_start else ""
 
         parts = [part.strip() for part in re.split(r"\s{2,}", raw_line.strip()) if part.strip()]
-        if len(parts) >= 2:
-            if not managers_text or not re.search(r"\d", managers_text):
-                managers_text = parts[-2]
-            if not sole_text:
-                sole_text = parts[-1]
+        if not parts:
+            continue
+
+        if any(character.isalpha() for character in parts[0]):
+            has_seen_issuer = True
+        elif not has_seen_issuer:
+            continue
+
+        vote_chunks: list[str] = []
+        while parts and len(vote_chunks) < 3 and re.fullmatch(r"[\d,.-]+", parts[-1]):
+            vote_chunks.insert(0, parts.pop())
+
+        discretion = None
+        managers_text = ""
+        data_parts = parts[1:] if parts and any(character.isalpha() for character in parts[0]) else parts
+        if data_parts and _is_discretion_token(data_parts[0]):
+            discretion = _normalize_investment_discretion(data_parts[0])
+            data_parts = data_parts[1:]
+        if data_parts:
+            managers_text = data_parts[-1]
+
+        sole_text = shared_text = none_text = None
+        if len(vote_chunks) == 3:
+            sole_text, shared_text, none_text = vote_chunks
+        elif len(vote_chunks) == 2:
+            sole_text, shared_text = vote_chunks
+        elif len(vote_chunks) == 1:
+            sole_text = vote_chunks[0]
 
         rows.append(
             _VotingRow(
-                other_managers=_split_manager_tokens(managers_text),
+                other_managers=tuple(_split_manager_tokens(managers_text)),
                 voting_authority_sole=_safe_int(sole_text),
                 voting_authority_shared=_safe_int(shared_text),
                 voting_authority_none=_safe_int(none_text),
+                investment_discretion=discretion,
             )
         )
     return rows
@@ -597,12 +661,18 @@ def _parse_single_table_row(
     shared_text = raw_line[shared_start:none_start].strip() if len(raw_line) > shared_start else ""
     none_text = raw_line[none_start:].strip() if len(raw_line) > none_start else ""
 
+    if parts and parts[0] == "$":
+        parts = parts[1:]
+    if len(parts) < 2:
+        return None
+
     return {
         "issuer_name": issuer_name,
         "title_of_class": title_of_class,
         "cusip": cusip,
         "value_usd": _safe_int(parts[0], thousands=True),
         "shares_or_principal": _safe_int(parts[1]),
+        "share_amount_type": None,
         "investment_discretion": _normalize_investment_discretion(parts[2] if len(parts) > 2 else None),
         "other_managers": _split_manager_tokens(managers_text),
         "voting_authority_sole": _safe_int(sole_text),
@@ -628,16 +698,40 @@ def _row_value_start(raw_line: str, fallback: int) -> int:
 
 
 def _parse_legacy_single_tail(value_text: str) -> dict[str, Any] | None:
-    match = re.match(r"^\s*(?P<value>[\d,]+)\s+(?P<shares>[\d,]+)\s+(?P<rest>.+?)\s*$", value_text)
+    match = re.match(r"^\s*\$?\s*(?P<value>[\d,]+)\s+(?P<shares>[\d,]+)\s+(?P<rest>.+?)\s*$", value_text)
     if not match:
         return None
 
     value = _safe_int(match.group("value"), thousands=True)
     shares = _safe_int(match.group("shares"))
     remainder = match.group("rest").strip()
-    discretion, remaining = _split_discretion_and_managers(remainder)
+    chunks = [chunk.strip() for chunk in re.split(r"\s{2,}", remainder) if chunk.strip()]
 
-    chunks = [chunk.strip() for chunk in re.split(r"\s{2,}", remaining) if chunk.strip()]
+    share_amount_type = None
+    if chunks:
+        first_chunk = chunks[0].upper()
+        if first_chunk in {"SH", "PRN"}:
+            share_amount_type = first_chunk
+            chunks = chunks[1:]
+        elif first_chunk.startswith("SH ") or first_chunk.startswith("PRN "):
+            parts = first_chunk.split(maxsplit=1)
+            share_amount_type = parts[0]
+            chunks[0] = parts[1]
+
+    if chunks and chunks[0].upper() in {"PUT", "CALL"}:
+        chunks = chunks[1:]
+
+    discretion = None
+    if chunks and _is_discretion_token(chunks[0]):
+        discretion = _normalize_investment_discretion(chunks[0])
+        chunks = chunks[1:]
+    elif chunks:
+        discretion, remaining = _split_discretion_and_managers(chunks[0])
+        if discretion is not None:
+            chunks[0] = remaining
+            if not chunks[0]:
+                chunks = chunks[1:]
+
     vote_chunks: list[str] = []
     while chunks and len(vote_chunks) < 3 and re.fullmatch(r"[\d,.-]+", chunks[-1]):
         vote_chunks.insert(0, chunks.pop())
@@ -654,6 +748,7 @@ def _parse_legacy_single_tail(value_text: str) -> dict[str, Any] | None:
     return {
         "value_usd": value,
         "shares_or_principal": shares,
+        "share_amount_type": share_amount_type,
         "investment_discretion": _normalize_investment_discretion(discretion),
         "other_managers": _split_manager_tokens(managers_text),
         "voting_authority_sole": _safe_int(sole_text),
@@ -686,16 +781,23 @@ def _parse_identity_prefix(prefix: str, pending_issuer_lines: list[str]) -> tupl
         title_of_class = prefix_parts[-2]
         cusip = prefix_parts[-1]
     elif len(prefix_parts) == 2:
-        issuer_parts = list(pending_issuer_lines)
-        issuer_or_class = prefix_parts[0]
-        cusip = prefix_parts[1]
-        split_match = re.match(r"^(.*\S)\s+([A-Z][A-Z0-9./-]*)$", issuer_or_class)
-        if split_match:
-            issuer_parts.append(split_match.group(1))
-            title_of_class = split_match.group(2)
+        class_cusip = _split_class_and_cusip(prefix_parts[1])
+        if class_cusip is not None:
+            issuer_parts = [*pending_issuer_lines, prefix_parts[0]]
+            title_of_class, cusip = class_cusip
         else:
-            issuer_parts.append(issuer_or_class)
-            title_of_class = None
+            issuer_parts = list(pending_issuer_lines)
+            issuer_or_class = prefix_parts[0]
+            cusip = prefix_parts[1]
+            issuer_and_title = _split_issuer_and_title(issuer_or_class)
+            if issuer_and_title is not None:
+                issuer_text, title_of_class = issuer_and_title
+                issuer_parts.append(issuer_text)
+            else:
+                issuer_parts.append(issuer_or_class)
+                title_of_class = None
+    elif len(prefix_parts) == 1:
+        return _parse_packed_identity_prefix(prefix_parts[0], pending_issuer_lines)
     else:
         return None
 
@@ -809,36 +911,50 @@ def _relevant_legacy_single_blocks(text: str) -> list[str]:
 def _single_table_column_positions(block: str) -> tuple[int, int, int, int, int]:
     lines = _clean_table_lines(block)
     value_start = _value_start_from_lines(lines)
-    managers_start, sole_start, shared_start, none_start = _voting_positions_from_lines(lines)
+    try:
+        managers_start, sole_start, shared_start, none_start = _voting_positions_from_lines(lines)
+    except ValueError:
+        fallback = max((len(line) for line in lines), default=value_start) + 1
+        managers_start = sole_start = shared_start = none_start = fallback
     return value_start, managers_start, sole_start, shared_start, none_start
 
 
 def _voting_positions_from_lines(lines: list[str]) -> tuple[int, int, int, int]:
-    header_line = next(
-        (line for line in lines if "Managers" in line and "Sole" in line and "Shared" in line),
-        None,
-    )
-    if header_line is None:
+    managers_start = _find_header_column(lines, "MANAGERS")
+    if managers_start is None:
         raise ValueError("Could not determine voting column positions")
-    managers_start = header_line.index("Managers")
-    sole_start = header_line.index("Sole", managers_start)
-    shared_start = header_line.index("Shared", sole_start + 1)
-    none_start = header_line.index("None", shared_start + 1) if "None" in header_line[shared_start + 1 :] else len(header_line)
+
+    sole_start = _find_header_column(lines, "SOLE", minimum=managers_start + 1)
+    if sole_start is None:
+        raise ValueError("Could not determine voting column positions")
+
+    shared_start = _find_header_column(lines, "SHARED", minimum=sole_start + 1)
+    none_start = _find_header_column(lines, "NONE", minimum=sole_start + 1)
+
+    if shared_start is None:
+        shared_start = none_start if none_start is not None else max((len(line) for line in lines), default=sole_start)
+    if none_start is None:
+        none_start = max((len(line) for line in lines), default=shared_start)
+
     return managers_start, sole_start, shared_start, none_start
 
 
 def _value_start_from_lines(lines: list[str]) -> int:
-    for line in lines:
-        if "(In Thousands)" in line:
-            return line.index("(In Thousands)")
-        if "Market Value" in line:
-            return line.index("Value")
-        if "Value (In" in line:
-            return line.index("Value")
-        if "Value" in line and "Shares or" in line:
-            return line.index("Value")
-        if "CUSIP" in line and "Value" in line:
-            return line.index("Value")
+    for index, line in enumerate(lines):
+        upper = line.upper()
+        if "(IN THOUSANDS)" in upper:
+            return upper.index("(IN THOUSANDS)")
+        if "MARKET VALUE" in upper:
+            return upper.index("VALUE")
+        if "VALUE (IN" in upper:
+            return upper.index("VALUE")
+        if "VALUE" not in upper:
+            continue
+        if any(token in upper for token in ["SHARES OR", "SHRS OR", "PRINCIPAL", "PRN AMT", "CUSIP", "X$1000"]):
+            return upper.index("VALUE")
+        lookahead = " ".join(next_line.upper() for next_line in lines[index + 1 : index + 3])
+        if any(token in lookahead for token in ["THOUSANDS", "SHARES OR", "SHRS OR", "PRINCIPAL", "PRN AMT"]):
+            return upper.index("VALUE")
     raise ValueError("Could not determine value column position")
 
 
@@ -854,9 +970,14 @@ def _should_skip_table_line(line: str) -> bool:
     if not stripped:
         return True
     upper = stripped.upper()
+    normalized = _normalize_spaces(upper)
     if upper.startswith("GRAND TOTAL") or upper.startswith("$") or upper.startswith("COLUMN "):
         return True
+    if upper.startswith("TOTAL") and _find_cusip_match(stripped) is None:
+        return True
     if upper == "INVESTMENT" or upper.startswith("DISCRETION"):
+        return True
+    if re.fullmatch(r"(?:(?:COLUMN|ITEM)\s+)?\d+:(?:\s+(?:(?:COLUMN|ITEM)\s+)?\d+:)+", normalized):
         return True
     if upper.startswith("ISSUER") and "CLASS" in upper and "NUMBER" in upper:
         return True
@@ -974,6 +1095,92 @@ def _normalize_spaces(value: str | None) -> str:
     return " ".join((value or "").split())
 
 
+def _split_class_and_cusip(value: str) -> tuple[str | None, str] | None:
+    cusip_match = _find_cusip_match(value)
+    if cusip_match is None:
+        return None
+    title_of_class = _normalize_spaces(value[: cusip_match.start()])
+    if not title_of_class:
+        return None
+    cusip = _normalize_cusip(cusip_match.group(1))
+    return title_of_class, cusip
+
+
+def _parse_packed_identity_prefix(value: str, pending_issuer_lines: list[str]) -> tuple[str, str | None, str | None] | None:
+    cusip_match = _find_cusip_match(value)
+    if cusip_match is None:
+        return None
+
+    before_cusip = _normalize_spaces(value[: cusip_match.start()])
+    if not before_cusip:
+        return None
+
+    tokens = before_cusip.split()
+    for size in (3, 2, 1):
+        if len(tokens) <= size:
+            continue
+        candidate = " ".join(tokens[-size:])
+        if _looks_like_title_of_class(candidate):
+            issuer_name = _normalize_spaces(" ".join([*pending_issuer_lines, " ".join(tokens[:-size])]))
+            return issuer_name, candidate, _normalize_cusip(cusip_match.group(1))
+
+    issuer_name = _normalize_spaces(" ".join([*pending_issuer_lines, before_cusip]))
+    return issuer_name, None, _normalize_cusip(cusip_match.group(1))
+
+
+def _looks_like_title_of_class(value: str | None) -> bool:
+    if value is None:
+        return False
+    cleaned = _normalize_spaces(value).upper().replace('.', '')
+    return cleaned in {
+        'COM',
+        'COMMON',
+        'CORP',
+        'CORPORATION',
+        'WTS',
+        'WTS 110402',
+        'ADR',
+        'PFD',
+        'PREFERRED',
+        'NOTE',
+        'NOTES',
+        'UNIT',
+        'UNITS',
+        'CLASS A',
+        'CLASS B',
+        'CL A',
+        'CL B',
+    }
+
+
+def _split_issuer_and_title(value: str) -> tuple[str, str] | None:
+    tokens = _normalize_spaces(value).split()
+    for size in (3, 2, 1):
+        if len(tokens) <= size:
+            continue
+        candidate = " ".join(tokens[-size:])
+        if _looks_like_title_of_class(candidate):
+            return " ".join(tokens[:-size]), candidate
+    return None
+
+
+def _find_header_column(lines: list[str], token: str, minimum: int = 0) -> int | None:
+    positions = []
+    for line in lines:
+        upper = line.upper()
+        start = 0
+        while True:
+            index = upper.find(token, start)
+            if index == -1:
+                break
+            if index >= minimum:
+                positions.append(index)
+            start = index + 1
+    if not positions:
+        return None
+    return min(positions)
+
+
 def _find_cusip_match(raw_line: str) -> re.Match[str] | None:
     for match in CUSIP_RE.finditer(raw_line):
         if any(character.isdigit() for character in match.group(1)):
@@ -1001,6 +1208,23 @@ def _normalize_investment_discretion(value: str | None) -> str | None:
     if cleaned in {"OTHER", "SHARED-OTHER"}:
         return "shared-other"
     return cleaned.lower()
+
+
+def _is_discretion_token(value: str | None) -> bool:
+    if value is None:
+        return False
+    cleaned = _normalize_spaces(value).upper()
+    return cleaned in {
+        "DFND",
+        "X",
+        "SHARED-DEFINED",
+        "DEFINED",
+        "SOLE",
+        "SOLE IN INSTR. V",
+        "SOLE IN INSTR. VOTE",
+        "OTHER",
+        "SHARED-OTHER",
+    }
 
 
 def _split_manager_tokens(value: str | None) -> list[str]:
