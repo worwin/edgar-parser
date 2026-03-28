@@ -141,6 +141,17 @@ edgar-parser schema list
 edgar-parser layout print --root D:\Projects\edgar-parser-data
 ```
 
+## Validation Statuses
+
+Each parsed filing includes a top-level `validation` object and a filing-level `validation_status`. Downstream systems can use this status as a quality gate when deciding which filings to consume automatically.
+
+- `pass`: the filing parsed successfully and the parsed holdings reconciled to the filing-reported totals used by the validator
+- `warn`: the filing parsed, but one or more validation checks did not reconcile cleanly, such as entry-count mismatches or total-value mismatches
+- `fail`: the parser could not reliably extract usable holdings from the filing
+- `unchecked`: the filing parsed, but the filing did not expose enough totals or comparable metadata for the validator to confirm it
+
+Current validation checks focus on reconciliation against filing-reported totals, especially expected holding counts and expected total reported value. In downstream pipelines, a common policy is to accept `pass`, review `warn`, exclude `fail`, and handle `unchecked` according to the needs of the consuming system.
+
 ## Docs
 
 - `docs/phase-01-architecture.md`
