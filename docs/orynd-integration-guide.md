@@ -102,7 +102,7 @@ What happens internally:
 1. Read `D:/Projects/Orynd/_edgar_parser_test/catalog/filings.jsonl`.
 2. Select only records that:
    - are 13F forms
-   - belong to `/ticker/brk-b/13F/`
+- belong to `/ticker/brk-b/raw/13F/`
    - match any requested accession/date filters
 3. Open each raw filing from `local_raw_filing_path`.
 4. Detect the filing format from the filing contents.
@@ -111,7 +111,7 @@ What happens internally:
 7. Update the catalog with parse status and normalized output path.
 
 Parsed filing output location:
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f`
 
 ## 13F Parser Decision Logic
 
@@ -135,7 +135,7 @@ That prevents silent data loss.
 ORYND should treat the parsed JSON files as the source parsed layer.
 
 One parsed file exists per accession, for example:
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f/0001193125-26-054580.json`
 
 Each parsed file contains:
 - filing metadata
@@ -184,7 +184,7 @@ Recommended sequence:
 1. `ORYND` decides which ticker or CIK to process.
 2. `ORYND` calls `edgar-parser` download.
 3. `ORYND` calls `edgar-parser` parse.
-4. `ORYND` reads parsed JSON files from `normalized/13f/filings/...`.
+4. `ORYND` reads parsed JSON files from `ticker/<ticker>/normalized/13f/...`.
 5. `ORYND` builds its own downstream training, analytics, or portfolio datasets from those parsed files.
 
 That keeps the repo boundary clean:
@@ -254,7 +254,7 @@ Important note:
 ## What ORYND Should Read
 
 ORYND should primarily read:
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/<ticker>/normalized/13f`
 - `D:/Projects/Orynd/_edgar_parser_test/catalog/filings.jsonl`
 
 Use parsed filing JSON for holdings.
@@ -265,7 +265,7 @@ Use the catalog for inventory, raw-path lookup, parse status, and auditability.
 Berkshire Hathaway / `BRK-B` / CIK `0001067983` has already been:
 - downloaded back to 1999
 - parsed into one JSON per filing
-- stored under `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b`
+- stored under `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f`
 
 Current Berkshire parse outcomes as of March 27, 2026:
 - `95` pass
@@ -284,10 +284,10 @@ The `parse_error` outputs are expected for unsupported historical layouts and sh
 ## Practical Review Set
 
 If ORYND or a human reviewer wants a small spot-check set, use:
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-26-054580.json`
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0001193125-12-470800.json`
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0000950148-99-001187.json`
-- `D:/Projects/Orynd/_edgar_parser_test/normalized/13f/filings/ticker/brk-b/0000950129-05-001294.json`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f/0001193125-26-054580.json`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f/0001193125-12-470800.json`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f/0000950148-99-001187.json`
+- `D:/Projects/Orynd/_edgar_parser_test/ticker/brk-b/normalized/13f/0000950129-05-001294.json`
 
 That set covers:
 - modern XML

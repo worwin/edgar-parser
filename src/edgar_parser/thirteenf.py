@@ -1058,7 +1058,7 @@ def _select_thirteenf_catalog_records(
             continue
         if cik_key and record.get("cik") != cik_key:
             continue
-        if ticker_key and f"/ticker/{ticker_key}/13F/" not in str(record.get("local_raw_filing_path", "")).replace("\\", "/"):
+        if ticker_key and f"/ticker/{ticker_key}/raw/13F/" not in str(record.get("local_raw_filing_path", "")).replace("\\", "/"):
             continue
         filing_date = date.fromisoformat(record["filing_date"])
         if after_date and filing_date < after_date:

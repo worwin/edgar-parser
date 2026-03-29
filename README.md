@@ -42,19 +42,24 @@ python -m edgar_parser --help
 
 ## Storage Layout
 
-Primary human-readable filing store:
+Primary human-readable filing store is now ticker-first or CIK-first all the way through:
 
 ```text
-ticker/<ticker-symbol>/<filing-family>/<filing-date>_<accession>/
+ticker/<ticker-symbol>/
+  raw/<filing-family>/<filing-date>_<accession>/
+  normalized/<filing-family>/<accession>.json
+
+cik/<cik>/
+  raw/<filing-family>/<filing-date>_<accession>/
+  normalized/<filing-family>/<accession>.json
 ```
 
 Within a clean project root, `edgar-parser` writes:
-- `ticker/` raw filings fetched by ticker
-- `cik/` raw filings fetched directly by CIK
+- `ticker/` raw and normalized filings fetched by ticker
+- `cik/` raw and normalized filings fetched directly by CIK
 - `sec/` SEC metadata like ticker maps and submissions JSON
 - `catalog/filings.jsonl` canonical filing inventory
-- `normalized/13f/filings/` one parsed JSON per 13F filing
-- `datasets/13f/` reserved for consolidated downstream datasets
+- `datasets/` reserved for later consolidated datasets
 
 ## Quick Start
 
@@ -78,7 +83,7 @@ Parse the downloaded Berkshire 13F filings:
 python -m edgar_parser parse 13f --root D:\Projects\edgar-parser-data --ticker BRK-B
 ```
 
-Parsed outputs will be written under `D:/Projects/edgar-parser-data/normalized/13f/filings/ticker/brk-b/`.
+Parsed outputs will be written under `D:/Projects/edgar-parser-data/ticker/brk-b/normalized/13f/`.
 
 ## Python API
 
@@ -126,6 +131,9 @@ parse_downloaded_thirteenf_filings(
 - immutable raw filing storage
 - canonical catalog file for all fetched filings
 - 13F parsing into one JSON file per filing
+- 10-K and 10-Q parsing into one JSON file per filing
+- 8-K narrative section parsing into one JSON file per filing
+- DEF 14A narrative section parsing into one JSON file per filing
 - modern XML 13F support
 - multiple legacy Berkshire text layouts
 - additional legacy Loews text-layout coverage
@@ -137,6 +145,10 @@ parse_downloaded_thirteenf_filings(
 edgar-parser init --root D:\Projects\edgar-parser-data --company-name "Example Research" --email "ops@example.com"
 edgar-parser fetch filings --root D:\Projects\edgar-parser-data --ticker BRK-B --forms 13F-HR --include-amends --after 1999-01-01
 edgar-parser parse 13f --root D:\Projects\edgar-parser-data --ticker BRK-B
+edgar-parser fetch filings --root D:\Projects\edgar-parser-data --ticker MSFT --forms 8-K --after 2026-01-01 --limit 1
+edgar-parser parse 8k --root D:\Projects\edgar-parser-data --ticker MSFT
+edgar-parser fetch filings --root D:\Projects\edgar-parser-data --ticker MSFT --forms "DEF 14A" --after 2025-01-01 --limit 1
+edgar-parser parse def14a --root D:\Projects\edgar-parser-data --ticker MSFT
 edgar-parser schema list
 edgar-parser layout print --root D:\Projects\edgar-parser-data
 ```

@@ -136,7 +136,7 @@ class ParseThirteenFTestCase(unittest.TestCase):
     def test_parse_xml_information_table(self) -> None:
         parsed = parse_thirteenf_text(
             XML_SAMPLE,
-            source_path="ticker/brk-b/13F/sample.txt",
+            source_path="ticker/brk-b/raw/13F/sample.txt",
             filing_metadata={
                 "accession_number": "0001193125-26-054580",
                 "cik": "0001067983",
@@ -155,7 +155,7 @@ class ParseThirteenFTestCase(unittest.TestCase):
     def test_parse_legacy_single_table(self) -> None:
         parsed = parse_thirteenf_text(
             LEGACY_SINGLE_SAMPLE,
-            source_path="ticker/brk-b/13F/sample.txt",
+            source_path="ticker/brk-b/raw/13F/sample.txt",
             filing_metadata={
                 "accession_number": "0001193125-12-470800",
                 "cik": "0001067983",
@@ -175,7 +175,7 @@ class ParseThirteenFTestCase(unittest.TestCase):
     def test_parse_legacy_split_table(self) -> None:
         parsed = parse_thirteenf_text(
             LEGACY_SPLIT_SAMPLE,
-            source_path="ticker/brk-b/13F/sample.txt",
+            source_path="ticker/brk-b/raw/13F/sample.txt",
             filing_metadata={
                 "accession_number": "0000950150-03-000243",
                 "cik": "0001067983",
@@ -412,7 +412,7 @@ class ParseThirteenFTestCase(unittest.TestCase):
         layout = ProjectLayout(root)
         layout.create()
 
-        raw_dir = root / "ticker" / "brk-b" / "13F" / "2005-02-14_0000950129-05-001294"
+        raw_dir = root / "ticker" / "brk-b" / "raw" / "13F" / "2005-02-14_0000950129-05-001294"
         raw_dir.mkdir(parents=True, exist_ok=True)
         raw_path = raw_dir / "0000950129-05-001294.txt"
         raw_path.write_text(
@@ -454,7 +454,7 @@ FILED AS OF DATE: 20050214
         )
 
         self.assertEqual(result.parsed_count, 1)
-        normalized_path = root / "normalized" / "13f" / "filings" / "ticker" / "brk-b" / "0000950129-05-001294.json"
+        normalized_path = root / "ticker" / "brk-b" / "normalized" / "13f" / "0000950129-05-001294.json"
         self.assertTrue(normalized_path.exists())
         records = read_jsonl(layout.catalog_file)
         self.assertEqual(records[0]["validation_status"], "fail")

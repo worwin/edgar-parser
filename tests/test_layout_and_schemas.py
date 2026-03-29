@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 import shutil
@@ -37,8 +37,11 @@ class LayoutAndSchemaTestCase(unittest.TestCase):
             "company_tickers_path",
             "catalog_dir",
             "catalog_file",
-            "normalized_thirteenf_filings_dir",
             "datasets_thirteenf_dir",
+            "datasets_tenk_dir",
+            "datasets_tenq_dir",
+            "datasets_eightk_dir",
+            "datasets_def14a_dir",
             "exports_csv_dir",
             "exports_parquet_dir",
             "exports_excel_dir",
@@ -53,6 +56,18 @@ class LayoutAndSchemaTestCase(unittest.TestCase):
             "thirteenf_position_record",
             "thirteenf_aggregated_position_record",
             "thirteenf_parsed_filing",
+            "periodic_report_fact_record",
+            "periodic_statement_line_item",
+            "periodic_report_statements",
+            "periodic_report_validation_summary",
+            "periodic_report_parsed_filing",
+            "tenk_parsed_filing",
+            "tenq_parsed_filing",
+            "narrative_section_record",
+            "narrative_report_validation_summary",
+            "narrative_report_parsed_filing",
+            "eightk_parsed_filing",
+            "def14a_parsed_filing",
             "validation_summary",
         }
         self.assertTrue(required.issubset(SCHEMA_REGISTRY))

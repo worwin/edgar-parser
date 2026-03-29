@@ -124,6 +124,8 @@ def _download_filing_artifacts(
     download_attachments: bool,
 ) -> FilingCatalogRecord:
     filing_group = _filing_group_label(filing.form)
+    parser_family = _parser_family_for_form(filing.form)
+    effective_download_attachments = download_attachments or parser_family == "periodic_reports"
     accession_dir = layout.filing_accession_dir(owner_type, owner_value, filing_group, filing.filing_date, filing.accession_number)
     accession_dir.mkdir(parents=True, exist_ok=True)
 
@@ -164,7 +166,7 @@ def _download_filing_artifacts(
                 filing.primary_document,
             )
 
-        if download_attachments:
+        if effective_download_attachments:
             documents_dir = accession_dir / "documents"
             documents_dir.mkdir(exist_ok=True)
             for item in items:
@@ -206,7 +208,7 @@ def _download_filing_artifacts(
         local_raw_index_path=local_raw_index_path.as_posix() if local_raw_index_path else None,
         local_normalized_path=None,
         raw_sha256=raw_sha256,
-        parser_family=_parser_family_for_form(filing.form),
+        parser_family=parser_family,
         parser_format=None,
         validation_status="unchecked",
     )
@@ -228,8 +230,10 @@ def _filing_group_label(form: str) -> str:
     upper_form = form.upper()
     if upper_form.startswith("13F-"):
         return "13F"
-    if upper_form in {"10-K", "10-Q", "8-K", "DEF 14A"}:
+    if upper_form in {"10-K", "10-Q", "8-K"}:
         return upper_form.replace("/", "_")
+    if upper_form == "DEF 14A":
+        return "DEF_14A"
     return upper_form.replace("/", "_")
 
 
@@ -237,9 +241,9 @@ def _parser_family_for_form(form: str) -> str:
     upper_form = form.upper()
     if upper_form.startswith("13F-"):
         return "thirteenf"
-    if upper_form in {"10-K", "10-Q"}:
+    if upper_form.startswith("10-K") or upper_form.startswith("10-Q"):
         return "periodic_reports"
-    if upper_form == "8-K":
+    if upper_form.startswith("8-K"):
         return "current_reports"
     if upper_form == "DEF 14A":
         return "proxy"

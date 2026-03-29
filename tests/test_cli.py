@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from pathlib import Path
 import os
@@ -42,6 +42,10 @@ class CliTestCase(unittest.TestCase):
         self.assertEqual(result.returncode, 0, msg=result.stderr)
         self.assertIn("filing_catalog_record", result.stdout)
         self.assertIn("thirteenf_parsed_filing", result.stdout)
+        self.assertIn("tenk_parsed_filing", result.stdout)
+        self.assertIn("tenq_parsed_filing", result.stdout)
+        self.assertIn("eightk_parsed_filing", result.stdout)
+        self.assertIn("def14a_parsed_filing", result.stdout)
 
     def test_init_creates_project_layout_and_config(self) -> None:
         root = self.tmp_root / "project-root"
@@ -65,6 +69,10 @@ class CliTestCase(unittest.TestCase):
         result = self.run_cli("schema", "export", "--out-dir", str(out_dir))
         self.assertEqual(result.returncode, 0, msg=result.stderr)
         self.assertTrue((out_dir / "filing_catalog_record.schema.json").exists())
+        self.assertTrue((out_dir / "tenk_parsed_filing.schema.json").exists())
+        self.assertTrue((out_dir / "tenq_parsed_filing.schema.json").exists())
+        self.assertTrue((out_dir / "eightk_parsed_filing.schema.json").exists())
+        self.assertTrue((out_dir / "def14a_parsed_filing.schema.json").exists())
 
 
 if __name__ == "__main__":

@@ -1,15 +1,19 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 from pathlib import Path
 import sys
 
 from edgar_parser.config import IdentityConfig, ProjectConfig
+from edgar_parser.def14a import ParseDef14AFilingsRequest, parse_downloaded_def14a_filings
+from edgar_parser.eightk import ParseEightKFilingsRequest, parse_downloaded_eightk_filings
 from edgar_parser.fetch import FetchFilingsRequest, fetch_filings
 from edgar_parser.io import dumps_json, write_json
 from edgar_parser.paths import ProjectLayout
 from edgar_parser.schemas import SCHEMA_REGISTRY
 from edgar_parser.sec_client import SecClient
+from edgar_parser.tenk import ParseTenKFilingsRequest, parse_downloaded_tenk_filings
+from edgar_parser.tenq import ParseTenQFilingsRequest, parse_downloaded_tenq_filings
 from edgar_parser.thirteenf import ParseThirteenFFilingsRequest, parse_downloaded_thirteenf_filings
 
 
@@ -65,6 +69,7 @@ def _build_parser() -> argparse.ArgumentParser:
 
     parse_parser = subparsers.add_parser("parse", help="Parse downloaded filings into normalized outputs.")
     parse_subparsers = parse_parser.add_subparsers(dest="parse_command", required=True)
+
     parse_13f_parser = parse_subparsers.add_parser("13f", help="Parse downloaded 13F filings into per-filing JSON.")
     parse_13f_parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory.")
     parse_13f_parser.add_argument("--ticker", type=str, help="Only parse filings stored under a ticker path.")
@@ -73,6 +78,42 @@ def _build_parser() -> argparse.ArgumentParser:
     parse_13f_parser.add_argument("--after", type=str, help="Earliest filing date inclusive, YYYY-MM-DD.")
     parse_13f_parser.add_argument("--before", type=str, help="Latest filing date inclusive, YYYY-MM-DD.")
     parse_13f_parser.add_argument("--limit", type=int, help="Maximum number of filings to parse after filtering.")
+
+    parse_10k_parser = parse_subparsers.add_parser("10k", help="Parse downloaded 10-K filings into per-filing JSON.")
+    parse_10k_parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory.")
+    parse_10k_parser.add_argument("--ticker", type=str, help="Only parse filings stored under a ticker path.")
+    parse_10k_parser.add_argument("--cik", type=str, help="Only parse filings for a specific CIK.")
+    parse_10k_parser.add_argument("--accession-number", type=str, help="Only parse a single accession number.")
+    parse_10k_parser.add_argument("--after", type=str, help="Earliest filing date inclusive, YYYY-MM-DD.")
+    parse_10k_parser.add_argument("--before", type=str, help="Latest filing date inclusive, YYYY-MM-DD.")
+    parse_10k_parser.add_argument("--limit", type=int, help="Maximum number of filings to parse after filtering.")
+
+    parse_10q_parser = parse_subparsers.add_parser("10q", help="Parse downloaded 10-Q filings into per-filing JSON.")
+    parse_10q_parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory.")
+    parse_10q_parser.add_argument("--ticker", type=str, help="Only parse filings stored under a ticker path.")
+    parse_10q_parser.add_argument("--cik", type=str, help="Only parse filings for a specific CIK.")
+    parse_10q_parser.add_argument("--accession-number", type=str, help="Only parse a single accession number.")
+    parse_10q_parser.add_argument("--after", type=str, help="Earliest filing date inclusive, YYYY-MM-DD.")
+    parse_10q_parser.add_argument("--before", type=str, help="Latest filing date inclusive, YYYY-MM-DD.")
+    parse_10q_parser.add_argument("--limit", type=int, help="Maximum number of filings to parse after filtering.")
+
+    parse_8k_parser = parse_subparsers.add_parser("8k", help="Parse downloaded 8-K filings into per-filing JSON.")
+    parse_8k_parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory.")
+    parse_8k_parser.add_argument("--ticker", type=str, help="Only parse filings stored under a ticker path.")
+    parse_8k_parser.add_argument("--cik", type=str, help="Only parse filings for a specific CIK.")
+    parse_8k_parser.add_argument("--accession-number", type=str, help="Only parse a single accession number.")
+    parse_8k_parser.add_argument("--after", type=str, help="Earliest filing date inclusive, YYYY-MM-DD.")
+    parse_8k_parser.add_argument("--before", type=str, help="Latest filing date inclusive, YYYY-MM-DD.")
+    parse_8k_parser.add_argument("--limit", type=int, help="Maximum number of filings to parse after filtering.")
+
+    parse_def14a_parser = parse_subparsers.add_parser("def14a", help="Parse downloaded DEF 14A filings into per-filing JSON.")
+    parse_def14a_parser.add_argument("--root", type=Path, default=Path.cwd(), help="Project root directory.")
+    parse_def14a_parser.add_argument("--ticker", type=str, help="Only parse filings stored under a ticker path.")
+    parse_def14a_parser.add_argument("--cik", type=str, help="Only parse filings for a specific CIK.")
+    parse_def14a_parser.add_argument("--accession-number", type=str, help="Only parse a single accession number.")
+    parse_def14a_parser.add_argument("--after", type=str, help="Earliest filing date inclusive, YYYY-MM-DD.")
+    parse_def14a_parser.add_argument("--before", type=str, help="Latest filing date inclusive, YYYY-MM-DD.")
+    parse_def14a_parser.add_argument("--limit", type=int, help="Maximum number of filings to parse after filtering.")
 
     return parser
 
@@ -186,6 +227,86 @@ def _cmd_parse_13f(args: argparse.Namespace) -> int:
     return 0
 
 
+def _cmd_parse_10k(args: argparse.Namespace) -> int:
+    project_root = args.root.resolve()
+    layout = ProjectLayout(project_root)
+    result = parse_downloaded_tenk_filings(
+        layout,
+        ParseTenKFilingsRequest(
+            ticker=args.ticker,
+            cik=args.cik,
+            accession_number=args.accession_number,
+            after=args.after,
+            before=args.before,
+            limit=args.limit,
+        ),
+    )
+    print(f"Parsed {result.parsed_count} 10-K filings")
+    for output_path in result.output_paths:
+        print(f"- {output_path}")
+    return 0
+
+
+def _cmd_parse_10q(args: argparse.Namespace) -> int:
+    project_root = args.root.resolve()
+    layout = ProjectLayout(project_root)
+    result = parse_downloaded_tenq_filings(
+        layout,
+        ParseTenQFilingsRequest(
+            ticker=args.ticker,
+            cik=args.cik,
+            accession_number=args.accession_number,
+            after=args.after,
+            before=args.before,
+            limit=args.limit,
+        ),
+    )
+    print(f"Parsed {result.parsed_count} 10-Q filings")
+    for output_path in result.output_paths:
+        print(f"- {output_path}")
+    return 0
+
+
+def _cmd_parse_8k(args: argparse.Namespace) -> int:
+    project_root = args.root.resolve()
+    layout = ProjectLayout(project_root)
+    result = parse_downloaded_eightk_filings(
+        layout,
+        ParseEightKFilingsRequest(
+            ticker=args.ticker,
+            cik=args.cik,
+            accession_number=args.accession_number,
+            after=args.after,
+            before=args.before,
+            limit=args.limit,
+        ),
+    )
+    print(f"Parsed {result.parsed_count} 8-K filings")
+    for output_path in result.output_paths:
+        print(f"- {output_path}")
+    return 0
+
+
+def _cmd_parse_def14a(args: argparse.Namespace) -> int:
+    project_root = args.root.resolve()
+    layout = ProjectLayout(project_root)
+    result = parse_downloaded_def14a_filings(
+        layout,
+        ParseDef14AFilingsRequest(
+            ticker=args.ticker,
+            cik=args.cik,
+            accession_number=args.accession_number,
+            after=args.after,
+            before=args.before,
+            limit=args.limit,
+        ),
+    )
+    print(f"Parsed {result.parsed_count} DEF 14A filings")
+    for output_path in result.output_paths:
+        print(f"- {output_path}")
+    return 0
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = _build_parser()
     args = parser.parse_args(argv)
@@ -204,6 +325,14 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_fetch_filings(args)
     if args.command == "parse" and args.parse_command == "13f":
         return _cmd_parse_13f(args)
+    if args.command == "parse" and args.parse_command == "10k":
+        return _cmd_parse_10k(args)
+    if args.command == "parse" and args.parse_command == "10q":
+        return _cmd_parse_10q(args)
+    if args.command == "parse" and args.parse_command == "8k":
+        return _cmd_parse_8k(args)
+    if args.command == "parse" and args.parse_command == "def14a":
+        return _cmd_parse_def14a(args)
 
     parser.print_help(sys.stderr)
     return 2

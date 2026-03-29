@@ -142,6 +142,66 @@ class FetchFilingsTestCase(unittest.TestCase):
         self.assertTrue((older_dir / "0001067983-13-000001.txt").exists())
         self.assertTrue((older_dir / "documents" / "legacy.txt").exists())
 
+    def test_fetch_periodic_reports_download_attachments_even_without_flag(self) -> None:
+        class PeriodicFakeSecClient(FakeSecClient):
+            def fetch_company_tickers(self) -> dict:
+                return {
+                    "0": {"cik_str": 1045810, "ticker": "NVDA", "title": "NVIDIA CORP"}
+                }
+
+            def fetch_submissions(self, cik: str) -> dict:
+                return {
+                    "name": "NVIDIA CORP",
+                    "filings": {
+                        "recent": {
+                            "accessionNumber": ["0001045810-26-000021"],
+                            "form": ["10-K"],
+                            "filingDate": ["2026-02-25"],
+                            "reportDate": ["2026-01-31"],
+                            "primaryDocument": ["nvda-20260131.htm"],
+                            "primaryDocDescription": ["Annual report"],
+                        },
+                        "files": [],
+                    },
+                }
+
+            def get(self, url: str) -> SecResponse:
+                if url.endswith("0001045810-26-000021.txt"):
+                    return SecResponse(url=url, status_code=200, headers={}, body=b"<SEC-DOCUMENT>10-K filing</SEC-DOCUMENT>")
+                if url.endswith("nvda-20260131.htm"):
+                    return SecResponse(url=url, status_code=200, headers={}, body=b"<html>annual report</html>")
+                if url.endswith("nvda-20260131_htm.xml"):
+                    return SecResponse(url=url, status_code=200, headers={}, body=b"<xbrli:xbrl xmlns:xbrli='http://www.xbrl.org/2003/instance'></xbrli:xbrl>")
+                raise AssertionError(f"Unexpected URL: {url}")
+
+            def fetch_filing_index_json(self, cik: str, accession_number: str) -> dict:
+                return {
+                    "directory": {
+                        "item": [
+                            {"name": "nvda-20260131.htm", "type": "text/html"},
+                            {"name": "nvda-20260131_htm.xml", "type": "text/xml"},
+                        ]
+                    }
+                }
+
+        layout = ProjectLayout(self.tmp_root / "workspace-fetch-periodic")
+        result = fetch_filings(
+            client=PeriodicFakeSecClient(),
+            layout=layout,
+            request=FetchFilingsRequest(
+                identifier="NVDA",
+                forms=["10-K"],
+                after="2024-01-01",
+                download_attachments=False,
+            ),
+        )
+
+        self.assertEqual(result.cik, "0001045810")
+        accession_dir = layout.filing_accession_dir("ticker", "nvda", "10-K", "2026-02-25", "0001045810-26-000021")
+        self.assertTrue((accession_dir / "0001045810-26-000021.txt").exists())
+        self.assertTrue((accession_dir / "documents" / "nvda-20260131.htm").exists())
+        self.assertTrue((accession_dir / "documents" / "nvda-20260131_htm.xml").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
@@ -42,6 +42,10 @@ class ProjectLayout:
     def submissions_path_from_name(self, name: str) -> Path:
         return self.sec_submissions_dir / name
 
+    def owner_root(self, owner_type: str, owner_value: str) -> Path:
+        base_dir = self.ticker_dir if owner_type == "ticker" else self.cik_dir
+        return base_dir / owner_value
+
     def filing_accession_dir(
         self,
         owner_type: str,
@@ -50,8 +54,7 @@ class ProjectLayout:
         filing_date: str,
         accession_number: str,
     ) -> Path:
-        base_dir = self.ticker_dir if owner_type == "ticker" else self.cik_dir
-        return base_dir / owner_value / filing_group / f"{filing_date}_{accession_number}"
+        return self.owner_root(owner_type, owner_value) / "raw" / filing_group / f"{filing_date}_{accession_number}"
 
     @property
     def catalog_dir(self) -> Path:
@@ -61,16 +64,20 @@ class ProjectLayout:
     def catalog_file(self) -> Path:
         return self.catalog_dir / "filings.jsonl"
 
-    @property
-    def normalized_dir(self) -> Path:
-        return self.root / "normalized"
-
-    @property
-    def normalized_thirteenf_filings_dir(self) -> Path:
-        return self.normalized_dir / "13f" / "filings"
-
     def normalized_thirteenf_filing_path(self, owner_type: str, owner_value: str, accession_number: str) -> Path:
-        return self.normalized_thirteenf_filings_dir / owner_type / owner_value / f"{accession_number}.json"
+        return self.owner_root(owner_type, owner_value) / "normalized" / "13f" / f"{accession_number}.json"
+
+    def normalized_tenk_filing_path(self, owner_type: str, owner_value: str, accession_number: str) -> Path:
+        return self.owner_root(owner_type, owner_value) / "normalized" / "10k" / f"{accession_number}.json"
+
+    def normalized_tenq_filing_path(self, owner_type: str, owner_value: str, accession_number: str) -> Path:
+        return self.owner_root(owner_type, owner_value) / "normalized" / "10q" / f"{accession_number}.json"
+
+    def normalized_eightk_filing_path(self, owner_type: str, owner_value: str, accession_number: str) -> Path:
+        return self.owner_root(owner_type, owner_value) / "normalized" / "8k" / f"{accession_number}.json"
+
+    def normalized_def14a_filing_path(self, owner_type: str, owner_value: str, accession_number: str) -> Path:
+        return self.owner_root(owner_type, owner_value) / "normalized" / "def14a" / f"{accession_number}.json"
 
     @property
     def datasets_dir(self) -> Path:
@@ -79,6 +86,22 @@ class ProjectLayout:
     @property
     def datasets_thirteenf_dir(self) -> Path:
         return self.datasets_dir / "13f"
+
+    @property
+    def datasets_tenk_dir(self) -> Path:
+        return self.datasets_dir / "10k"
+
+    @property
+    def datasets_tenq_dir(self) -> Path:
+        return self.datasets_dir / "10q"
+
+    @property
+    def datasets_eightk_dir(self) -> Path:
+        return self.datasets_dir / "8k"
+
+    @property
+    def datasets_def14a_dir(self) -> Path:
+        return self.datasets_dir / "def14a"
 
     @property
     def exports_dir(self) -> Path:
@@ -111,8 +134,11 @@ class ProjectLayout:
             self.sec_indexes_dir,
             self.sec_submissions_dir,
             self.catalog_dir,
-            self.normalized_thirteenf_filings_dir,
             self.datasets_thirteenf_dir,
+            self.datasets_tenk_dir,
+            self.datasets_tenq_dir,
+            self.datasets_eightk_dir,
+            self.datasets_def14a_dir,
             self.exports_csv_dir,
             self.exports_parquet_dir,
             self.exports_excel_dir,
@@ -135,8 +161,11 @@ class ProjectLayout:
             "company_tickers_path": self.company_tickers_path.as_posix(),
             "catalog_dir": self.catalog_dir.as_posix(),
             "catalog_file": self.catalog_file.as_posix(),
-            "normalized_thirteenf_filings_dir": self.normalized_thirteenf_filings_dir.as_posix(),
             "datasets_thirteenf_dir": self.datasets_thirteenf_dir.as_posix(),
+            "datasets_tenk_dir": self.datasets_tenk_dir.as_posix(),
+            "datasets_tenq_dir": self.datasets_tenq_dir.as_posix(),
+            "datasets_eightk_dir": self.datasets_eightk_dir.as_posix(),
+            "datasets_def14a_dir": self.datasets_def14a_dir.as_posix(),
             "exports_csv_dir": self.exports_csv_dir.as_posix(),
             "exports_parquet_dir": self.exports_parquet_dir.as_posix(),
             "exports_excel_dir": self.exports_excel_dir.as_posix(),
