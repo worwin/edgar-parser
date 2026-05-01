@@ -294,7 +294,7 @@ Each `facts[]` row can include:
 - `dimensions`
 - `statement_hint`
 
-Downstream consumers should treat `facts[]` as the authoritative periodic-report fact surface. `statement_hint` and the grouped `statements` arrays are helpful classifiers for common financial statement views, not completeness boundaries; concept-driven consumers should still inspect `facts[]` directly.
+Downstream consumers should treat `facts[]` as the authoritative periodic-report fact surface. `statement_hint` and the grouped `statements` arrays are helpful classifiers for common financial statement views, not completeness boundaries; concept-driven consumers should still inspect `facts[]` directly. Facts such as share repurchases, dividends, treasury stock, common stock, additional paid-in capital, or other equity-table items may be valid normalized facts even when they are not grouped into a cash-flow statement bucket.
 
 `statements` groups the filing into:
 
