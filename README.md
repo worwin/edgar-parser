@@ -283,12 +283,18 @@ Each `facts[]` row can include:
 - `context_id`
 - `unit`
 - `decimals`
+- `scale`
+- `scale_source`
+- `presentation_note`
 - `period_start`
 - `period_end`
 - `instant`
 - `value`
+- `normalized_value`
 - `dimensions`
 - `statement_hint`
+
+Downstream consumers should treat `facts[]` as the authoritative periodic-report fact surface. `statement_hint` and the grouped `statements` arrays are helpful classifiers for common financial statement views, not completeness boundaries; concept-driven consumers should still inspect `facts[]` directly.
 
 `statements` groups the filing into:
 

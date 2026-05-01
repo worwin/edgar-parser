@@ -1,6 +1,7 @@
 ﻿from __future__ import annotations
 
 from dataclasses import dataclass
+from decimal import Decimal, InvalidOperation
 from datetime import date
 import html
 from pathlib import Path
@@ -35,6 +36,10 @@ TABLE_BLOCK_RE = re.compile(r"<TABLE\b.*?>.*?</TABLE>", re.IGNORECASE | re.DOTAL
 HTML_TAG_RE = re.compile(r"<[^>]+>")
 YEAR_RE = re.compile(r"\b(?:19|20)\d{2}\b")
 VALUE_TOKEN_RE = re.compile(r"\(?\$?\s*[\d,]+(?:\.\d+)?\)?|--")
+PRESENTATION_SCALE_RE = re.compile(
+    r"\b(?:amounts|dollars|shares|share amounts|data)?\s*(?:are\s*)?(?:stated|presented|expressed|reported)?\s*(?:in|as)\s+(millions?|thousands?|billions?)\b",
+    re.IGNORECASE,
+)
 
 INLINE_NAMESPACE_HINTS = ("inlineXBRL", "2013/inlineXBRL", "2014/inlineXBRL")
 CONTEXT_LOCAL_NAMES = {"context"}
@@ -66,22 +71,51 @@ STATEMENT_HINT_KEYWORDS = {
         "grossprofit",
         "operatingincome",
         "operatingincomeloss",
+        "operatingexpenses",
+        "operatingcostsandexpenses",
+        "costsandexpenses",
         "costofrevenue",
         "costofgoods",
         "operatingexpense",
+        "sellinggeneral",
+        "generalandadministrativeexpense",
+        "sellingandmarketingexpense",
+        "salesandmarketingexpense",
+        "researchanddevelopmentexpense",
+        "otherincomeexpensenet",
+        "othernonoperatingincomeexpense",
+        "nonoperatingincomeexpense",
+        "gainlossonsaleofassets",
+        "gainlossondispositionofassets",
+        "gainlossonsaleofpropertyplantequipment",
         "earningspershare",
         "eps",
     ),
     "balance_sheet": (
         "assets",
         "liabilities",
+        "liabilitiescurrentandnoncurrent",
+        "deferredtax",
+        "minorityinterest",
+        "noncontrollinginterest",
+        "otherliabilities",
+        "otheraccruedliabilities",
+        "preferredstock",
+        "commonstock",
+        "commonstocks",
+        "additionalpaidincapital",
+        "treasurystock",
         "stockholdersequity",
         "equity",
         "cashandcashequivalents",
         "inventory",
+        "prepaidexpense",
+        "othercurrentassets",
+        "otherassetscurrent",
         "goodwill",
         "accountsreceivable",
         "propertyplantandequipment",
+        "accumulateddepreciationdepletionandamortizationpropertyplantandequipment",
     ),
     "cash_flow": (
         "netcashprovidedbyusedinoperatingactivities",
@@ -89,9 +123,62 @@ STATEMENT_HINT_KEYWORDS = {
         "netcashusedininvestingactivities",
         "netcashprovidedbyusedininvestingactivities",
         "netcashprovidedbyusedinfinancingactivities",
+        "netcashusedinfinancingactivities",
+        "cashcashequivalentsrestrictedcashandrestrictedcashequivalentsperiodincreasedecrease",
+        "cashandcashequivalentsperiodincreasedecrease",
         "depreciation",
         "capitalexpenditures",
+        "paymentstoacquirepropertyplantandequipment",
+        "paymentsforrepurchaseofcommonstock",
+        "paymentsforrepurchaseofequity",
+        "paymentsofdividends",
+        "paymentsofordinarydividends",
+        "proceedsfromstockoptionsexercised",
+        "proceedsfromissuanceofcommonstock",
+        "proceedsfromissuanceoflongtermdebt",
+        "proceedsfromlongtermdebt",
+        "proceedsfromborrowings",
+        "repaymentsoflongtermdebt",
+        "repaymentsofdebt",
+        "proceedsfromrepaymentsofshorttermdebt",
+        "proceedsfromrepaymentsofcommercialpaper",
     ),
+}
+EXACT_STATEMENT_HINTS = {
+    "capitalexpendituresincurredbutnotyetpaid": "cash_flow",
+    "cashandcashequivalentsperiodincreasedecrease": "cash_flow",
+    "cashcashequivalentsrestrictedcashandrestrictedcashequivalentsperiodincreasedecreaseexchangerateeffect": "cash_flow",
+    "cashcashequivalentsrestrictedcashandrestrictedcashequivalentsperiodincreasedecreaseexcludingexchangerateeffect": "cash_flow",
+    "cashcashequivalentsrestrictedcashandrestrictedcashequivalentsperiodincreasedecreaseincludingexchangerateeffect": "cash_flow",
+    "netcashprovidedbyusedinfinancingactivities": "cash_flow",
+    "netcashprovidedbyusedininvestingactivities": "cash_flow",
+    "netcashprovidedbyusedinoperatingactivities": "cash_flow",
+    "netcashusedinfinancingactivities": "cash_flow",
+    "netcashusedininvestingactivities": "cash_flow",
+    "paymentsofdividends": "cash_flow",
+    "paymentsofdividendscommonstock": "cash_flow",
+    "paymentsofordinarydividends": "cash_flow",
+    "paymentsforrepurchaseofcommonstock": "cash_flow",
+    "paymentsforrepurchaseofequity": "cash_flow",
+    "paymentstoacquirepropertyplantandequipment": "cash_flow",
+    "proceedsfromborrowings": "cash_flow",
+    "proceedsfromissuanceofcommonstock": "cash_flow",
+    "proceedsfromissuanceoflongtermdebt": "cash_flow",
+    "proceedsfromlongtermdebt": "cash_flow",
+    "proceedsfromrepaymentsofcommercialpaper": "cash_flow",
+    "proceedsfromrepaymentsofshorttermdebt": "cash_flow",
+    "proceedsfromrepaymentsofshorttermdebtmaturinginmorethanthreemonths": "cash_flow",
+    "proceedsfromstockoptionsexercised": "cash_flow",
+    "repaymentsofdebt": "cash_flow",
+    "repaymentsoflongtermdebt": "cash_flow",
+    "repaymentsoflongtermdebtandfinanceleaseobligations": "cash_flow",
+    "additionalpaidincapital": "balance_sheet",
+    "commonstocksincludingadditionalpaidincapital": "balance_sheet",
+    "commonstockvalue": "balance_sheet",
+    "preferredstockvalue": "balance_sheet",
+    "preferredstocksincludingadditionalpaidincapital": "balance_sheet",
+    "treasurystockcommonvalue": "balance_sheet",
+    "treasurystockvalue": "balance_sheet",
 }
 STATEMENT_TYPE_TO_HINT = {
     "income_statement": "income_statement",
@@ -329,12 +416,15 @@ def _parse_legacy_statement_document(
         statement_type = _detect_legacy_statement_type(text, match.start())
         if statement_type is None:
             continue
+        presentation_note, table_scale = _detect_legacy_table_scale(text, match.start(), table_block)
         line_items = _parse_legacy_statement_table(
             table_block=table_block,
             statement_type=statement_type,
             filing_metadata=filing_metadata,
             ticker_symbol=ticker_symbol,
             source_path=source_path,
+            scale=table_scale,
+            presentation_note=presentation_note,
         )
         if not line_items:
             continue
@@ -420,10 +510,14 @@ def _select_statement_line_items(
             context_id=fact.context_id,
             unit=fact.unit,
             decimals=fact.decimals,
+            scale=fact.scale,
+            scale_source=fact.scale_source,
+            presentation_note=fact.presentation_note,
             period_start=fact.period_start,
             period_end=fact.period_end,
             instant=fact.instant,
             value=fact.value,
+            normalized_value=fact.normalized_value,
             dimensions=fact.dimensions,
             parser_format=fact.parser_format,
             source_path=fact.source_path,
@@ -454,10 +548,14 @@ def _statement_line_items_from_facts(
             context_id=fact.context_id,
             unit=fact.unit,
             decimals=fact.decimals,
+            scale=fact.scale,
+            scale_source=fact.scale_source,
+            presentation_note=fact.presentation_note,
             period_start=fact.period_start,
             period_end=fact.period_end,
             instant=fact.instant,
             value=fact.value,
+            normalized_value=fact.normalized_value,
             dimensions=fact.dimensions,
             parser_format=fact.parser_format,
             source_path=fact.source_path,
@@ -604,9 +702,10 @@ def _extract_inline_facts(
         concept_local_name = name_attr.split(":")[-1]
         context_id = element.attrib.get("contextRef")
         unit_ref = element.attrib.get("unitRef")
-        value = _clean_text("".join(element.itertext()))
+        value = _apply_inline_sign(_clean_text("".join(element.itertext())), element.attrib.get("sign"))
         if not value:
             continue
+        scale = _parse_scale_attribute(element.attrib.get("scale"))
         facts.append(
             _build_fact_record(
                 filing_metadata=filing_metadata,
@@ -619,6 +718,9 @@ def _extract_inline_facts(
                 context_id=context_id,
                 unit=units.get(unit_ref) if unit_ref else None,
                 decimals=element.attrib.get("decimals"),
+                scale=scale,
+                scale_source="inline_xbrl_attribute" if scale is not None else None,
+                presentation_note=None,
                 value=value,
                 context=_context_for(contexts, context_id),
             )
@@ -659,6 +761,9 @@ def _extract_xbrl_instance_facts(
                 context_id=context_id,
                 unit=units.get(element.attrib.get("unitRef")) if element.attrib.get("unitRef") else None,
                 decimals=element.attrib.get("decimals"),
+                scale=None,
+                scale_source=None,
+                presentation_note=None,
                 value=value,
                 context=_context_for(contexts, context_id),
             )
@@ -677,6 +782,9 @@ def _build_fact_record(
     context_id: str | None,
     unit: str | None,
     decimals: str | None,
+    scale: int | None,
+    scale_source: str | None,
+    presentation_note: str | None,
     value: str | None,
     context: dict[str, Any],
 ) -> PeriodicReportFactRecord:
@@ -695,10 +803,14 @@ def _build_fact_record(
         context_id=context_id,
         unit=unit,
         decimals=decimals,
+        scale=scale,
+        scale_source=scale_source,
+        presentation_note=presentation_note,
         period_start=context.get("period_start"),
         period_end=context.get("period_end"),
         instant=context.get("instant"),
         value=value,
+        normalized_value=_normalize_scaled_numeric_value(value, scale),
         dimensions=dict(context.get("dimensions") or {}),
         statement_hint=statement_hint,
         parser_format=parser_format,
@@ -747,10 +859,14 @@ def _build_validation_summary(
             context_id=fact.context_id,
             unit=fact.unit,
             decimals=fact.decimals,
+            scale=fact.scale,
+            scale_source=fact.scale_source,
+            presentation_note=fact.presentation_note,
             period_start=fact.period_start,
             period_end=fact.period_end,
             instant=fact.instant,
             value=fact.value,
+            normalized_value=fact.normalized_value,
             dimensions=fact.dimensions,
             statement_hint=fact.statement_hint,
             parser_format=fact.parser_format,
@@ -811,10 +927,14 @@ def _build_legacy_validation_summary(
             context_id=fact.context_id,
             unit=fact.unit,
             decimals=fact.decimals,
+            scale=fact.scale,
+            scale_source=fact.scale_source,
+            presentation_note=fact.presentation_note,
             period_start=fact.period_start,
             period_end=fact.period_end,
             instant=fact.instant,
             value=fact.value,
+            normalized_value=fact.normalized_value,
             dimensions=fact.dimensions,
             statement_hint=fact.statement_hint,
             parser_format=fact.parser_format,
@@ -901,6 +1021,8 @@ def _parse_legacy_statement_table(
     filing_metadata: dict[str, Any],
     ticker_symbol: str | None,
     source_path: str,
+    scale: int | None,
+    presentation_note: str | None,
 ) -> list[PeriodicStatementLineItem]:
     lines = _legacy_table_lines(table_block)
     if not lines:
@@ -958,6 +1080,8 @@ def _parse_legacy_statement_table(
                     label=label,
                     header=header,
                     value=value,
+                    scale=scale,
+                    presentation_note=presentation_note,
                 )
             )
 
@@ -972,6 +1096,8 @@ def _build_legacy_line_item(
     label: str,
     header: str,
     value: str,
+    scale: int | None,
+    presentation_note: str | None,
 ) -> PeriodicStatementLineItem:
     concept_local_name = _legacy_concept_name(label)
     report_period = filing_metadata.get("report_period")
@@ -992,10 +1118,14 @@ def _build_legacy_line_item(
         context_id=header,
         unit=None,
         decimals=None,
+        scale=scale,
+        scale_source="statement_heading" if scale is not None else None,
+        presentation_note=presentation_note,
         period_start=None,
         period_end=period_end,
         instant=instant,
         value=value,
+        normalized_value=_normalize_scaled_numeric_value(value, scale),
         dimensions={},
         parser_format="legacy_html_tables",
         source_path=source_path,
@@ -1021,10 +1151,14 @@ def _line_items_to_facts(line_items: list[PeriodicStatementLineItem]) -> list[Pe
                 context_id=item.context_id,
                 unit=item.unit,
                 decimals=item.decimals,
+                scale=item.scale,
+                scale_source=item.scale_source,
+                presentation_note=item.presentation_note,
                 period_start=item.period_start,
                 period_end=item.period_end,
                 instant=item.instant,
                 value=item.value,
+                normalized_value=item.normalized_value,
                 dimensions=item.dimensions,
                 statement_hint=STATEMENT_TYPE_TO_HINT[item.statement_type],
                 parser_format=item.parser_format,
@@ -1051,6 +1185,17 @@ def _legacy_table_lines(table_block: str) -> list[str]:
     text = text.replace("\xa0", " ")
     text = HTML_TAG_RE.sub("", text)
     return [line.rstrip() for line in text.splitlines()]
+
+
+def _detect_legacy_table_scale(text: str, table_start: int, table_block: str) -> tuple[str | None, int | None]:
+    context_window = _html_to_text(text[max(0, table_start - 800):table_start] + "\n" + table_block)
+    match = PRESENTATION_SCALE_RE.search(context_window)
+    if not match:
+        return (None, None)
+    note = _clean_text(match.group(0))
+    label = match.group(1).lower()
+    scale = {"thousand": 3, "thousands": 3, "million": 6, "millions": 6, "billion": 9, "billions": 9}.get(label)
+    return (note, scale)
 
 
 def _legacy_column_headers(lines: list[str]) -> list[str]:
@@ -1110,6 +1255,50 @@ def _normalize_legacy_value(value: str) -> str | None:
     return cleaned
 
 
+def _parse_scale_attribute(value: str | None) -> int | None:
+    if value in (None, ""):
+        return None
+    try:
+        return int(value)
+    except ValueError:
+        return None
+
+
+def _apply_inline_sign(value: str, sign: str | None) -> str:
+    if not value or sign != "-":
+        return value
+    normalized = value.strip()
+    if normalized.startswith("-"):
+        return normalized
+    return f"-{normalized}"
+
+
+def _normalize_scaled_numeric_value(value: str | None, scale: int | None) -> str | None:
+    if value in (None, ""):
+        return None
+    cleaned = (
+        value.replace(",", "")
+        .replace("$", "")
+        .replace(" ", "")
+        .replace("\u00a0", "")
+        .strip()
+    )
+    if not cleaned or cleaned in {"--", "-", "\u2014", "\u2013"}:
+        return None
+    if cleaned.startswith("(") and cleaned.endswith(")"):
+        cleaned = f"-{cleaned[1:-1]}"
+    try:
+        decimal_value = Decimal(cleaned)
+    except InvalidOperation:
+        return None
+    if scale is not None:
+        decimal_value *= Decimal(10) ** scale
+    integral_value = decimal_value.to_integral_value()
+    if decimal_value == integral_value:
+        return str(integral_value)
+    return format(decimal_value.normalize(), "f")
+
+
 def _should_skip_legacy_label(label: str) -> bool:
     lowered = label.lower()
     if lowered in {"assets", "revenues", "cost and expenses", "liabilities and shareholders' equity"}:
@@ -1139,6 +1328,9 @@ def _html_to_text(value: str) -> str:
 
 def _statement_hint(concept_local_name: str) -> str | None:
     lowered = concept_local_name.lower()
+    exact_hint = EXACT_STATEMENT_HINTS.get(lowered)
+    if exact_hint is not None:
+        return exact_hint
     for hint, keywords in STATEMENT_HINT_KEYWORDS.items():
         if any(keyword in lowered for keyword in keywords):
             return hint

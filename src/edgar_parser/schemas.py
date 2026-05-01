@@ -299,10 +299,14 @@ class PeriodicReportFactRecord:
     context_id: str | None
     unit: str | None
     decimals: str | None
+    scale: int | None
+    scale_source: str | None
+    presentation_note: str | None
     period_start: str | None
     period_end: str | None
     instant: str | None
     value: str | None
+    normalized_value: str | None
     dimensions: dict[str, str] = field(default_factory=dict)
     statement_hint: str | None = None
     parser_format: str = "unknown"
@@ -326,10 +330,14 @@ class PeriodicReportFactRecord:
                 "context_id": {"type": ["string", "null"]},
                 "unit": {"type": ["string", "null"]},
                 "decimals": {"type": ["string", "null"]},
+                "scale": {"type": ["integer", "null"]},
+                "scale_source": {"type": ["string", "null"]},
+                "presentation_note": {"type": ["string", "null"]},
                 "period_start": {"type": ["string", "null"], "format": "date"},
                 "period_end": {"type": ["string", "null"], "format": "date"},
                 "instant": {"type": ["string", "null"], "format": "date"},
                 "value": {"type": ["string", "null"]},
+                "normalized_value": {"type": ["string", "null"]},
                 "dimensions": {"type": "object", "additionalProperties": {"type": "string"}},
                 "statement_hint": {"type": ["string", "null"]},
                 "parser_format": {"type": "string"},
@@ -367,10 +375,14 @@ class PeriodicStatementLineItem:
     context_id: str | None
     unit: str | None
     decimals: str | None
+    scale: int | None
+    scale_source: str | None
+    presentation_note: str | None
     period_start: str | None
     period_end: str | None
     instant: str | None
     value: str | None
+    normalized_value: str | None
     dimensions: dict[str, str] = field(default_factory=dict)
     parser_format: str = "unknown"
     source_path: str = ""
@@ -393,10 +405,14 @@ class PeriodicStatementLineItem:
                 "context_id": {"type": ["string", "null"]},
                 "unit": {"type": ["string", "null"]},
                 "decimals": {"type": ["string", "null"]},
+                "scale": {"type": ["integer", "null"]},
+                "scale_source": {"type": ["string", "null"]},
+                "presentation_note": {"type": ["string", "null"]},
                 "period_start": {"type": ["string", "null"], "format": "date"},
                 "period_end": {"type": ["string", "null"], "format": "date"},
                 "instant": {"type": ["string", "null"], "format": "date"},
                 "value": {"type": ["string", "null"]},
+                "normalized_value": {"type": ["string", "null"]},
                 "dimensions": {"type": "object", "additionalProperties": {"type": "string"}},
                 "parser_format": {"type": "string"},
                 "source_path": {"type": "string"},
